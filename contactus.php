@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="contact_us">
     <h1>Contactez-nous</h1>
     <div class="box_1">
     <form action="">
@@ -19,17 +20,18 @@
     </div>
     <div class="box_2">
         <form action="" method="post">
-            <input type="text" placeholder="Objet">
-            <input type="text" placeholder="Message">
+            <input type="text" name="" id="" placeholder="Objet">
+            <textarea name="" id="message" cols="24" rows="10" placeholder="Message" style="outline: none;"></textarea>
         </form>
-    </div class="Contact">
-   <div>
-    <div>
-        <button> Envoyer </button>
+    </div>
+   
+    <div class="btn">
+        <button> Envoyer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
     </div>
 
-    <div>
+    <div class="Contact">
         06.01.02.03.04 <br>
+        <br>
         tailledor@live.fr
     </div>
     </div>
