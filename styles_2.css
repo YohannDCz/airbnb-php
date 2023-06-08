@@ -1,0 +1,96 @@
+@font-face {
+    font-family: FuturaMediumBT;
+    src: url(assets/font/FuturaMediumBT.ttf);
+}
+
+.signup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 20px;
+    min-height: 100vh;
+    font-family: FuturaMediumBT;
+}
+
+.signup_box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0px;
+    width: 250px;
+    height: 150px;
+
+}
+
+.signup_box input{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 10px 30px;
+    gap: 10px;
+    width: 250px;
+    height: 50px;
+    outline: none;
+    font-size: 15px;
+    font-family: FuturaMediumBT;
+}
+
+.mail_input{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#confirm_password{
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.acount_exist{
+    text-align: center;
+    margin-top: 40px;
+    font-family: FuturaMediumBT;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h2{
+    font-family: FuturaMediumBT;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+.btn{
+    display: inline-block;
+
+}
+button {
+    display: flex;
+    align-items: center;
+     margin: 30px;
+     background-color: #EDD54C;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        width: 110px;
+        height: 40px;
+        cursor: pointer;
+        padding: 10px 20px;
+
+  }
+button img {
+    width: 25px;
+    height: 25px;
+}
+
