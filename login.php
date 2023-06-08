@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="header_login">
         <div class="logo_login"> <img src="./assets/img/logo.png" class="img_logo" alt=""> <h2>TAILLE D'OR</h2></div>
     </header>
     <div class="login"> 

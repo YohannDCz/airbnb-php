@@ -163,13 +163,19 @@ button {
 header{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background: black;
     color: white;
 }
 .logo {
     display: flex;
     align-items: center;
+  }
+.header_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
   }
 .logo_login{
     display: flex;
@@ -205,7 +211,7 @@ header{
   .menu {
     display: none;
     position: absolute;
-    right: 0;
+    right: 45px;
     background: black;
     top: 0;
     left: 0;
@@ -309,3 +315,31 @@ a{
         margin-right: 150px;
     }
 }
+/* Fin du css Login  */
+
+/* Css de la page ajouter un logement */
+.add_logement{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+
+}
+.Form_group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.Form_group label{
+    padding-bottom: 10px;
+}
+ .Form_group  input{
+    border-radius: 10px;
+    width: 345px;
+    height: 35px;
+    outline: none;
+} 

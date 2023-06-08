@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="header.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header >
         <div class="logo"><img  src="./assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
     
           <nav class="menu">
@@ -24,22 +25,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          
-          <script>
-            const menuBurger = document.querySelector('.menu-burger');
-            const menu = document.querySelector('.menu');
-            const closeBtn = document.querySelector('.close-btn');
-
-            menuBurger.addEventListener('click', function() {
-            menu.classList.toggle('active');
-            });
-
-            closeBtn.addEventListener('click', function() {
-            menu.classList.remove('active');
-            });
-
-          </script>
-          </header>
+        
     </header>
 </body>
 </html>
