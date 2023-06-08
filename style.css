@@ -8,6 +8,7 @@
 }
 body{
     font-family: futura;
+    margin: 0;
 }
 .contact_us{
     display: flex;
@@ -158,6 +159,87 @@ button {
 
 
 }
+/* Css pour le header */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+  }
+.logo_login{
+    display: flex;
+    align-items: center;
+  }
+.img_logo{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    margin-right: 10px;
+}
+
+
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 2px;
+    background-color: #EDD54C ;
+    margin-bottom: 4px;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  
+  .menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+  }
 
 /* Css Pour la partie login */
 .login{
@@ -174,7 +256,7 @@ button {
     border: 2px solid black;
     width: 220px;
     height: 90px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .box_login input{
     border: none;
@@ -200,7 +282,6 @@ button {
     font-size: 15px;
 }
 a{
-    text-decoration: none;
     color: black;
 }
 

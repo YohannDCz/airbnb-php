@@ -8,8 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div class="logo_login"> <img src="./assets/img/logo.png" class="img_logo" alt=""> <h2>TAILLE D'OR</h2></div>
+    </header>
     <div class="login"> 
     <h1>Connexion</h1>
+    <form action="">
     <div class="box_login">
         <input type="email" name="" id="" placeholder="Adresse mail @">
         <input type="password" name="" id="mot_de_passe" placeholder="Mot de passe">
@@ -17,6 +21,7 @@
     <div class="link_password">
     <a href="#" id="left">Mot de passe oublié ?</a> <a href="#" id="right">S'inscrire</a>
 </div>
+</form>
 <div class="btn">
     <button> Continuer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
 </div>
