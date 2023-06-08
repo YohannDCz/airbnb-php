@@ -20,8 +20,9 @@
             <a href="#" id="left">Vous êtes déjà client ?</a> 
             </div>
             <div class="btn">
-                <button> Continuer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
+                <button type="submit"> <span>Continuer</span>  <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
             </div>
+                 
         </form>
     </div>
 </body>

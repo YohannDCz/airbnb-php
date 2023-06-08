@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
     row-gap: 20px;
     min-height: 100vh;
     font-family: FuturaMediumBT;
@@ -70,13 +71,26 @@ h2{
     justify-content: center;
     font-size: 36px;
 }
+.btn{
+    display: inline-block;
 
+}
 button {
-    
+    display: flex;
+    align-items: center;
+     margin: 30px;
+     background-color: #EDD54C;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        width: 110px;
+        height: 40px;
+        cursor: pointer;
+        padding: 10px 20px;
+
   }
-
-.btn button img {
-
+button img {
     width: 25px;
     height: 25px;
 }
+
