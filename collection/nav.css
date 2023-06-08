@@ -1,0 +1,67 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#nav_bar {
+    width: 100%;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#nav_bar input {
+
+    padding: 3vw;
+    border-bottom: 2px solid #EDD54C;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#voyageurs {
+    border-bottom: 0px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 20px;
+    background-color: #EDD54C;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Futura_medium_italic;
+    font-size: 18px;
+    color: black;
+  }
+.btn button img {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+input {
+    border: none;
+    text-align: center; 
+}
+
+input::placeholder {
+    font-family: Futura_medium_italic;
+    font-size: 18px;
+    color: black;
+}
+
