@@ -2,3 +2,8 @@
     font-family: Futura_medium_italic;
     src: url("./font/Futura\ Medium\ Italic\ font.ttf");
   }
+
+  @font-face {
+    font-family: Futura_Heavy;
+    src: url("./font/Futura\ Heavy\ font.ttf");
+  }
