@@ -1,0 +1,15 @@
+#area_button_filtre {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+
+#area_button_filtre button {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-family: Futura_medium_italic;
+    font-size: 18px;
+}
