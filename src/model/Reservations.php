@@ -3,7 +3,7 @@
 //Inclusion du fichier pour la connexion a la BDD
 require_once 'Database.php';
 
-//Ces lignes de code ont été recyclées avec le consentement des personnes l'ayant fait ( parce qu'on est écolo, bien sûr ) du projet précédent .
+//Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les prof
 class Locations 
 {
@@ -26,7 +26,9 @@ class Locations
         return $result;
     }
     //Permet de rechercher un logement suivant le nom entré
-    function searchLocation($location)
+
+    //WIP Ajouter un SELECT top(//) pour limiter le nombre de SELECT    
+    function searchLocationByName($location)
     {
         //Connecter la BDD
         $db = new Database();
@@ -204,5 +206,54 @@ class Locations
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
+    }
+    function deleteBookingByIds($locationId,$userId,$newStatus) {
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("UPDATE booking SET booking_status = :newstatus WHERE location_id = :locationId and user_id = :userId");
+        if ($request->execute()) {
+            return False; }
+        return True ;
+    }
+    function deleteReviewById($userId){
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("UPDATE reviews DROP id WHERE user_id = :userId ;");
+        $request->bindParam(":userId", $userId);
+        if ($request->execute()) {
+            return False; }
+        return True ;
+    }
+    function setLocationAvailability($newStatus) {
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("UPDATE location UPDATE currently_free =:newstatus WHERE id = :id ;");
+        $request->bindParam(":newstatus", $newstatus);
+        if ($request->execute()) {
+            return False; }
+        return True ;
+    }
+    //WIP
+    function searchByDate() {
+        pass;
+    }
+    //WIP
+    function AddLocation() {
+        pass;
     }
 }

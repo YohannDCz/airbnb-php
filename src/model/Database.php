@@ -1,6 +1,6 @@
 <?php
 class Database {
-    //Code recyclé du projet précédent et aussi de https://www.w3schools.com/php/php_mysql_connect.asp 
+    //Code recyclé  en partie du projet précédent et aussi de https://www.w3schools.com/php/php_mysql_connect.asp 
 
     //Fonction qui permet de se connecter à la base de données
     function getConnection () {
