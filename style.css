@@ -9,164 +9,14 @@
 body{
     font-family: futura;
     margin: 0;
-}
-.contact_us{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 20px;
+    position: relative;
     min-height: 100vh;
-    font-family: FuturaMediumBT;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-    font-family: FuturaMediumBT;
-    font-weight: 400;
-}
-.box_1{
-    width: 207px;
-    height: 165px;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-#tel{
-    border: none;
-}
-
-.box_2{
-    width: 207px;
-    height: 133px;
-    border: 2px solid black;
-    border-radius: 10px;
-    
-}
-#message{
-    border: none;
-    height: 80px;
-    margin-top: 0;
-    padding-top: 0;
-    padding-left: 5px;
-    
-}
-
-.Contact{
-  margin-left: -150px;
-  margin-bottom: -90px
-  ;
-}
-.box_1 input{
-    border: none;
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    width: 195px;
-    margin: 10px 0 ;
-    outline: none;
-    padding-left: 10px;
-    font-family: futura;
-
-}
-
-.box_2 input{
-    border: none;
-    border-bottom: 2px solid black;
-    padding-bottom: 5px;
-    width: 199px;
-    margin: 10px 0 ;
-    outline: none;
-    padding-left: 10px;
-    font-family: FuturaMediumBT;
-
-}
-
-button {
-    padding: 10px 20px;
-    background-color: #EDD54C;
-    color: black;
-    border: none;
-    border-radius: 30px;
-    width: 110px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-  }
-.btn button img {
-    width: 25px;
-    height: 25px;
-}
-@media screen  and (min-width: 800px){
-    .contact_us{
-        row-gap: 5px;
-        min-height: 100vh;
-        margin-top: -60px;
-    }
-    .box_1{
-        width: 700px;
-        height: 170px;
-        border: none;
-
-    }
-    .box_1 input{
-        border: 1px solid black;
-        width: 250px;
-        height: 30px;
-        margin: 10px 0 ;
-        outline: none;
-        padding-left: 10px;
-        border-radius: 10px;
-        display: inline-block;
-        margin: 20px 40px;
-        font-family: FuturaMediumBT;
-
-    }
-    #tel{
-        border: 1px solid black;
-    }
-    .box_2{
-        width: 615px;
-        height: 133px;
-        border: 1px solid black;
-        border-radius: 10px;        
-    }
-    .box_2 input{
-        border: none;
-        border-bottom: 1px solid black;
-        padding-bottom: 5px;
-        width: 608px;
-        margin: 10px 0 ;
-        outline: none;
-        padding-left: 10px;
-        font-family: FuturaMediumBT;
-
-    }
-    .Contact{
-        margin-left: -510px;
-        margin-bottom: -150px
-        ;
-      }
-    button {
-        padding: 10px 20px;
-        background-color: #EDD54C;
-        color: black;
-        border: none;
-        border-radius: 30px;
-        width: 110px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        margin-top: 10px;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        -ms-border-radius: 30px;
-        -o-border-radius: 30px;
 }
 
 
-}
+
 /* Css pour le header */
-header{
+ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -193,7 +43,9 @@ header{
     margin-right: 10px;
     margin-right: 10px;
 }
-
+.nav_links{
+    display: none;
+}
 
 .menu-burger {
     display: flex;
@@ -252,101 +104,111 @@ header{
     cursor: pointer;
     font-size: 40px;
   }
-
-/* Css Pour la partie login */
-.login{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    row-gap: 20px;
-    min-height: 100vh;
-    font-family: FuturaMediumBT;
-}
-.box_login{
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 220px;
-    height: 90px;
-    margin-top: 30px;
-}
-.box_login input{
-    border: none;
-    border-bottom: 2px solid black;
-    width: 203px;
-    height: 20px;
-    margin-top: 20px; 
-    padding-left: 15px;
-    outline: none;
-    font-size: 15px;
-    font-family: FuturaMediumBT;
-  
-}
-
-#mot_de_passe{
-    border-bottom: none;
-}
-
-.link_password{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    font-family: futura;
-    font-size: 15px;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-
-@media screen and (min-width: 800px) {
-    .box_login{
-        border-radius: 7px;
-        border: 1px solid black;
-        width: 350px;
-        height: 90px;
-        margin-top: 40px;
+  @media screen and (min-width: 800px) { 
+    .nav_links a{
+        text-decoration: none;
+        color: white;
+        margin-right: 30px;
     }
-    .box_login input{
-        border: none;
-        border-bottom: 1px solid black;
-        width: 332px;
-        height: 20px;
-        margin-top: 20px; 
-        padding-left: 15px;
-        outline: none;
+    .nav_links{
+        margin-left: -400px;
+        display: unset;
+
+    }
+    header{
+        height: 70px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+        height: min-content;
+        margin-left: 0px;
+       
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background: white;
+        width: 200px;
+        height: 200px;
+        top: 73px;
+        right: 50px;
+        left: unset;
+        border-radius: 10px;
         font-size: 15px;
-        font-family: FuturaMediumBT;
-      
-    }
-    #left{
-        margin-right: 150px;
-    }
-}
-/* Fin du css Login  */
+        border: 1px solid black;
+      }
+      .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 40px;
+        color: black;
+        box-shadow: whitesmoke;
+      }
 
-/* Css de la page ajouter un logement */
-.add_logement{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 40px;
-    margin: 0;
+    
+  }
+
+/* Footer */
+
+footer{
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+* {
     padding: 0;
-
+    margin: 0;
+    box-sizing: border-box;
 }
-.Form_group{
+footer{
+    width : 100vw;
+    height : 75px;
+    background-color :black;
+    padding: 0;
     display: flex;
-    flex-direction: column;
-    margin-bottom: 50px;
+    justify-content: space-evenly;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
 }
-.Form_group label{
-    padding-bottom: 10px;
+footer .container {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
 }
- .Form_group  input{
-    border-radius: 10px;
-    width: 345px;
-    height: 35px;
-    outline: none;
-} 
+
+p {
+    font-size: 1.063rem;
+    color: white;
+    font-family: 'Futura PT';
+}
+
+.container-img{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.container-img figure {
+    max-height: 94%;
+    max-width: 23px;
+}
+
+.container-img figure img {
+    min-width: 14px;
+    max-width: 34px;
+    width: 100%;
+    height: 20px;
+}
+
+.footer-a{
+    color: white;
+}
+}
