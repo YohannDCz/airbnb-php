@@ -65,3 +65,20 @@ input::placeholder {
     color: black;
 }
 
+@media screen and (min-width: 600px) {
+    #nav_bar {
+        flex-direction: row;
+        max-width: 1000px;
+    }
+
+    #nav_bar input {
+        border-bottom: 0px;
+        border-right: 2px solid #EDD54C;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #destination {
+        
+    }
+}

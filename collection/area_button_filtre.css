@@ -5,17 +5,35 @@
     align-items: center;
 }
 
-#area_button_filtre button {
+#filtre {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: Futura_medium_italic;
     font-size: 18px;
     height: 80%;
     width: 132px;
+    margin-left: 0px;
 }
 
 #area_button_filtre img {
     height: 20px;
     width: 20px;
     margin-left: 10px;
+}
+
+.filtre_button {
+     border: 0px;
+     height: auto;
+     width: 80%;
+     background-color: white;
+     margin-left: 10%;
+     margin-right: 10%;
+     margin-top: 0px;
+     margin-bottom: 0px;
+     padding-bottom: 10px;
+     padding-top: 10px;
+     border-bottom: 1.5px solid black;
+     border-radius: 0px;
+     display: flex;
+     justify-content: left;
 }

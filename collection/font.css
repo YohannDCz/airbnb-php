@@ -7,3 +7,8 @@
     font-family: Futura_Heavy;
     src: url("./font/Futura\ Heavy\ font.ttf");
   }
+
+  @font-face {
+    font-family: Didot;
+    src: url("./font/Didot\ Regular.ttf");
+  }

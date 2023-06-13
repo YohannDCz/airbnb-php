@@ -1,0 +1,63 @@
+#arguments {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#arguments * {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#first {
+    width: 100%;
+    margin-bottom: 72px;
+    margin-top: 72px;
+}
+
+#first p {
+    width: 90%;
+    text-align: center;
+    font-family: Futura_medium_italic;
+    font-size: 18px;
+}
+
+
+#first h2 {
+    width: 92%;
+    font-size: 22px;
+    text-align: center;
+}
+
+#second {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 72px;
+}
+
+#second p {
+    width: 92%;
+    text-align: center;
+    font-family: Futura_medium_italic;
+    font-size: 18px;
+}
+
+
+#second h2 {
+    width: 92%;
+    text-align: center;
+}
+
+#arguments img {
+    width: 60%;
+}
+
+#arguments h2 {
+    font-family: Didot;
+    font-size: 32px;
+}
