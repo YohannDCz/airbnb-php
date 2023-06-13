@@ -5,7 +5,7 @@ require_once 'Database.php';
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les prof
-class Locations 
+class Management 
 { 
     function getlocationdetails()
     {
@@ -82,4 +82,58 @@ class Locations
             return False; }
         return True ;
     }
+    function createLocation($name,$price,$address,$pics,$description,$maxPlaces,$currentlyFree,$area) {
+            //Connecter la BDD
+            $db = new Database();
+            
+            // Ouverture de la connection
+            $connection = $db->getConnection();
+
+            // Requêtes SQL
+            $request = $connection->prepare("INSERT INTO location (name, price, address, pics,description,max_places,currently_free,area) VALUES (:name, :price, :address, :pics, :description,:maxPlaces, :currentlyfree, :area)");
+            $request->bindParam(":name", $name);
+            $request->bindParam(":price", $profile_icon);
+            $request->bindParam(":address", $pics);
+            $request->bindParam(":pics", $pics);
+            $request->bindParam(":description", $description);
+            $request->bindParam(":max_places", $max_places);
+            $request->bindParam(":currently_free", $currently_free);
+            $request->bindParam(":area", $area);
+
+            //Execution de la Query
+            $request->execute();
+
+            // Fermeture de la connection
+            $connection = null;
+
+            return $page_name;
+    }
+    function updateLocation($name,$price,$address,$pics,$description,$maxPlaces,$currentlyFree,$area,$locationId) {
+        //Connecter la BDD
+        $db = new Database();
+        
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        // Requêtes SQL
+        $request = $connection->prepare("UPDATE location SET name = :name, price = :price address = :address, pics = :pics, description = :description, max_places = :maxPlaces, currently_free = :currentlyfree, area = :area WHERE location_id = locationId ;)");
+        $request->bindParam(":name", $name);
+        $request->bindParam(":price", $profile_icon);
+        $request->bindParam(":address", $pics);
+        $request->bindParam(":pics", $pics);
+        $request->bindParam(":description", $description);
+        $request->bindParam(":max_places", $max_places);
+        $request->bindParam(":currently_free", $currently_free);
+        $request->bindParam(":area", $area);
+        
+        $request->bindParam(":locationId", $locationId);
+
+        //Execution de la Query
+        $request->execute();
+
+        // Fermeture de la connection
+        $connection = null;
+
+        return $page_name;
+}
 }
