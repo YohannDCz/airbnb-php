@@ -29,7 +29,7 @@
             gap: 3%;
         }
 
-        p {
+        .container p {
             font-size: 1.063rem;
             color: white;
             font-family: 'Futura PT';
