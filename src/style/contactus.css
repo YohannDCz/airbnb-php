@@ -4,7 +4,6 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
-    min-height: 100vh;
     font-family: FuturaMediumBT;
 }
 
@@ -13,6 +12,7 @@ h1{
     justify-content: center;
     font-family: FuturaMediumBT;
     font-weight: 400;
+    margin-top: 100px;
 }
 .box_1{
     width: 207px;
@@ -91,9 +91,13 @@ button {
     height: 25px;
 }
 @media screen  and (min-width: 800px){
-    .contact_us{
-        row-gap: 5px;
+    .body{
         min-height: 100vh;
+        overflow-x: none;
+        overflow-y: hidden;
+    }
+    .contact_us{
+        row-gap: 1px;
         margin-top: -60px;
     }
     .box_1{
@@ -137,7 +141,7 @@ button {
     }
     .Contact{
         margin-left: -510px;
-        margin-bottom: -150px
+        margin-bottom: 75px
         ;
       }
     button {
