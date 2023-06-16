@@ -1,0 +1,163 @@
+.contact_us{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 20px;
+    font-family: FuturaMediumBT;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: FuturaMediumBT;
+    font-weight: 400;
+    margin-top: 100px;
+}
+.box_1{
+    width: 207px;
+    height: 165px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#tel{
+    border: none;
+}
+
+.box_2{
+    width: 207px;
+    height: 133px;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+}
+#message{
+    border: none;
+    height: 80px;
+    margin-top: 0;
+    padding-top: 0;
+    padding-left: 5px;
+    
+}
+
+.Contact{
+  margin-left: -150px;
+  margin-bottom: -90px
+  ;
+}
+.box_1 input{
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: 195px;
+    margin: 10px 0 ;
+    outline: none;
+    padding-left: 10px;
+    font-family: futura;
+
+}
+
+.box_2 input{
+    border: none;
+    border-bottom: 2px solid black;
+    padding-bottom: 5px;
+    width: 195px;
+    margin: 10px 0 ;
+    outline: none;
+    padding-left: 10px;
+    font-family: FuturaMediumBT;
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #EDD54C;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+.btn button img {
+    width: 25px;
+    height: 25px;
+}
+@media screen  and (min-width: 800px){
+    .body{
+        min-height: 100vh;
+        overflow-x: none;
+        overflow-y: hidden;
+    }
+    .contact_us{
+        row-gap: 1px;
+        margin-top: -60px;
+    }
+    .box_1{
+        width: 700px;
+        height: 170px;
+        border: none;
+
+    }
+    .box_1 input{
+        border: 1px solid black;
+        width: 250px;
+        height: 30px;
+        margin: 10px 0 ;
+        outline: none;
+        padding-left: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 20px 40px;
+        font-family: FuturaMediumBT;
+
+    }
+    #tel{
+        border: 1px solid black;
+    }
+    .box_2{
+        width: 615px;
+        height: 133px;
+        border: 1px solid black;
+        border-radius: 10px;        
+    }
+    .box_2 input{
+        border: none;
+        border-bottom: 1px solid black;
+        padding-bottom: 5px;
+        width: 603px;
+        margin: 10px 0 ;
+        outline: none;
+        padding-left: 10px;
+        font-family: FuturaMediumBT;
+
+    }
+    .Contact{
+        margin-left: -510px;
+        margin-bottom: 75px
+        ;
+      }
+    button {
+        padding: 10px 20px;
+        background-color: #EDD54C;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        width: 110px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+}
+}
