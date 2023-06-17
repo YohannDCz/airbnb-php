@@ -4,7 +4,7 @@
 require_once 'Database.php';
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
-// Commentaire pour les prof
+// Commentaire pour les profs
 class Management 
 { 
     function getlocationdetails()
@@ -135,5 +135,23 @@ class Management
         $connection = null;
 
         return $page_name;
-}
+    }
+    function deleteLocation($locationId){
+            //Connecter la BDD
+            $db = new Database();
+        
+            // Ouverture de la connection
+            $connection = $db->getConnection();
+    
+            // Requêtes SQL
+            $request = $connection->prepare("DELETE FROM location WHERE id = :locationId; ;)");
+          $request->bindParam(":locationId", $locationId);
+
+    //Execution de la Query
+    $request->execute();
+
+    // Fermeture de la connection
+    $connection = null;
+
+    return $page_name;
 }
