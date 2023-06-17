@@ -129,13 +129,12 @@ a {
 
 
 
-.icons{
+.icons {
     display: flex;
     justify-content: space-around;
     gap: 25px;
     height: min-content;
     margin-left: 0px;
-   
 }
 
 .freur {
@@ -155,6 +154,7 @@ a {
     font-family: Futura, sans-serif;
     margin-left: 13px;
 }
+
 .freur .separation {
     width: 2px;
     height: 28px;
@@ -217,6 +217,7 @@ a {
     top: 69px;
     left: -165px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 8px 0;
 }
 
 .menu .panel .panel-item {
