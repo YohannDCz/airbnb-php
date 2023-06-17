@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="add_logement.css">
-    <script src="add_logement.js" defer></script>
     <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/contactus.css">
 </head>
 <body>
     <header >
         <div class="left">
-        <div class="logo"><img  src="./assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
+        <div class="logo"><img  src="../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
     
           <nav class="menu">
             <ul>
@@ -33,8 +32,8 @@
 
           <div class="right">
           <div class="icons">
-            <a href="lien_image1.html"><img src="./assets/img/Fr.svg" alt="fr"></a>
-            <a href="lien_image2.html"><img src="./assets/img/search.svg" alt="LP"></a>
+            <a href="lien_image1.html"><img src="../assets/img/Fr.svg" alt="fr"></a>
+            <a href="lien_image2.html"><img src="../assets/img/search.svg" alt="LP"></a>
          </div>
 
             <div class="menu-burger">
@@ -44,25 +43,39 @@
             </div>
 
         <div class="icons2">
-                <a href="lien_image4.html"><img src="./assets/img/profil.png" alt="rl"></a>
+                <a href="lien_image4.html"><img src="../assets/img/profil.png" alt="rl"></a>
         </div>
        </div>
 
         
     </header>
-    <div class="add_logement">
-        <h1> Photos du logement</h1>
-        <p> Ajouter au moins une photos maintenant</p>
-         <form action="" method="post">
-            <input type="file" name="image" id="inputImage" value="Ajouter une image" id="" accept="image/*">
-            <img id="previewImage" src="#" alt="Aperçu de l'image" style="display: none;">
-         </form>
-
+    <div class="contact_us">
+    <h1>Contactez-nous</h1>
+    <div class="box_1">
+    <form action="">
+     <input type="text" name="" id="" placeholder="Prénom">
+     <input type="text" name="" id="" placeholder="Nom">
+     <input type="mail" name="" id="" placeholder="Adresse mail">
+     <input type="tel" name="" id="tel" placeholder="Téléphone portable">
+    </form>
     </div>
+    <div class="box_2">
+        <form action="" method="post">
+            <input type="text" name="" id="" placeholder="Objet">
+            <textarea name="" id="message" cols="24" rows="10" placeholder="Message" style="outline: none;"></textarea>
+        </form>
+    </div>
+   
     <div class="btn">
-        <button id="btn_back1"> <img src="./assets/img/back_arrow.svg" alt="flèche"> Retour  </button>
-        <button id="second_btn"> Envoyer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
-    </div> 
+        <button> Envoyer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
+    </div>
+
+    <div class="Contact">
+        06.01.02.03.04 <br>
+        <br>
+        tailledor@live.fr
+    </div>
+    </div>
 
     <footer>
         <div class = "container">
@@ -75,16 +88,16 @@
         </div>
         <div class="container-img">
             <figure>
-                <img src="./assets/img/Facebook.svg" alt="">
+                <img src="../assets/img/Facebook.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/instagram.svg" alt="">
+                <img src="../assets/img/instagram.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/Twitter.svg" alt="">
+                <img src="../assets/img/Twitter.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/Youtube.svg" alt="">
+                <img src="../assets/img/Youtube.svg" alt="">
             </figure>
         </div>
         </class>

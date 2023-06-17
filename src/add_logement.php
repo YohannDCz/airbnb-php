@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="../style/add_logement.css">
     <script src="../javascript/header.js" defer ></script>
     <script src="../javascript/add_logement.js" defer></script>
-    <title>Document</title>
+    <title>Page 1</title>
 </head>
 <body>
     <header >
         <div class="left">
-        <div class="logo"><img  src="../../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
+        <div class="logo"><img  src="../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
     
           <nav class="menu">
             <ul>
@@ -34,8 +34,8 @@
 
           <div class="right">
           <div class="icons">
-            <a href="lien_image1.html"><img src="../../assets/img/Fr.svg" alt="fr"></a>
-            <a href="lien_image2.html"><img src="../../assets/img/search.svg" alt="LP"></a>
+            <a href="lien_image1.html"><img src="../assets/img/Fr.svg" alt="fr"></a>
+            <a href="lien_image2.html"><img src="../assets/img/search.svg" alt="LP"></a>
          </div>
 
             <div class="menu-burger">
@@ -45,7 +45,7 @@
             </div>
 
         <div class="icons2">
-                <a href="lien_image4.html"><img src="../../assets/img/profil.png" alt="rl"></a>
+                <a href="lien_image4.html"><img src="../assets/img/profil.png" alt="rl"></a>
         </div>
        </div>
 
@@ -125,16 +125,16 @@
         </div>
         <div class="container-img">
             <figure>
-                <img src="../../assets/img/Facebook.svg" alt="">
+                <img src="../assets/img/Facebook.svg" alt="">
             </figure>
             <figure>
-                <img src="../../assets/img/instagram.svg" alt="">
+                <img src="../assets/img/instagram.svg" alt="">
             </figure>
             <figure>
-                <img src="../../assets/img/Twitter.svg" alt="">
+                <img src="../assets/img/Twitter.svg" alt="">
             </figure>
             <figure>
-                <img src="../../assets/img/Youtube.svg" alt="">
+                <img src="../assets/img/Youtube.svg" alt="">
             </figure>
         </div>
         </class>
