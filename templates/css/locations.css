@@ -1,4 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
 #area_button_filtre {
+    position: relative;
+    display: flex;
     height: 70px;
     width: 100%;
     display: flex;
@@ -10,10 +18,12 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: Futura_medium_italic;
     font-size: 18px;
-    height: 80%;
+    height: 46px;
     width: 132px;
-    margin-left: 0px;
+    margin-left: 72px;
 }
+
+
 
 #area_button_filtre img {
     height: 20px;
@@ -21,21 +31,29 @@
     margin-left: 10px;
 }
 
-.filtre_button {
-     border: 0px;
-     height: auto;
-     width: 80%;
-     background-color: white;
-     margin-left: 10%;
-     margin-right: 10%;
-     margin-top: 0px;
-     margin-bottom: 0px;
-     padding-bottom: 10px;
-     padding-top: 10px;
-     border-bottom: 1.5px solid black;
-     border-radius: 0px;
-     display: flex;
-     justify-content: left;
+#panelfiltre {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 72px;
+    top: 72px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    width: 240px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#panelfiltre p {
+    font-size: 16px;
+    font-family: Futura, sans-serif;
+}
+#panelfiltre p:not(:first-child) {
+    margin-top: 8px
+}
+
+#panelfiltre p:not(:last-child) {
+    margin-bottom: 8px;
 }
 
 body{
@@ -54,10 +72,6 @@ body{
     display: grid;
     grid-template-columns: repeat(2, 160px);
     grid-gap: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-top: 32px;
-    margin-bottom: 16px;
 }
 
 .appart_parent img {
@@ -217,7 +231,6 @@ input::placeholder {
     width: 400px;
     height: auto;
     background-color: white;
-    position: relative;
     right: 124px;
     top: 125px;
     border: 0.5px solid black;
