@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="styles_signup.css">
-   <script src="signup.js"></script>
+    <link rel="stylesheet" href="../style/styles_signup.css">
+   <script src="../javascript/signup.js"></script>
 
     <title>Document</title>
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="./assets/img/logo.png" alt="">
+            <img src="../../assets/img/logo.png" alt="">
             <h1>TAILLE D'OR</h1>
         </div>
     </header>
@@ -46,9 +46,9 @@
                 <input type="date" name="birthday" id="birthday" placeholder="Date d'anniversaire" required>
                 <input class="tel_input" type="tel" id="phone" name="phone" placeholder="Telephone portable" required>
             </div>
-            <div class="btn">
+            <div class="btn" id="page2-btn">
                 <button type="submit"> <span>Valider</span>  <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
-                <button type="button" id="back-btn"> <span>Retour</span>  <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
+                <button type="button" id="back-btn"><img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> <span>Retour</span>   </button>
             </div>
 
         </form>

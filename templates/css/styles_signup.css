@@ -1,11 +1,11 @@
 @font-face {
     font-family: FuturaMediumBT;
-    src: url(assets/font/FuturaMediumBT.ttf);
+    src: url(../../assets/font/FuturaMediumBT.ttf);
 }
 
 @font-face {
     font-family: Vogue;
-    src: url(assets/font/Vogue.ttf);
+    src: url(../../assets/font/Vogue.ttf);
 }
 
 
@@ -186,12 +186,14 @@ header {
         line-height: 37px;
     }
     .signup{
-        
+
     margin-top: 100px;
     }
 
 
 }
+
+
 
 
 
