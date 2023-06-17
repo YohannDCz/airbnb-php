@@ -3,10 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_profil.css">
+    <link rel="stylesheet" href="../style/style_profill.css">
+    <link rel="stylesheet" href="../style/style.css">
+    <script src="../javascript/header.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
+
+<header >
+        <div class="left">
+        <div class="logo"><img  src="../../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
+    
+          <nav class="menu">
+            <ul>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Voyages</a></li>
+              <li><a href="#">Favoris</a></li>
+              <li><a href="#">Signout</a></li>
+            </ul>
+            <div class="close-btn">&times;</div>
+          </nav>
+          <div class="nav_links">
+            <a href="">Accueil</a>
+            <a href="">Locations</a>
+            <a href="">Experiences</a>
+            <a href="">Dashboard</a>
+          </div>
+        </div>
+
+          <div class="right">
+          <div class="icons">
+            <a href="lien_image1.html"><img src="../../assets/img/Fr.svg" alt="fr"></a>
+            <a href="lien_image2.html"><img src="../../assets/img/search.svg" alt="LP"></a>
+         </div>
+
+            <div class="menu-burger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+        <div class="icons2">
+                <a href="lien_image4.html"><img src="../../assets/img/profil.png" alt="rl"></a>
+        </div>
+       </div>
+
+        
+    </header>
 
     <div class="profil-container no-scroll">
         <div class="profil-page">
@@ -14,7 +57,7 @@
                 <div class="profil-form">
                     <div class="icon-container">
                         <h1 class="profil-text">A propos de moi</h1>
-                        <img src="assets\img\Rectangle 319.svg" alt="" class="icon-img">
+                        <img src="../../assets\img\Rectangle 319.svg" alt="" class="icon-img">
                     </div>
                     <div class="profil-formulaire">
                         <div class="profil-input">
@@ -77,11 +120,38 @@
                         <button type="submit"> <span>Valider</span>  <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
 
                     </div>
+
                 </div>
 
             </div>
+
         </div>
 
     </div>
+    <footer>
+        <div class = "container">
+            <p>© 2023 Taillé d’or, Inc. </p>
+            <a href="" class="footer-a">Infos sur l'entreprise</a>
+            <a href="" class="footer-a">Fonctionnement du site</a>
+            <a href="" class="footer-a">Conditions générales</a>
+            <a href="" class="footer-a">Plan du site</a>
+            <a href="" class="footer-a">Confidentialité</a>
+        </div>
+        <div class="container-img">
+            <figure>
+                <img src="../../assets/img/Facebook.svg" alt="">
+            </figure>
+            <figure>
+                <img src="../../assets/img/instagram.svg" alt="">
+            </figure>
+            <figure>
+                <img src="../../assets/img/Twitter.svg" alt="">
+            </figure>
+            <figure>
+                <img src="../../assets/img/Youtube.svg" alt="">
+            </figure>
+        </div>
+        </class>
+    </footer>
 </body>
 </html>

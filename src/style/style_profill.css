@@ -1,11 +1,11 @@
 @font-face {
   font-family: FuturaMediumBT;
-  src: url(assets/font/FuturaMediumBT.ttf);
+  src: url(../../assets/font/FuturaMediumBT.ttf);
 }
 
 @font-face {
   font-family: FuturaBdCnBT;
-  src: url(assets/font/futura_bdcn_bt_bold.ttf);
+  src: url(../../assets/font/futura_bdcn_bt_bold.ttf);
 }
 
 
@@ -64,6 +64,7 @@ body{
   flex-shrink: 0;
   justify-content: space-between;
   margin-bottom: 80px;
+  margin-top: 50px;
 }
 
 .profil-text{
@@ -88,7 +89,7 @@ body{
 }
 
 .profil-input {
-  gap: 15px;
+  gap: 50px;
   display: flex;
   align-items: flex-start;
   flex-shrink: 0;
