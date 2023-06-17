@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="add_logement3.css">
-    <script src="add_logement.js" defer></script>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/add_logement3.css">
+    <script src="../javascript/header.js" defer ></script>
+    <script src="../javascript/add_logement.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header >
         <div class="left">
-        <div class="logo"><img  src="./assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
+        <div class="logo"><img  src="../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
     
           <nav class="menu">
             <ul>
@@ -33,8 +34,8 @@
 
           <div class="right">
           <div class="icons">
-            <a href="lien_image1.html"><img src="./assets/img/Fr.svg" alt="fr"></a>
-            <a href="lien_image2.html"><img src="./assets/img/search.svg" alt="LP"></a>
+            <a href="lien_image1.html"><img src="../assets/img/Fr.svg" alt="fr"></a>
+            <a href="lien_image2.html"><img src="../assets/img/search.svg" alt="LP"></a>
          </div>
 
             <div class="menu-burger">
@@ -44,7 +45,7 @@
             </div>
 
         <div class="icons2">
-                <a href="lien_image4.html"><img src="./assets/img/profil.png" alt="rl"></a>
+                <a href="lien_image4.html"><img src="../assets/img/profil.png" alt="rl"></a>
         </div>
        </div>
 
@@ -64,7 +65,7 @@
             <textarea name="" id="" cols="30" rows="10" placeholder="Description"></textarea>
            </div>
            <div class="btn">
-            <button id="btn_back2"> <img src="./assets/img/back_arrow.svg" alt="flèche"> Retour  </button>
+            <button id="btn_back2"> <img src="../assets/img/back_arrow.svg" alt="flèche"> Retour  </button>
             <button > Envoyer <img src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png" alt="flèche"> </button>
         </div> 
      
@@ -86,16 +87,16 @@
         </div>
         <div class="container-img">
             <figure>
-                <img src="./assets/img/Facebook.svg" alt="">
+                <img src="../assets/img/Facebook.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/instagram.svg" alt="">
+                <img src="../assets/img/instagram.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/Twitter.svg" alt="">
+                <img src="../assets/img/Twitter.svg" alt="">
             </figure>
             <figure>
-                <img src="./assets/img/Youtube.svg" alt="">
+                <img src="../assets/img/Youtube.svg" alt="">
             </figure>
         </div>
         </class>
