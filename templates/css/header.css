@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-h1{
-    font-size: 40px;
-    font-family: "Inter";
-    text-align: center;
-    margin: 15px 0px 15px 0px;
+@font-face {
+    font-family: 'Vogue';
+    src: url('../../assets/fonts/Vogue.ttf') format('truetype');
 }
+
   
 .login_signup{
     display: flex;
@@ -73,9 +72,11 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid black;
     width: 100%;
-    padding: 25px;
+    height: 80px;
+    padding: 0 25px;
     align-items: center;
     background-color: black;
 }
@@ -88,14 +89,18 @@ header{
 }
 
 .logo{
-    height: 45px;
+    height: 32px;
     display: flex;
     margin-right: 15px;
 }
 .nom {
     display: flex;
     align-items: center;
-    margin-left: 40;
+}
+
+.nom p {
+    font-size: 27px;
+    font-family: "Vogue", serif;
 }
 
 p{
@@ -107,17 +112,18 @@ p{
 .taches {
     display: flex;
     align-items: center;
-    margin-left: 70px;
-    gap: 30px;
+    margin-left: 40px;
+    gap: 40px;
     color: white;
-
-
 }
 
-a{
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     font-size: 27px;
-    font-family: "Didot", serif;
+    font-family: Didot, serif;
     text-decoration: none;
 }
 
@@ -135,11 +141,64 @@ a{
 .freur {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
+.freur p:first-of-type {
+    font-size: 17px;
+    font-family: Futura, sans-serif;
+    margin-right: 13px;
+}
+
+.freur p:last-of-type {
+    font-size: 17px;
+    font-family: Futura, sans-serif;
+    margin-left: 13px;
+}
 .freur .separation {
     width: 2px;
-    height: 27px;
+    height: 28px;
+    border: 1px solid #E0BF00;
+}
+
+.round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 999px;
+    border: 2px solid #E0BF00;
+}
+
+.round img {
+    width: 22px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 74px;
+    height: 40px;
+    border-radius: 999px;
+    border: 2px solid #E0BF00;
+    cursor: pointer;
+}
+
+.menu .menuicon {
+    width: 32px;
+    height: 32px;
+    margin-left: 3px;   
+}
+
+.menu .profile {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #E0BF00;
+    border-radius: 999px;
 }
 .material-icons-outlined.md-48 { font-size: 48px; }
 
@@ -147,4 +206,39 @@ a{
     width: 48px;
 }
 
+.menu .panel {
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    width: 240px;
+    background-color: white;
+    border-radius: 20px;
+    top: 69px;
+    left: -165px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.menu .panel .panel-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 8px 16px;
+}
+
+.menu .panel img {
+    width: 24px;
+}
+
+.menu .panel p {
+    color: black;
+    font-size: 17px;
+    font-family: Futura, sans-serif;
+    margin-left: 8px;
+}
+
+hr {
+    width: 208px;
+    margin: 0 16px;
+}
 
