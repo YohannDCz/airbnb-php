@@ -26,7 +26,11 @@
     <style>
         <?php
         include("../css/homepage/homepage.css");
-        include("../css/homepage/carouselle.css")
+        include("../css/homepage/carouselle.css");
+        include("../css/homepage/collection.css");
+        include("../css/homepage/argument.css");
+        include("../css/homepage/review.css")
+
         ?>
     </style>
 </head>
@@ -42,13 +46,13 @@
             <!-- More Radio Buttons Here -->
             <div class="carousel-wrapper">
                 <div class="carousel-slide">
-                Slide 1
+                <img src="../../assets/img/immeuble.png" alt="">
                 </div>
                 <div class="carousel-slide">
-                Slide 2
+                <img src="../../assets/img/appartement4.png" alt="">
                 </div>
                 <div class="carousel-slide">
-                Slide 3
+                <img src="../../assets/img/appartement6.png" alt="">
                 </div>
                 <!-- More Slides Here -->
             </div>
@@ -135,6 +139,23 @@
             <button id="buttun_more">
                 <p>Voir plus...</p>
             </button>
+        </div>
+        </div>
+        <div class="arguement">
+            <div>
+                <img src="../../assets/img/argument1.png" alt="">
+                <img src="../../assets/img/argument2.png" alt="">
+                <img src="../../assets/img/immeuble.png" alt="">
+            </div>
+            <p></p>
+        </div>
+        <div class="arguement">
+            <p></p>
+            <div>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </div>
         </div>
     </div>
 <?php
