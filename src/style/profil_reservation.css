@@ -1,0 +1,386 @@
+@font-face {
+    font-family: FuturaMediumBT;
+    src: url(../../assets/font/FuturaMediumBT.ttf);
+  }
+  
+  @font-face {
+    font-family: EpilogueExtraBold;
+    src: url(../../assets/font/Epilogue-ExtraBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: EpilogueRegular;
+    src: url(../../assets/font/Epilogue-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: EpilogueSemiBold;
+    src: url(../../assets/font/Epilogue-SemiBold.ttf);
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+/**************header***************************/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+
+.img_logo{
+    width: 25px;
+    height: auto;
+    margin-right: 10px;
+    margin-right: 10px;
+}
+.nav_links{
+    display: none;
+}
+.icons2{
+  display: none;
+}
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .bar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 2px;
+    background-color: #EDD54C ;
+    margin-bottom: 4px;
+  }
+  
+  .menu {
+    display: none;
+    position: absolute;
+    right: 45px;
+    background: black;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .menu.active {
+    display: block;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .icons{
+    display: none;
+  }
+  .menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+  }
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 40px;
+  }
+  @media screen and (min-width: 800px) { 
+    .nav_links a{
+        text-decoration: none;
+        color: white;
+        margin-right: 30px;
+    }
+    .nav_links{
+        display: unset;
+        padding-left: 0;
+
+    }
+    header{
+        height: 70px;
+    }
+    .icons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 25px;
+        
+    }
+    .icons2{
+      display: unset;
+    }
+    .left{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .right{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        background: white;
+        width: 200px;
+        height: 170px;
+        top: 73px;
+        right: 50px;
+        left: unset;
+        border-radius: 10px;
+        font-size: 15px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        padding: 20px;
+      }
+      .menu a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+        color: black;
+         }
+
+
+  }
+
+/***********************************************/
+
+@font-face {
+    font-family: FuturaMediumBT;
+    src: url(../../assets/font/FuturaMediumBT.ttf);
+  }
+  
+  @font-face {
+    font-family: EpilogueExtraBold;
+    src: url(../../assets/font/Epilogue-ExtraBoldItalic.ttf);
+  }
+
+  @font-face {
+    font-family: EpilogueRegular;
+    src: url(../../assets/font/Epilogue-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: EpilogueSemiBold;
+    src: url(../../assets/font/Epilogue-SemiBold.ttf);
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.profil_container2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    overflow: auto;
+    margin-top: 40px;
+    margin-left: 40px;
+
+}
+
+.reservation {
+    text-align: left; 
+}
+
+.reservation h2 {
+    font-family: FuturaMediumBT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 20px;
+    text-align: left; 
+    
+}
+
+.reservation-container {
+    display: flex;
+    justify-content: flex-start; 
+    gap: 20px;
+}
+
+.appartement {
+    width: 300px;
+    padding: 20px 20px 20px 0px;
+
+}
+
+.appartement h4 {
+    font-family: FuturaMediumBT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+.appartement img {
+    width: 247px;
+    height: 240px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.appartement p.title {
+    font-family: EpilogueExtraBold;
+    font-size: 20px;
+    font-weight: 800;
+    font-style: italic;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    color: black;
+    text-align: left; 
+}
+
+.appartement p.description {
+    font-family: EpilogueSemiBold;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 13px;
+    text-align: left; 
+}
+
+.appartement p.date {
+    font-family: EpilogueRegular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+.appartement p.price {
+    font-family: EpilogueRegular;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 14px;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+.appartement button {
+    margin-top: 15px;
+    background-color: #EDD54C;
+    color: black;
+    font-family: FuturaMediumBT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.appartement button:hover {
+    margin-top: 15px;
+    background-color: #EDD54C;
+    color: rgb(255, 255, 255);
+    font-family: FuturaMediumBT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 30px;
+    width: 90%;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center; 
+}
+
+/*************footer*********/
+footer{
+    display: none;
+}
+@media screen and (min-width: 800px) {
+    
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+footer{
+    width : 100%;
+    height : 75px;
+    background-color :black;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+}
+footer .container {
+    width: 77%;
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+p {
+    font-size: 1.063rem;
+    color: white;
+    font-family: 'Futura PT';
+}
+
+.container-img{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.container-img figure {
+    max-height: 94%;
+    max-width: 23px;
+}
+
+.container-img figure img {
+    min-width: 14px;
+    max-width: 34px;
+    width: 100%;
+    height: 20px;
+}
+
+.footer-a{
+    color: white;
+}
+}

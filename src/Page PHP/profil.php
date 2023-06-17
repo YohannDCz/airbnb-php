@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/style_profill.css">
+    <link rel="stylesheet" href="../style/profil.css">
     <link rel="stylesheet" href="../style/style.css">
     <script src="../javascript/header.js" defer ></script>
     <title>Document</title>
 </head>
 <body>
 
-<header >
+<header>
         <div class="left">
         <div class="logo"><img  src="../../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
-    
           <nav class="menu">
             <ul>
               <li><a href="#">Account</a></li>

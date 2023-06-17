@@ -12,6 +12,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-y: hidden;
 }
 
 .signup{
@@ -185,10 +186,9 @@ header {
         margin: 0;
         line-height: 37px;
     }
-    .signup{
 
-    margin-top: 100px;
-    }
+
+
 
 
 }

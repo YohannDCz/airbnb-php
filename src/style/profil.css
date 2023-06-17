@@ -1,0 +1,196 @@
+@font-face {
+    font-family: FuturaMediumBT;
+    src: url(../../assets/font/FuturaMediumBT.ttf);
+  }
+  
+  @font-face {
+    font-family: FuturaBdCnBT;
+    src: url(../../assets/font/futura_bdcn_bt_bold.ttf);
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  .profil-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .profil-page {
+    gap: 54px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 1);
+  }
+  
+  .profil-frame1{
+    gap: 10px;
+    display: flex;
+    padding: 48px 144px;
+    overflow: hidden;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  
+  .profil-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .icon-container{
+    gap: 61px;
+    width: 521px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    margin-top: 50px;
+  }
+  
+  .profil-text{
+    height: auto;
+    font-size: 36px;
+    font-style: Medium;
+    text-align: center;
+    font-family: FuturaMediumBT;
+    font-weight: 400;
+    line-height: 37.25px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  .profil-formulaire {
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .profil-input {
+    gap: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  
+  .profil-info {
+    gap: 16px;
+    width: 509px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    justify-content: space-between;
+  }
+  
+  .info{
+    gap: 16px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .title-info {
+    color: rgba(0, 0, 0, 1);
+    width: 194px;
+    height: auto;
+    font-size: 22px;
+    font-style: Bold;
+    text-align: left;
+    font-family: FuturaBdCnBT;
+    font-weight: 400;
+    line-height: 27px;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  
+  .text-info {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 18px;
+    font-style: normal;
+    text-align: left;
+    font-family: FuturaMediumBT;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .edit {
+    color: rgba(0, 0, 0, 1);
+    height: auto;
+    font-size: 18px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Epilogue;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: underline;
+  
+  }
+  
+  
+  button {
+    display: flex;
+    align-items: center;
+     margin: 40px 20px 40px 20px;
+     background-color: #EDD54C;
+        color: black;
+        border: none;
+        border-radius: 30px;
+        width: 110px;
+        height: 40px;
+        cursor: pointer;
+        padding: 10px 20px;
+  
+  }
+  
+  .btn{
+    display: flex;
+  
+  
+  }
+  button img {
+    width: 25px;
+    height: 25px;
+  
+  }
+  
+  button#back-btn img {
+    transform: scaleX(-1);
+  }
+  
+  .no-scroll {
+    overflow-y: hidden;
+  }
+
+
+
+
+
+
+
+
+
+
+
