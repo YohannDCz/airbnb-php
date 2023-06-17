@@ -59,80 +59,94 @@
         </div>
     </div>
     <div id="collection">
-        <div id="collection_grid">
-            <div class="appart_parent" id="appart_1">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
+        <div id="top_collection">
+            <div id="left_collection_btn" >
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
             </div>
+            <div id="area_collection_grid">
+            <div id="collection_grid">
+                <div class="appart_parent" id="appart_1">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
 
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
                 </div>
-            </div>
 
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+                <div class="appart_parent">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                    <p class="title">Villa Paris 12e</p>
+                    <p class="description">22, rue des champs elysées </p>
+                    <p class="description">600 € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
                 </div>
             </div>
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
             </div>
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
-            </div>
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
-            </div>
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
-            </div>
-            <div class="appart_parent">
-                <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                <p class="title">Villa Paris 12e</p>
-                <p class="description">22, rue des champs elysées </p>
-                <p class="description">600 € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>
+            <div id="right_collection_btn">
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
             </div>
         </div>
         <div id="more">
@@ -140,28 +154,44 @@
                 <p>Voir plus...</p>
             </button>
         </div>
-        </div>
-        <div class="arguement">
-            <div>
-                <img src="../../assets/img/argument1.png" alt="">
-                <img src="../../assets/img/argument2.png" alt="">
-                <img src="../../assets/img/immeuble.png" alt="">
-            </div>
-            <p></p>
-        </div>
-        <div class="arguement">
-            <p></p>
-            <div>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </div>
+    </div>
+    <div class="arguement">
+        <img src="../../assets/img/argument_1.png" alt="">
+        <div>
+            <h3>Profitez d’un de nos 250 logements sur Paris</h3>
+            <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
         </div>
     </div>
+    <div class="arguement">
+        <img src="../../assets/img/argument_2.png" alt="">
+        <div>
+            <h3>Que ce soit pour une occasion ou pour visiter la ville </h3>
+            <p>Faites vous accompagner par un chauffeur dès votre venue et visitez la ville  avec un guide touristique rattaché à chacune de nos locations. Vous n’avez pas la tête à visiter ? Ce n’est pas grave, avec un service personnalisable selon vos besoins ce sont des petit plus qui font toute la différence d’un voyage réussit la différence </p>
+        </div>
+    </div>
+    <div id="review">
+        <div id="left_review_btn" >
+            <button>
+                <img src="../../assets/logo/arrow-black.png" alt="">
+            </button>
+        </div>
+        <div id="area_review_slider">
+            <div id="review_slider">
+                
+                
+            </div>
+        </div>
+        <div id="right_review_btn">
+            <button>
+                <img src="../../assets/logo/arrow-black.png" alt="">
+            </button>
+        </div>
+    </div>
+
 <?php
 
 ?>
-    <script src="./filtre.js"></script>
+    <script src="./homepage.js"></script>
     <footer>
         
     </footer>

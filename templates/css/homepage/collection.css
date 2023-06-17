@@ -2,12 +2,20 @@
     align-self: center;
 }
 
+#left_collection_btn {
+    height: 0px;
+    overflow: hidden;
+}
+
+#right_collection_btn {
+    height: 0px;
+    overflow: hidden;
+}
+
 #collection_grid {
     display: grid;
     grid-template-columns: repeat(2, 160px);
-    grid-gap: 50px;
-    margin-left: 16px;
-    margin-right: 16px;
+    grid-gap: 16px;
     margin-top: 32px;
     margin-bottom: 16px;
 }
@@ -42,6 +50,13 @@
     font-family:Futura_Heavy;
 }
 
+#area_collection_grid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
   @media (min-width: 750px) {
     #collection_grid {
       grid-template-columns: repeat(3, 200px);
@@ -55,18 +70,102 @@
 
 
 @media (min-width: 1100px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .appart_parent img {
+        height: 240px;
+        width: 240px;
+    }
+
     #collection {
         align-self: none;
-        overflow: hidden;
+        width: 100%;
+
+    }
+
+    #area_collection_grid {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        z-index: 0;
+        justify-content: center;
+
     }
 
     #collection_grid {
-      display: flex;
-      flex-direction: row;
-      overflow: hidden;
+        display: flex;
+        margin: 0px;
+        position: relative;
+        align-items: start;
+      
     }
 
     #more {
         height: 0px;
+        overflow-x: hidden;
+    }
+
+    #left_collection_btn{
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+        height: 100%;
+        overflow: visible;
+    }
+
+    #right_collection_btn{
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+        height: 100%;
+        overflow: visible;
+    }
+
+    #left_collection_btn button {
+        background-color: white;
+        border: 1px solid black;
+        height: 70px;
+        width: 70px;
+        border-radius: 90px;
+        position: relative;
+        left: 35px;
+    }
+
+    
+    #right_collection_btn  button{
+        background-color: white;
+        border: 1px solid black;
+        height: 70px;
+        width: 70px;
+        border-radius: 90px;
+        position: relative;
+        right: 35px;
+    }
+
+    #left_collection_btn button img {
+        height: 80%;
+        rotate: 180deg;
+    }
+
+    #right_collection_btn button img {
+        height: 80%;
+    }
+
+    #top_collection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 96px;
+        margin-bottom: 96px;
     }
   }
+
+
+

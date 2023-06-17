@@ -1,37 +1,25 @@
 .arguement {
     width: 100%;
-    margin-top: 48px;
-    margin-bottom: 48px;
-    
+    display: flex;
+    align-items: center;
+    margin-top: 72px;
+    flex-direction: column;
+}
+
+.arguement img {
+    width: 70%;
 }
 
 .arguement div {
-    display: flex;
-    width: 25%;
-    height: 100%;
-    margin-left: 154px;
+    width: 90%;
+
 }
 
-.arguement div img {
-    height: 208px;
-    width: 208px;
-    border: white solid 1px;
+.arguement div h3{
+    text-align: center; 
 }
 
-.arguement div img:nth-child(1) {
- z-index: 2;
+.arguement div p{
+    text-align: center; 
 }
 
-.arguement div img:nth-child(2) {
-    z-index: 1;
-    position: relative;
-    right: 160px;
-    bottom: 28px;
-}
-
-.arguement div img:nth-child(3) {
-    z-index: 0;
-    position: relative;
-    right: 388px;
-    top: 16px;
-}
