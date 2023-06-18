@@ -1,23 +1,9 @@
 @font-face {
-    font-family: FuturaMediumBT;
-    src: url(assets/font/FuturaMediumBT.ttf);
-}
-
-@font-face {
     font-family: vogue;
     src: url(../MiniAirBnb/src/vogue/Vogue.ttf);
 }
 
-body {
-    font-family: futura;
-    margin: 0;
-    position: relative;
-    min-height: 100vh;
-}
-
 /* Footer */
-
-@import url('https://fonts.cdnfonts.com/css/futura-pt');
 
 * {
     padding: 0;
@@ -26,14 +12,14 @@ body {
 }
 
 footer {
-    width: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
     background-color: black;
     padding: 0;
     display: flex;
     justify-content: space-evenly;
     margin: 0;
-    position: absolute;
-    bottom: 0;
     padding: 40px;
 }
 
@@ -51,7 +37,9 @@ footer .container {
 }
 
 .container a {
+    font-family: Futura, sans-serif;
     font-size: 17px;
+    text-decoration: underline;
 }
 
 .container-img {

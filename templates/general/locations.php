@@ -12,7 +12,7 @@
     </style>
 </head>
 <body>
-    <?php include "../components/header.php">
+    <?php include "../components/header.php" ?>
     <nav>
         <div id="nav_bar">
             <input type="text" id="destination" placeholder="Destination">
