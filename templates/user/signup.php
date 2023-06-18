@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/styles_signup.css">
-   <script src="../javascript/signup.js"></script>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../script/signup.js"></script>
 
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="logo-container">
-            <img src="../../assets/img/logo.png" alt="">
-            <h1>TAILLE D'OR</h1>
-        </div>
-    </header>
+    <?php include "../components/header-mini.php" ?>
     <div class="signup" id="page1">
-
         <h2>Inscription</h2>
         <form action="#" method="post" id="page1-form">
             <div class="signup_box"> 
@@ -53,7 +48,6 @@
 
         </form>
     </div>
-
-
+    <?php include "../components/footer.php" ?>
 </body>
 </html>
