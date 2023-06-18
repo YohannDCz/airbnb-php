@@ -1,3 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
 .add_logement {
     display: flex;
     justify-content: center;
@@ -9,24 +23,43 @@
     padding: 0;
 
 }
-.Form_group{
+
+h1 {
+    font-size: 36px;
+    font-family: Futura;
+    font-weight: 500;
+}
+
+select {
+    width: 345px;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+.Form_group {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
-.Form_group label{
-    padding-bottom: 10px;
-    font-size: 18px;
+
+.Form_group label {
+    font-size: 22px;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    margin-bottom: 10px;
 }
- .Form_group  input{
+
+.Form_group input {
     border-radius: 10px;
     width: 345px;
     height: 35px;
     outline: none;
     font-size: 18px;
-} 
-.Form_group select{
-    height: 30px;
+    padding-left: 8px;
+
 }
 
 button {
@@ -40,14 +73,15 @@ button {
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 80px;
-  }
-  .btn{
-  display: flex;
-  justify-content: center;
-  margin-top: 5px;
-  
 }
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+
+}
+
 .btn button img {
     width: 25px;
     height: 25px;
