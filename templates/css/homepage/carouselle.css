@@ -4,10 +4,9 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    min-height: 25rem;
-    padding: 0.5rem;
-    margin: 40px;
-    border-radius: 20px;
+    height: 90vh;
+    overflow:hidden
+
 }
 
 .carousel *{
@@ -80,45 +79,11 @@ input[name="carousel-css"]:checked::before{
 
 input[name="carousel-css"]:last-child:checked ~ .carousel-wrapper .carousel-slide:nth-child(1),
 input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
-input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
-input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(4),
-input[name="carousel-css"][value="slide-4"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(5),
-input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(6),
-input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
-input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
-input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
-input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
-input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
-input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
-input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
-input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15),
-input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(16),
-input[name="carousel-css"][value="slide-16"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(17),
-input[name="carousel-css"][value="slide-17"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(18),
-input[name="carousel-css"][value="slide-18"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(19),
-input[name="carousel-css"][value="slide-19"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(20){
+input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3){
     transition: 0.5s transform;
     transform: translate(100%, 0);
 }
 
-input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:last-child,
-input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(19),
-input[name="carousel-css"][value="slide-19"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(18),
-input[name="carousel-css"][value="slide-18"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(17),
-input[name="carousel-css"][value="slide-17"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(16),
-input[name="carousel-css"][value="slide-16"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15),
-input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
-input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
-input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
-input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
-input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
-input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
-input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
-input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(6),
-input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(5),
-input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(4),
 input[name="carousel-css"][value="slide-4"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
 input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
 input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(1){
@@ -131,24 +96,8 @@ input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carouse
 
 input[name="carousel-css"][value="slide-1"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(1),
 input[name="carousel-css"][value="slide-2"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(2),
-input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3),
-input[name="carousel-css"][value="slide-4"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(4),
-input[name="carousel-css"][value="slide-5"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(5),
-input[name="carousel-css"][value="slide-6"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(6),
-input[name="carousel-css"][value="slide-7"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(7),
-input[name="carousel-css"][value="slide-8"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(8),
-input[name="carousel-css"][value="slide-9"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(9),
-input[name="carousel-css"][value="slide-10"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(10),
-input[name="carousel-css"][value="slide-11"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(11),
-input[name="carousel-css"][value="slide-12"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(12),
-input[name="carousel-css"][value="slide-13"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(13),
-input[name="carousel-css"][value="slide-14"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(14),
-input[name="carousel-css"][value="slide-15"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(15),
-input[name="carousel-css"][value="slide-16"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(16),
-input[name="carousel-css"][value="slide-17"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(17),
-input[name="carousel-css"][value="slide-18"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(18),
-input[name="carousel-css"][value="slide-19"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(19),
-input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(20){
+input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carousel-slide:nth-child(3)
+{
     transition: 0.5s transform;
     transform: translate(0, 0);
     opacity: 1;
@@ -165,4 +114,19 @@ input[name="carousel-css"][value="slide-20"]:checked ~ .carousel-wrapper .carous
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; 
+}
+
+.carousel-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-width: 1100px) {
+
+    .carousel {
+    padding: 0.5rem;
+    margin: 50px;
+    border-radius: 20px;
+    }
 }

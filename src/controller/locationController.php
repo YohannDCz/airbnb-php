@@ -3,10 +3,9 @@ require_once('./model/Database');
 require_once('./model/Reservations.php');
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
-// Commentaire pour les prof
+// Commentaire pour les profs
 
-//Fonction qui recupère tout les logements 
-
+//Fonction qui récupère tous les logements 
 function ShowLocation() {
     $search = $_POST["search"];
 
@@ -16,14 +15,6 @@ function ShowLocation() {
 
     return $result;
 }
-function deleteBooking() {
-    $userId = $_POST["userId"];
-    $locationId = $_POST["locationId"];
-    $newstatus = $_POST["newstatus"];
-    
-    $location = new locations;
-    $location->deleteBookingByIds($userId,$locationId,$newstatus);
-    return True ;
-} 
+
 
 

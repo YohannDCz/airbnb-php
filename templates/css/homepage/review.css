@@ -1,0 +1,72 @@
+#review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#area_review_slider {
+    display: flex;
+    width: 80%;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    z-index: 0;
+    justify-content: center;
+
+}
+
+#review_slider {
+  display: flex;
+  margin: 0px;
+  position: relative;
+    
+}
+
+#left_review_btn{
+    width: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    overflow: visible;
+}
+
+#right_review_btn{
+    width: 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 1;
+    height: 100%;
+    overflow: visible;
+}
+
+#left_review_btn button {
+    background-color: white;
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    border-radius: 90px;
+    position: relative;
+    left: 35px;
+}
+
+
+#right_review_btn  button{
+    background-color: white;
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    border-radius: 90px;
+    position: relative;
+    right: 35px;
+}
+
+#left_review_btn button img {
+    height: 80%;
+    rotate: 180deg;
+}
+
+#right_review_btn button img {
+    height: 80%;
+}
