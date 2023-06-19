@@ -1,6 +1,7 @@
 <?php
-require_once"C:/xampp/htdocs\MiniAirbnb\src\model\Database.php";
-require_once"C:/xampp/htdocs\MiniAirbnb\src\model\Reservations.php";
+echo getcwd();
+require_once"../../src/model/Database.php";
+require_once"../../src/model/Reservations.php";
 $location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
@@ -21,8 +22,8 @@ $location = new Locations();
     }
 
     @font-face {
-        font-family: Futura_Medium;
-        src: url("../../assets/fonts/Futura_medium.ttf");
+        font-family: Futura_medium;
+        src: url("../../assets/font/FuturaMediumBT.ttf");
     }
 
     @font-face {
@@ -30,6 +31,7 @@ $location = new Locations();
         src: url("../../assets/fonts/Didot_Regular.ttf");
     }
     </style>
+    l
     <style>
         <?php
         include("../css/homepage/homepage.css");
@@ -75,11 +77,6 @@ $location = new Locations();
         </div>
     </div>
     <div id="collection">
-        <div id="collection_title">
-            <span>
-                Nos propositions
-            </span>
-        </div>
         <div id="top_collection">
             <div id="left_collection_btn" >
                 <button>
@@ -117,33 +114,19 @@ $location = new Locations();
     <div class="arguement" id="argument_1">
         <img src="../../assets/img/argument_1.png" alt="">
         <div>
-            <div class="title_arguement">
-                <h2>Profitez d’un de nos 250 logements sur Paris</h2>
-            </div>
-            <div class="text_arguement">
-                <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
-            </div>
+            <h2>Profitez d’un de nos 250 logements sur Paris</h3>
+            <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
         </div>
     </div>
     <div class="arguement" id="argument_2">
         <img src="../../assets/img/argument_2.png" alt="">
         <div>
-        <div class="title_arguement">
-                <h2>Profitez d’un de nos 250 logements sur Paris</h2>
-            </div>
-            <div class="text_arguement">
-                <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
-            </div>
+            <h2>Que ce soit pour une occasion ou pour visiter la ville </h3>
+            <p>Faites vous accompagner par un chauffeur dès votre venue et visitez la ville  avec un guide touristique rattaché à chacune de nos locations. Vous n’avez pas la tête à visiter ? Ce n’est pas grave, avec un service personnalisable selon vos besoins ce sont des petit plus qui font toute la différence d’un voyage réussit la différence </p>
         </div>
     </div>
     <div id="review">
     <h3>Retour d'esperience</h3>
-        <div id="area_review">
-        <div id="left_review_btn" >
-            <button>
-                <img src="../../assets/logo/arrow-black.png" alt="">
-            </button>
-        </div>
         <div id="area_review_slider">
             <div id="review_slider">
                 <div class="review_element">
@@ -188,18 +171,12 @@ $location = new Locations();
                 </div>
             </div>
         </div>
-        <div id="right_review_btn">
-            <button>
-                <img src="../../assets/logo/arrow-black.png" alt="">
-            </button>
-        </div>
-        </div>
     </div>
 
 <?php
 
 ?>
-    <script src="../script/homepage.js"></script>
+    <script src="./homepage.js"></script>
     <footer>
         
     </footer>
