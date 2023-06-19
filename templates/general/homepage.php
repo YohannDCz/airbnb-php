@@ -1,5 +1,4 @@
 <?php
-echo getcwd();
 require_once"../../src/model/Database.php";
 require_once"../../src/model/Reservations.php";
 $location = new Locations();
