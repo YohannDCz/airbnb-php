@@ -2,13 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 #area_review_slider {
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: flex-start;
-    overflow-x: hidden;
+    overflow-x: scroll;
     z-index: 0;
     justify-content: center;
 
@@ -17,8 +18,7 @@
 #review_slider {
   display: flex;
   margin: 0px;
-  position: relative;
-    
+  justify-content: flex-start;
 }
 
 #left_review_btn{
@@ -69,4 +69,14 @@
 
 #right_review_btn button img {
     height: 80%;
+}
+
+.review_element {
+    height: 364px;
+    width: 230px;
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 12px;
+    margin-top: 42px;
+    margin-bottom: 42px;
 }
