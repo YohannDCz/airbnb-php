@@ -3,52 +3,57 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
+}
+
+#review h3 {
+    font-family: Futura_Heavy;
+    font-size: 18px;
+    margin-bottom: 24px;
+    margin-top: 40px;
+}
+
+#area_review {
+    display: flex;
+    width: 100%;
 }
 
 #area_review_slider {
     display: flex;
-    width: 100%;
     justify-content: flex-start;
-    overflow-x: scroll;
+    overflow-x: hidden;
     z-index: 0;
-    justify-content: center;
-
+    width: 100%;
 }
 
 #review_slider {
   display: flex;
   margin: 0px;
   justify-content: flex-start;
+  overflow-x: scroll;
 }
 
 #left_review_btn{
-    width: 10%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    z-index: 1;
-    height: 100%;
-    overflow: visible;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
 }
 
 #right_review_btn{
-    width: 10%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    z-index: 1;
-    height: 100%;
-    overflow: visible;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
 }
 
 #left_review_btn button {
     background-color: white;
     border: 1px solid black;
-    height: 70px;
-    width: 70px;
+    height: 0px;
+    width: 0px;
     border-radius: 90px;
     position: relative;
     left: 35px;
+    padding: 0px;
 }
 
 
@@ -73,10 +78,110 @@
 
 .review_element {
     height: 364px;
-    width: 230px;
+    min-width: 230px;
     background-color: white;
     border: 1px solid black;
-    margin-right: 12px;
-    margin-top: 42px;
+    margin-left: 12px;
     margin-bottom: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review_element h3 {
+    margin-top: 24px;
+    margin-bottom: 60px;
+    font-family: Futura_Heavy;
+    font-size: 18px; 
+}
+
+.review_element p {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px; 
+}
+
+.review_element:last-child {
+    margin-right: 12px;
+}
+
+@media (min-width: 1100px) {
+
+
+    #review {
+        align-self: none;
+        width: 100%;
+
+    }
+
+    #area_review {
+        display: flex;
+        width: 80%;
+        justify-content: flex-start;
+        overflow-x: hidden;
+        z-index: 0;
+
+    }
+
+    #review_slider {
+        display: flex;
+        margin: 0px;
+        position: relative;    
+    }
+
+    #left_review_btn{
+        width: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+        height: 100%;
+        overflow: visible;
+    }
+
+    #right_review_btn{
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 1;
+        height: 100%;
+        overflow: visible;
+    }
+
+    #left_review_btn button {
+        background-color: white;
+        border: 0px;
+        height: 0px;
+        width: 0px;
+        border-radius: 90px;
+        position: relative;
+        left: 35px;
+    }
+
+    
+    #right_review_btn  button{
+        background-color: white;
+        border: 1px solid black;
+        height: 70px;
+        width: 70px;
+        border-radius: 90px;
+        position: relative;
+        right: 35px;
+    }
+
+
+    #area_review {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 96px;
+        margin-bottom: 96px;
+        width: 100%;
+    } 
+
+    #review_slider {
+        overflow-x:visible;
+        transition: all 0.2s;
+    }
 }

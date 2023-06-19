@@ -55,7 +55,8 @@
 .carousel-slide h3 {
     margin: 22px;
     font-family: Didot;
-    font-size: 32px; 
+    font-size: 32px;
+    font-weight: 300; 
 }
 
 .carousel-slide p {

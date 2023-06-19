@@ -28,7 +28,6 @@
         src: url("../../assets/fonts/Didot_Regular.ttf");
     }
     </style>
-    l
     <style>
         <?php
         include("../css/homepage/homepage.css");
@@ -74,6 +73,11 @@
         </div>
     </div>
     <div id="collection">
+        <div id="collection_title">
+            <span>
+                Nos propositions
+            </span>
+        </div>
         <div id="top_collection">
             <div id="left_collection_btn" >
                 <button>
@@ -173,19 +177,33 @@
     <div class="arguement" id="argument_1">
         <img src="../../assets/img/argument_1.png" alt="">
         <div>
-            <h2>Profitez d’un de nos 250 logements sur Paris</h3>
-            <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
+            <div class="title_arguement">
+                <h2>Profitez d’un de nos 250 logements sur Paris</h2>
+            </div>
+            <div class="text_arguement">
+                <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
+            </div>
         </div>
     </div>
     <div class="arguement" id="argument_2">
         <img src="../../assets/img/argument_2.png" alt="">
         <div>
-            <h2>Que ce soit pour une occasion ou pour visiter la ville </h3>
-            <p>Faites vous accompagner par un chauffeur dès votre venue et visitez la ville  avec un guide touristique rattaché à chacune de nos locations. Vous n’avez pas la tête à visiter ? Ce n’est pas grave, avec un service personnalisable selon vos besoins ce sont des petit plus qui font toute la différence d’un voyage réussit la différence </p>
+        <div class="title_arguement">
+                <h2>Profitez d’un de nos 250 logements sur Paris</h2>
+            </div>
+            <div class="text_arguement">
+                <p>Situé dans la capitale, nos logement donne une vue sur la Tour Eiffel, les Champs-Élysée ou sont encore situées directement sur l’île Saint-Louis. Réservés pour l’élite de la société</p>
+            </div>
         </div>
     </div>
     <div id="review">
     <h3>Retour d'esperience</h3>
+        <div id="area_review">
+        <div id="left_review_btn" >
+            <button>
+                <img src="../../assets/logo/arrow-black.png" alt="">
+            </button>
+        </div>
         <div id="area_review_slider">
             <div id="review_slider">
                 <div class="review_element">
@@ -230,12 +248,18 @@
                 </div>
             </div>
         </div>
+        <div id="right_review_btn">
+            <button>
+                <img src="../../assets/logo/arrow-black.png" alt="">
+            </button>
+        </div>
+        </div>
     </div>
 
 <?php
 
 ?>
-    <script src="./homepage.js"></script>
+    <script src="../script/homepage.js"></script>
     <footer>
         
     </footer>
