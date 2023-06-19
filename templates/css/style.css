@@ -7,7 +7,6 @@
     src: url(../MiniAirBnb/src/vogue/Vogue.ttf);
 }
 body{
-    font-family: futura;
     margin: 0;
     position: relative;
     min-height: 100vh;
@@ -22,6 +21,7 @@ body{
     justify-content: space-between;
     background: black;
     color: white;
+    padding: 0px 20px;
 }
 .logo {
     display: flex;
@@ -170,7 +170,7 @@ footer{
     display: none;
 }
 @media screen and (min-width: 800px) {
-    
+
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 * {
     padding: 0;

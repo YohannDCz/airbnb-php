@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/profil.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../../templates/css/style_profil.css">
+    <link rel="stylesheet" href="../../templates/css/style.css">
     <script src="../javascript/header.js" defer ></script>
     <title>Document</title>
 </head>

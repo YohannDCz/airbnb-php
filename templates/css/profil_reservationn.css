@@ -18,6 +18,8 @@
     src: url(../../assets/font/Epilogue-SemiBold.ttf);
   }
 
+
+
   body{
     margin: 0;
     padding: 0;
@@ -233,7 +235,7 @@ body{
 }
 
 .appartement {
-    width: 300px;
+  width: 300px;
     padding: 20px 20px 20px 0px;
 
 }
@@ -249,7 +251,7 @@ body{
 }
 
 .appartement img {
-    width: 247px;
+    width: 240px;
     height: 240px;
     height: auto;
     margin-bottom: 10px;
@@ -326,61 +328,349 @@ body{
     text-align: center; 
 }
 
+/*******************************************************************/ 
+
+#collection{
+  margin-top: 30px;
+}
+
+#collection h2{
+  font-family: FuturaMediumBT;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 37px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    text-align: left; 
+}
+
+
+.appart_parent{
+  padding: 20px 20px 20px 0px;
+}
+
+.appart_parent img {
+  margin-bottom: 10px;
+
+}
+
+.appart_parent p.title {
+  font-family: EpilogueExtraBold;
+  font-size: 20px;
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: black;
+  text-align: left; 
+}
+
+.appart_parent p.description {
+  font-family: EpilogueSemiBold;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 13px;
+  text-align: left; 
+}
+
+.appart_parent p.date {
+  font-family: EpilogueRegular;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 5px;
+  text-align: left; 
+}
+
+.appart_parent p.price {
+  font-family: EpilogueRegular;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000000;
+  margin-top: 14px;
+  margin-bottom: 5px;
+  text-align: left; 
+}
+
+.appart_parent button {
+  margin-top: 15px;
+  background-color: #EDD54C;
+  color: black;
+  font-family: FuturaMediumBT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  width: 90%;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.appart_parent button:hover {
+  margin-top: 15px;
+  background-color: #EDD54C;
+  color: rgb(255, 255, 255);
+  font-family: FuturaMediumBT;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  width: 90%;
+  padding: 10px;
+  cursor: pointer;
+  text-align: center; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#collection {
+  align-self: center;
+}
+
+#left_collection_btn {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+#right_collection_btn {
+  height: 0px;
+  width: 0px;
+  overflow: hidden;
+}
+
+#collection_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 160px);
+  grid-gap: 16px;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.appart_parent img {
+  height: 160px;
+  width: 160px;
+  border-radius: 15px;
+}
+
+.description {
+  margin-top: 16px;
+}
+
+.title {
+  margin-top: 16px;
+}
+
+
+
+
+#area_collection_grid {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+}
+
+#left_collection_btn button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+#right_collection_btn button{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 20px;
+
+}
+
+
+@media (min-width: 750px) {
+  #collection_grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  .appart_parent img {
+      height: 200px;
+      width: 200px;
+}}
+
+
+
+@media (min-width: 1100px) {
+  body {
+      overflow-x: hidden;
+  }
+
+  .appart_parent img {
+      height: 240px;
+      width: 240px;
+  }
+
+  #collection {
+      align-self: none;
+      width: 100%;
+
+  }
+
+  #area_collection_grid {
+      display: flex;
+      justify-content: flex-start;
+      overflow-x: hidden;
+      z-index: 0;
+
+  }
+
+  #collection_grid {
+      display: flex;
+      margin: 0px;
+      position: relative;
+      transition: all 0.2s;
+
+  }
+
+
+
+  #left_collection_btn{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      z-index: 1;
+      height: 100%;
+      overflow: visible;
+  }
+
+  #right_collection_btn{
+      width: 10%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      z-index: 1;
+      height: 100%;
+      overflow: visible;
+  }
+
+  #left_collection_btn button {
+      background-color: white;
+      border: 1px solid black;
+      height: 0px;
+      width: 0px;
+      border-radius: 90px;
+      position: relative;
+      left: 35px;
+      padding: 0px;
+      
+  }
+
+  
+  #right_collection_btn  button{
+      background-color: white;
+      border: 1px solid black;
+      height: 70px;
+      width: 70px;
+      border-radius: 90px;
+      position: relative;
+      right: 35px;
+  }
+
+  #left_collection_btn button img {
+      height: 90%;
+      rotate: 180deg;
+  }
+
+  #right_collection_btn button img {
+      height: 90%;
+  }
+
+  #top_collection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 96px;
+      margin-left: 40px;
+  }
+}
+
+
+
+
+
 /*************footer*********/
 footer{
-    display: none;
+  display: none;
 }
 @media screen and (min-width: 800px) {
-    
+  
 @import url('https://fonts.cdnfonts.com/css/futura-pt');
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 footer{
-    width : 100%;
-    height : 75px;
-    background-color :black;
-    padding: 0;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    position: absolute;
-    bottom: 0;
+  width : 100%;
+  height : 75px;
+  background-color :black;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+
 }
 footer .container {
-    width: 77%;
-    display: flex;
-    align-items: center;
-    gap: 3%;
+  width: 77%;
+  display: flex;
+  align-items: center;
+  gap: 3%;
 }
 
 p {
-    font-size: 1.063rem;
-    color: white;
-    font-family: 'Futura PT';
+  font-size: 1.063rem;
+  color: white;
+  font-family: 'Futura PT';
 }
 
 .container-img{
-    display: flex;
-    align-items: center;
-    gap: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .container-img figure {
-    max-height: 94%;
-    max-width: 23px;
+  max-height: 94%;
+  max-width: 23px;
 }
 
 .container-img figure img {
-    min-width: 14px;
-    max-width: 34px;
-    width: 100%;
-    height: 20px;
+  min-width: 14px;
+  max-width: 34px;
+  width: 100%;
+  height: 20px;
 }
 
 .footer-a{
-    color: white;
+  color: white;
 }
 }
