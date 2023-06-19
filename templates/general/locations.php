@@ -1,5 +1,7 @@
 <?php
-
+require_once"../../src/model/Database.php";
+require_once"../../src/model/Reservations.php";
+$location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +43,7 @@
             <p>Popularité</p>
         </div>
     </div>
-    echo '<div id="collection">
+    <?php echo '<div id="collection">
         <div id="collection_grid">';
         $result = $location->getlocations();
         foreach ($result as $r) {
