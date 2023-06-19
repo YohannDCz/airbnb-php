@@ -1,8 +1,14 @@
+body {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
 .add_logement3{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     gap: 20px;
  }
 
@@ -13,12 +19,7 @@
     margin-top: 10px;
 
  }
- .tarif input {
-   width: 340px;
-   height: 30px;
-   border-radius: 10px;
-   border: 2px solid black;
- }
+
  .tarif textarea{
     border-radius: 10px;
     border: 2px solid black;
@@ -37,7 +38,6 @@
     display: flex;
     align-items: center;
     margin-top: 10px;
-    margin-bottom: 80px;
   }
   .btn{
   display: flex;

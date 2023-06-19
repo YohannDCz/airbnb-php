@@ -20,16 +20,16 @@
         </div>
         <div class="container-img">
             <figure>
-                <img src="Vector.png" alt="">
+                <img src="../../assets/logo/facebook.svg" alt="">
             </figure>
             <figure>
-                <img src="Vector-1.png" alt="">
+                <img src="../../assets/logo/instagram.svg" alt="">
             </figure>
             <figure>
-                <img src="Vector-2.png" alt="">
+                <img src="../../assets/logo/twitter.svg" alt="">
             </figure>
             <figure>
-                <img src="Vector-3.png" alt="">
+                <img src="../../assets/logo/youtube.svg" alt="">
             </figure>
         </div>
         </class>
