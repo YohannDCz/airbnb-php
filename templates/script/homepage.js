@@ -60,7 +60,6 @@ left_button_review.addEventListener('click', () => {
         left_button_review.style.width = "0px"
         left_button_review.style.height = "0px"
         left_button_review.style.padding = "0px"
-        left_button_review.style.border = "0px"
     }
 
 });
@@ -77,7 +76,6 @@ right_button_review.addEventListener('click', () => {
         left_button_review.style.width = "70px"
         left_button_review.style.height = "70px"
         left_button_review.style.padding = "10px 20px"
-        left_button_review.style.border = "1px solid black"
     }
 
 });

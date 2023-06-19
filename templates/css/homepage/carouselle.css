@@ -149,17 +149,17 @@ input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carouse
 }
 
 #first_carousel {
-    background-image: url("../../assets/img/immeuble.png");
+    background-image: url("../../../assets/img/immeuble.png");
     background-size: cover;
 }
 
 #second_carousel {
-    background-image: url("../../assets/img/immeuble.png");
+    background-image: url("../../../assets/img/immeuble.png");
     background-size: cover;
 }
 
 #third_carousel {
-    background-image: url("../../assets/img/immeuble.png");
+    background-image: url("../../../assets/img/immeuble.png");
     background-size: cover;
 }
 

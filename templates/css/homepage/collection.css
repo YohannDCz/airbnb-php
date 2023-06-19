@@ -146,24 +146,24 @@
 
     #left_collection_btn button {
         background-color: white;
-        border: 1px solid black;
         height: 0px;
         width: 0px;
         border-radius: 90px;
         position: relative;
         left: 35px;
         padding: 0px;
+        box-shadow: 0px 12px 40px 8px rgba(0, 0, 0, 0.15);
     }
 
     
     #right_collection_btn  button{
         background-color: white;
-        border: 1px solid black;
         height: 70px;
         width: 70px;
         border-radius: 90px;
         position: relative;
         right: 35px;
+        box-shadow: 0px 12px 40px 8px rgba(0, 0, 0, 0.15);
     }
 
     #left_collection_btn button img {
