@@ -21,8 +21,8 @@ $location = new Locations();
     }
 
     @font-face {
-        font-family: Futura_medium;
-        src: url("../../assets/font/FuturaMediumBT.ttf");
+        font-family: Futura_Medium;
+        src: url("../../assets/fonts/Futura_medium.ttf");
     }
 
     @font-face {
