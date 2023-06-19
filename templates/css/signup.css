@@ -9,26 +9,22 @@
 }
 
 
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.signup{
+.signup {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    row-gap: 20px;
-    min-height: 100vh;
-    font-family: FuturaMediumBT;
+    row-gap: 80px;
+    font-family: Futura, sans-serif;
 }
 
-
-
-
-.signup_box{
+.signup_box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -37,27 +33,19 @@ body{
     padding: 0px;
     width: 250px;
     height: 150px;
-
+    overflow: hidden;
 }
 
-.signup_box_second{
+.signup_box_second {
     height: 200px;
 }
 
-.signup_box input{
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: none;
-    border-bottom: 2px solid black;
-    padding: 10px 30px;
-    gap: 10px;
-    width: 250px;
-    height: 50px;
-    outline: none;
-    font-size: 15px;
-    font-family: FuturaMediumBT;
+#left {
+    color: black;
+    font-size: 18px;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    margin: 0;
 }
 
 .mail_input {
@@ -65,7 +53,7 @@ body{
     border-top-right-radius: 10px;
 }
 
-.prenom_input{
+.prenom_input {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
@@ -76,51 +64,51 @@ body{
     border-bottom-right-radius: 10px;
 }
 
-#phone{
+#phone {
     border-bottom: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.acount_exist{
+.acount_exist {
     text-align: center;
-    margin-top: 40px;
-    font-family: FuturaMediumBT;
+    margin: 40px 0 40px;
+    font-family: Futura, sans-serif;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-h2{
-    font-family: FuturaMediumBT;
+h2 {
+    font-family: Futura, sans-serif;
     font-weight: 400;
     display: flex;
     justify-content: center;
     font-size: 36px;
 }
 
-
-
-.btn{
-    display: inline-block;
+.btn {
+    display: flex;
+    justify-self: center;
 
 }
+
 button {
     display: flex;
     align-items: center;
-     margin: 30px;
-     background-color: #EDD54C;
-        color: black;
-        border: none;
-        border-radius: 30px;
-        width: 110px;
-        height: 40px;
-        cursor: pointer;
-        padding: 10px 20px;
+    background-color: #EDD54C;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 !important;
+}
 
-  }
 button img {
     width: 25px;
     height: 25px;
@@ -161,34 +149,19 @@ button img {
 
 @media screen and (min-width: 800px) {
 
-    .signup_box{
-        margin-top: 80px;
+    .signup_box {
         width: 475px;
         height: 210px;
     }
 
-    .signup_box input{
+    .signup_box input {
 
         width: 475px;
         height: 70px;
     }
-    button{
-        margin-top: 40px;
-    }
 
-    h2{
+    h2 {
         margin: 0;
         line-height: 37px;
     }
-    .signup{
-
-    margin-top: 100px;
-    }
-
-
 }
-
-
-
-
-

@@ -22,7 +22,7 @@
                         <p> TAILLE D'OR </p>
                     </div>
                     <div class="taches">
-                        <a href>Acceuil</a>
+                        <a href>Accueil</a>
                         <a href>Locations</a>
                         <a href>Experience</a>
                         <a href>Messagerie</a>
