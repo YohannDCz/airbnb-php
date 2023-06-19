@@ -17,7 +17,7 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT location.*, reviews.Reviews, reviews.created_at, location_services.* FROM location INNER JOIN reviews ON location.id = reviews.location_id INNER JOIN location_services ON location.id = location_services.location_id ;");
+        $request = $connection->prepare("SELECT * FROM location;");
 
         $request->execute();
 
