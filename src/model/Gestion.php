@@ -154,4 +154,4 @@ class Management
     $connection = null;
 
     return $page_name;
-}
+} }

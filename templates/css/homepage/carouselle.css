@@ -5,8 +5,8 @@
     justify-content: center;
     align-items: end;
     height: 90vh;
-    overflow:hidden
-
+    overflow:hidden;
+    
 }
 
 .carousel *{
@@ -21,6 +21,7 @@
     overflow: hidden;
     top: 0;
     left: 0;
+    
 }
 
 .carousel-slide{
@@ -30,13 +31,38 @@
     text-align: center;
     width: 100%;
     height: 100%;
-
     position: absolute;
     top: 0;
     left: 0;
-
     transform: translate(100%, 0);
     opacity: 0;
+    flex-direction: column;
+    
+}
+
+.carousel-slide div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(0.5);
+    
+}
+
+.carousel-slide h3 {
+    margin: 22px;
+    font-family: Didot;
+    font-size: 32px;
+    font-weight: 300; 
+}
+
+.carousel-slide p {
+    margin: 22px;
+    font-family: Futura_medium;
+    font-size: 18px;
 }
 
 input[name="carousel-css"]{
@@ -122,11 +148,36 @@ input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carouse
     height: 100%;
 }
 
+#first_carousel {
+    background-image: url("../../../assets/img/immeuble.png");
+    background-size: cover;
+}
+
+#second_carousel {
+    background-image: url("../../../assets/img/immeuble.png");
+    background-size: cover;
+}
+
+#third_carousel {
+    background-image: url("../../../assets/img/immeuble.png");
+    background-size: cover;
+}
+
 @media (min-width: 1100px) {
 
     .carousel {
     padding: 0.5rem;
     margin: 50px;
     border-radius: 20px;
+    height: 50vh;
+    }
+
+    .carousel-slide h3 {
+        width: 40%;
+    }
+
+    .carousel-slide p {
+        width: 25%;
+        line-height: 25px;
     }
 }
