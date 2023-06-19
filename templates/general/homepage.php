@@ -1,5 +1,7 @@
 <?php
-
+require_once"C:/xampp/htdocs\MiniAirbnb\src\model\Database.php";
+require_once"C:/xampp/htdocs\MiniAirbnb\src\model\Reservations.php";
+$location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -80,83 +82,21 @@
                     <img src="../../assets/logo/arrow-black.png" alt="">
                 </button>
             </div>
-            <div id="area_collection_grid">
-            <div id="collection_grid">
-                <div class="appart_parent" id="appart_1">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="description">600 € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>
-                </div>
-            </div>
+            <?php   echo '<div id="area_collection_grid">
+                            <div id="collection_grid">';
+                    $result = $location->getlocations();
+                    foreach ($result as $r) {
+                        echo '<div class="appart_parent" id="appart_1">
+                            <img src="' . $r["pics"] . '" alt="facade villa">
+                            <p class="title">' . $r["name"] . '</p>
+                            <p class="description">' . $r["address"] . '</p>
+                            <p class="description">' . $r["price"] . ' € / nuit</p>
+                            <div class="reserve_button">
+                                <button>Reserver</button>
+                            </div>
+                        </div>';
+                    }
+                    echo '</div>'; ?>
             </div>
             <div id="right_collection_btn">
                 <button>
