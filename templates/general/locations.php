@@ -9,26 +9,10 @@
     <link rel="stylesheet" href="../css/locations.css">
     <title>Document</title>
     <style>
-    @font-face {
-        font-family: Futura_medium_italic;
-        src: url("../../assets/fonts/Futura_Medium_Italic.ttf");
-    }
-
-    @font-face {
-        font-family: Futura_Heavy;
-        src: url("../../assets/fonts/Futura_Heavy_font.ttf");
-    }
-
-    @font-face {
-        font-family: Didot;
-        src: url("../../assets/fonts/Didot_Regular.ttf");
-    }
     </style>
 </head>
 <body>
-    <header>
-
-    </header>
+    <?php include "../components/header.php" ?>
     <nav>
         <div id="nav_bar">
             <input type="text" id="destination" placeholder="Destination">
@@ -47,7 +31,7 @@
             <p>Trier</p>
             <img src="../../assets/logo/filter.png" alt="">
         </button>
-        <div id="panelfiltre">
+        <div id="panelfiltre" style="display: none">
             <p>Prix décroissants</p>
             <hr>
             <p>Prix croissants</p>
@@ -140,6 +124,6 @@
             </button>
         </div>
     </div>
-
+    <script src="../script/filtre.js"></script>
 </body>
 </html>

@@ -1,76 +1,114 @@
-.login{
+body {
+    display: flex;
+}
+
+.login {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     row-gap: 20px;
-    min-height: 100vh;
-    font-family: FuturaMediumBT;
+    font-family: Futura, sans-serif;
 }
-.box_login{
+
+h1 {
+    display: flex;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EDD54C;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    margin-top: 10px;
+    width: 160px;
+    height: 60px;
+    font-size: 18px;
+    font-family: Futura, sans-serif;
+    font-weight: 500;
+}
+
+form {
+    width: 475px;
+}
+
+.form {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box_login {
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     border: 2px solid black;
     width: 220px;
-    margin-top: 30px;
-}
-.box_login input{
-    border: none;
-    border-bottom: 2px solid black;
-    width: 203px;
-    height: 20px;
-    margin-top: 20px; 
-    padding-left: 15px;
-    outline: none;
-    font-size: 15px;
-    font-family: FuturaMediumBT;
-    padding-bottom: 15px;
-  
+    margin: 0;
 }
 
-#mot_de_passe{
+.box_login input {
+    width: 100%;
+    height: 56px;
+    padding-left: 15px;
+    outline: none;
+    font-size: 18px;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#mot_de_passe {
     border-bottom: none;
     border-radius: 10px;
 }
 
-.link_password{
+.link_password {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 20px;
     font-family: futura;
     font-size: 15px;
-}
-a{
-    color: black;
-    text-decoration: none;
-}
-#left{
-  margin-left: 5px;
+    justify-content: space-between;
+    width: 100%;
 }
 
-#right{
+.link_password a {
+    color: black !important;
+    font-size: 18px;
+    font-family: Futura, sans-serif;
+}
+
+#left {
+    margin-left: 5px;
+}
+
+#right {
     margin-left: 10px;
-} 
+}
+
+img {
+    width: 32px;
+}
 
 @media screen and (min-width: 800px) {
-    .box_login{
+    .box_login {
         border-radius: 7px;
-        border: 1px solid black;
-        width: 350px;
-        height: 90px;
-        margin-top: 40px;
+        width: 100%;
     }
-    .box_login input{
+
+    .box_login input {
         border: none;
-        border-bottom: 1px solid black;
-        width: 332px;
-        height: 20px;
-        margin-top: 20px; 
-        padding-left: 15px;
-        outline: none;
-        font-size: 15px;
-        font-family: FuturaMediumBT;
-      
+        border-bottom: 2px solid black;
     }
-    #left{
-        margin-right: 150px;
-    }
+
 }

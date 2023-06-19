@@ -4,7 +4,7 @@
 require_once 'Database.php';
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
-// Commentaire pour les prof
+// Commentaire pour les profs
 class Locations 
 {
     //Fonction qui retourne les loyers sans les filtrer/organiser
@@ -207,53 +207,49 @@ class Locations
 
         return $result;
     }
-    function deleteBookingByIds($locationId,$userId,$newStatus) {
-        //Connecter la BDD
-        $db = new Database();
-
-        // Ouverture de la connection
-        $connection = $db->getConnection();
-
-        //  Requêtes SQL
-        $request = $connection->prepare("UPDATE booking SET booking_status = :newstatus WHERE location_id = :locationId and user_id = :userId");
-        if ($request->execute()) {
-            return False; }
-        return True ;
-    }
-    function deleteReviewById($userId){
-        //Connecter la BDD
-        $db = new Database();
-
-        // Ouverture de la connection
-        $connection = $db->getConnection();
-
-        //  Requêtes SQL
-        $request = $connection->prepare("UPDATE reviews DROP id WHERE user_id = :userId ;");
-        $request->bindParam(":userId", $userId);
-        if ($request->execute()) {
-            return False; }
-        return True ;
-    }
-    function setLocationAvailability($newStatus) {
-        //Connecter la BDD
-        $db = new Database();
-
-        // Ouverture de la connection
-        $connection = $db->getConnection();
-
-        //  Requêtes SQL
-        $request = $connection->prepare("UPDATE location UPDATE currently_free =:newstatus WHERE id = :id ;");
-        $request->bindParam(":newstatus", $newstatus);
-        if ($request->execute()) {
-            return False; }
-        return True ;
-    }
+    
+    
     //WIP
     function searchByDate() {
         pass;
     }
     //WIP
-    function AddLocation() {
-        pass;
+    function createLocation() {
+        function addUser($address, $password, $name, $price, $pics,$max_places, $description, $currentlyFree){
+            //  Connecter la BDD
+            $db = new Database();
+            // Ouverture de la connection
+            $connection = $db->getConnection();
+            // Requêtes SQL
+    
+            $sql = 'INSERT INTO "location" (name, price, address, pics, description, currently_free, max_places,area)
+            VALUES(:name, :price, :address, :pics, :description, :currentlyFree, :maxPlaces :area)';
+    
+            $query = $connection->prepare($sql);
+        
+            $address=htmlspecialchars(strip_tags($address));
+            $name=htmlspecialchars(strip_tags($name));
+            $price=htmlspecialchars(strip_tags($price));
+            $description=htmlspecialchars(strip_tags($description));
+            $pics=htmlspecialchars(strip_tags($pics));
+    
+    
+            $query->bindParam(":name", $name);
+            $query->bindParam(":price", $price);
+            $query->bindParam(":address", $address);
+            $query->bindParam(":pics", $pics);
+            $query->bindParam(":description", $description);
+            $query->bindParam(":password", $password);
+            $query->bindParam(":maxPlaces", $maxPlaces);
+    
+    
+            if ($query->execute()){
+                $connection = null;
+                return true;
+            }
+            $connection = null;
+            return false;
+        }
+    
     }
 }

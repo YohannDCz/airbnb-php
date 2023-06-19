@@ -27,61 +27,84 @@
                         <a href>Experience</a>
                         <a href>Messagerie</a>
                     </div>
-
                 </div>
-                <div class="icons">
-                    <div class="freur">
-                        <p>FR</p>
-                        <div class="separation"></div>
-                        <p>&euro;</p>
-                    </div>
-                    <div class="round">
-                        <a href="lien_image2.html"><img
-                                src="../../assets/logo/search2.png" alt="LP"></a>
-                    </div>
-                    <div class="menu">
+            </div>
+            <div class="icons">
+                <div class="freur">
+                    <p>FR</p>
+                    <div class="separation"></div>
+                    <p>&euro;</p>
+                </div>
+                <div class="round">
+                    <a href="lien_image2.html"><img
+                            src="../../assets/logo/search2.png" alt="LP"></a>
+                </div>
+                <div class="menu">
+                    <div class="menu2">
                         <img class="menuicon" src="../../assets/logo/menu.png"
                             alt="L'icone du menu.">
                         <img class="profile" src="../../assets/logo/profile.png"
                             alt="L'icone de la honte.">
-                        <div class="panel" style="display: none">
-                            <a href="">
-                                <div class="account panel-item">
-                                    <img src="../../assets/logo/person.svg" alt
-                                        class="accounticon icon">
-                                    <p>Compte</p>
-                                </div>
-                            </a>
-                            <hr>
+                    </div>
+                    <div class="panel" style="display: none">
+                        <img src="../../assets/logo/cross.png" alt class="close">
+                        <a href="#">
+                            <div class="account panel-item">
+                                <img src="../../assets/logo/person.svg" alt
+                                    class="accounticon icon black">
+                                <img class="white"
+                                    src="../../assets/logo/person-white.svg" alt>
+                                <p>Compte</p>
+                            </div>
+                        </a>
+                        <hr>
+                        <a href="#">
                             <div class="reservations panel-item">
                                 <img src="../../assets/logo/reservations.svg"
-                                    alt class="reservationicon icon">
+                                    alt class="reservationicon icon black">
+                                <img class="white"
+                                    src="../../assets/logo/reservations-white.svg"
+                                    alt>
                                 <p>Réservations</p>
                             </div>
-                            <hr>
+                        </a>
+                        <hr>
+                        <a href>
                             <div class="favori panel-item">
                                 <img src="../../assets/logo/favorite.svg" alt
-                                    class="favorisicon icon">
+                                    class="favorisicon icon black">
+                                <img class="white"
+                                    src="../../assets/logo/favorite-white.svg"
+                                    alt>
                                 <p>Favoris</p>
                             </div>
-                            <hr>
+                        </a>
+                        <hr>
+                        <a>
                             <div class="theme panel-item">
                                 <img src="../../assets/logo/theme.svg" alt
-                                    class="themeicon">
+                                    class="themeicon black">
+                                <img class="white"
+                                    src="../../assets/logo/theme-white.svg" alt>
                                 <p>Thème</p>
                             </div>
-                            <hr>
+                        </a>
+                        <hr>
+                        <a>
                             <div class="logout panel-item">
                                 <img src="../../assets/logo/logout.svg" alt
-                                    class="signouticon">
+                                    class="signouticon black">
+                                <img class="white"
+                                    src="../../assets/logo/logout-white.svg" alt>
                                 <p>Déconnexion</p>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
+            </div>
 
-                <script src="../script/menu.js"></script>
+            <script src="../script/menu.js"></script>
 
-            </header>
-        </body>
-    </html>
+        </header>
+    </body>
+</html>
