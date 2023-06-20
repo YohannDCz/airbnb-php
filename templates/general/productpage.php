@@ -27,11 +27,11 @@
     </style>
     <style>
         <?php
-        include("../css/productpage/product.css");
-        include("../css/productpage/dispo.css");
-        include("../css/productpage/collection.css");
-        include("../css/productpage/review.css");
-        include("../css/productpage/productpage.css");
+        include("../styles/productpage/product.css");
+        include("../styles/productpage/dispo.css");
+        include("../styles/productpage/collection.css");
+        include("../styles/productpage/review.css");
+        include("../styles/productpage/productpage.css");
         ?>
     </style>
     <title>Document</title>

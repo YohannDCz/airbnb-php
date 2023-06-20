@@ -197,11 +197,16 @@ header a {
     display: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .panel p {
     color: black;
     font-size: 17px;
     font-family: Futura, sans-serif;
     margin-left: 8px;
+    text-decoration: none;
 }
 
 .panel hr {

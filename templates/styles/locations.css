@@ -75,7 +75,7 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, 160px);
     grid-gap: 32px;
-    margin: 24px 0;
+    margin: 24px 0 48px;
 }
 
 .appart_parent {
@@ -190,7 +190,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: Futura_medium_italic;
+    font-family: Futura, sans-serif;
     font-size: 18px;
     color: black;
     cursor: pointer;
