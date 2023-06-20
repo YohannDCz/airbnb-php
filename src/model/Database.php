@@ -6,17 +6,17 @@ class Database {
     function getConnection() {
         // variables de connection a la bdd
         $servername = "localhost";
-        $username = "root";
-        $password = "";
-        
+        $username = "Yohann";
+        $password = "Yohann";
+
         try {
-        $conn = new PDO("mysql:host=$servername;dbname=Project_Airbnb", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        return $conn;
+            $conn = new PDO("mysql:host=$servername;dbname=Project_Airbnb", $username, $password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
         } 
         catch(PDOException $exception) {
-        echo "ERROR: " . $exception->getMessage();
-        return null;
+            echo "ERROR: " . $exception->getMessage();
+            return null;
         }
         }
     }

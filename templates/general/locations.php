@@ -58,6 +58,8 @@ $location = new Locations();
                 </div>';
             echo"</div>";
         }
+        echo '</div>
+            </div>'
             ?>
         <div id="more">
             <button id="buttun_more">
@@ -65,5 +67,6 @@ $location = new Locations();
             </button>
         </div>
     </div>
+    <?php include "../components/footer.php" ?>
 </body>
 </html>

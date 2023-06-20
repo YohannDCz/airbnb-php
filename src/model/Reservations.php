@@ -17,7 +17,7 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location;");
+        $request = $connection->prepare('SELECT * FROM location');
 
         $request->execute();
 
