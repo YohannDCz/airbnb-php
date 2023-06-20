@@ -30,7 +30,7 @@ $location = new Locations();
         src: url("../../assets/fonts/Didot_Regular.ttf");
     }
     </style>
-    l
+    
     <style>
         <?php
         include("../css/homepage/homepage.css");

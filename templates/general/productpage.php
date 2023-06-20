@@ -5,10 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+    @font-face {
+        font-family: Futura_medium_italic;
+        src: url("../../assets/fonts/Futura_Medium_Italic.ttf");
+    }
+
+    @font-face {
+        font-family: Futura_Heavy;
+        src: url("../../assets/fonts/Futura_Heavy_font.ttf");
+    }
+
+    @font-face {
+        font-family: Futura_medium;
+        src: url("../../assets/font/FuturaMediumBT.ttf");
+    }
+
+    @font-face {
+        font-family: Didot;
+        src: url("../../assets/fonts/Didot_Regular.ttf");
+    }
+    </style>
+    <style>
         <?php
         include("../css/productpage/product.css");
         include("../css/productpage/disponibilite.css");
-        include("../css/productpage/carouselle.css");
+        include("../css/productpage/collection.css");
         include("../css/productpage/review.css");
         include("../css/productpage/productpage.css");
         ?>
@@ -65,7 +86,7 @@
         </div>
     </div>
     <div id="dispomibilite">
-    <h3>Retour d'esperience</h3>
+        <h3>Retour d'esperience</h3>
         <div id="area_dispomibilite_slider">
             <div id="dispomibilite_slider">
                 <div class="dispomibilite_element">
@@ -107,8 +128,107 @@
             </div>
         </div>
     </div>
-    <div id="carouselle">
+    <div id="collection">
+        <div id="collection_title">
+            <span>
+                Nos propositions
+            </span>
+        </div>
+        <div id="top_collection">
+            <div id="left_collection_btn" >
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
+            </div>
+            <div id="area_collection_grid">
+                <div id="collection_grid">
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
 
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                    <div class="appart_parent">
+                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
+                        <p class="title">Villa Paris 12e</p>
+                        <p class="description">22, rue des champs elysées </p>
+                        <p class="description">600 € / nuit</p>
+                        <div class="reserve_button">
+                            <button>Reserver</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right_collection_btn">
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
+            </div>
+        </div>
+        <div id="more">
+            <button id="buttun_more">
+                <p>Voir plus...</p>
+            </button>
+        </div>
     </div>
     <div id="review">
     <h3>Retour d'esperience</h3>
