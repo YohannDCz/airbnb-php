@@ -35,8 +35,7 @@ $location = new Locations();
 
 </head>
 <body>
-    <header>
-    </header>
+    <?php include "../components/header.php" ?>
     <div id="carousel_area">
         <div class="carousel">
             <input type="radio" id="carousel-css-slide-1" name="carousel-css" value="slide-1" checked/>
@@ -188,8 +187,6 @@ $location = new Locations();
         </div>
     </div>
     <script src="../script/homepage.js"></script>
-    <footer>
-        
-    </footer>
+    <?php include "../components/footer.php" ?>
 </body>
 </html>
