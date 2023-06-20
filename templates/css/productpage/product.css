@@ -1,6 +1,6 @@
 #product {
     display: flex;
-    padding: 14px;
+    padding: 0px;
     justify-content: center;
     align-items: center;
     flex-grow: 1;
@@ -17,10 +17,9 @@
 #left_aera_product {
     display: flex;
     height: inherit;
-
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items: center; 
 }
 
 #right_aera_product {
@@ -29,6 +28,7 @@
     width: inherit;
     flex-direction: column;
     margin-bottom: 48px;
+    padding: 14px;
 }
 
 #right_aera_product h1{
@@ -128,12 +128,13 @@ input[type="date"] {
         height: inherit;
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
     
     #left_aera_product {
         display: flex;
         height: inherit;
-    
+        padding: 0px;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;

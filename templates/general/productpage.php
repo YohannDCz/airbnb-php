@@ -17,7 +17,7 @@
 
     @font-face {
         font-family: Futura_medium;
-        src: url("../../assets/font/FuturaMediumBT.ttf");
+        src: url("../../assets/fonts/Futura_medium.ttf");
     }
 
     @font-face {
@@ -66,7 +66,7 @@
                     <p>22, rue des champs elysées </p>
                 </div>
                 <div id="price">
-                    <p><span id="price_each">600</span>&nbsp€ /nuit</p>
+                    <h3><span id="price_each">600</span>&nbsp€ /nuit</h3>
                 </div>
                 <div id="calender" >
                     <div id="calender_du">
