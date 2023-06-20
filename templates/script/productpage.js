@@ -124,40 +124,33 @@ right_button_review.addEventListener('click', () => {
 
 });
 
- // Sélectionner les éléments d'entrée date
+
  const dateDebutInput = document.getElementById('date_debut');
  const dateFinInput = document.getElementById('date_fin');
  const price_tag = document.getElementById('price_tag')
  const price_each = document.getElementById('price_each')
- 
- // Ajouter des écouteurs d'événements pour les modifications de valeur
+
  dateDebutInput.addEventListener('input', calculerNombreJours);
  dateFinInput.addEventListener('input', calculerNombreJours);
 
  function calculerNombreJours() {
-     // Obtenir les valeurs des champs de saisie date
+
      const dateDebut = dateDebutInput.value;
      const dateFin = dateFinInput.value;
 
-     // Vérifier si les deux champs sont remplis
      if (dateDebut && dateFin) {
-         // Convertir les valeurs en objets Date
-         const dateDebutObj = new Date(dateDebut);
-         const dateFinObj = new Date(dateFin);
 
-         // Calculer la différence en millisecondes
-         const differenceMs = dateFinObj - dateDebutObj;
+        let dateDebutObj = new Date(dateDebut);
+        let dateFinObj = new Date(dateFin);
+        let differenceMs = dateFinObj - dateDebutObj;
+        let differenceJours = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
+        let resultat = document.getElementById('nb_jours');
+        resultat.textContent = ` ${differenceJours} jours`;
+        price_tag.textContent = price_each.textContent*differenceJours
 
-         // Convertir la différence en jours
-         const differenceJours = Math.floor(differenceMs / (1000 * 60 * 60 * 24));
-
-         // Afficher le résultat
-         const resultat = document.getElementById('nb_jours');
-         resultat.textContent = ` ${differenceJours} jours`;
-         price_tag.textContent = price_each.textContent*differenceJours
      } else {
-         // Les champs ne sont pas remplis, masquer le résultat
-         const resultat = document.getElementById('nb_jours');
+
+         let resultat = document.getElementById('nb_jours');
          resultat.textContent = '';
      }
  }
