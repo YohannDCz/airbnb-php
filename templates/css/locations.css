@@ -16,6 +16,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    margin-top: 12px;
 }
 
 #filtre {
@@ -25,7 +26,6 @@
     font-size: 18px;
     height: 46px;
     width: 132px;
-    margin-left: 72px;
 }
 
 #area_button_filtre img {
@@ -75,6 +75,11 @@ html, body {
     display: grid;
     grid-template-columns: repeat(2, 160px);
     grid-gap: 32px;
+    margin: 24px 0;
+}
+
+.appart_parent {
+    width: 160px;
 }
 
 .appart_parent img {
@@ -84,14 +89,14 @@ html, body {
 }
 
 .description {
-    font-family: Futura_medium_italic;
+    font-family: Futura, sans-serif;
     font-size: 18px;
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
 .title {
-    font-family: Futura_Heavy;
-    margin-top: 16px;
+    font-family: Futura, sans-serif;
+    margin-top: 12px;
     font-size: 20px;
 }
 
@@ -112,6 +117,10 @@ html, body {
         grid-template-columns: repeat(3, 200px);
     }
 
+    .appart_parent {
+        width: 200px;
+    }
+
     .appart_parent img {
         height: 200px;
         width: 200px;
@@ -122,7 +131,11 @@ html, body {
 
 @media (min-width: 1100px) {
     #collection_grid {
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(4, 300px);
+    }
+
+    .appart_parent {
+    width: 300px;
     }
 
     .appart_parent img {
@@ -140,7 +153,7 @@ nav {
 
 #nav_bar {
     width: 100%;
-    margin: 18px 72px;
+    margin: 40px 72px 18px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -157,6 +170,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#nav_bar input::placeholder {
+    font-family: Futura, sans-serif;
 }
 
 #voyageurs {
@@ -227,5 +244,6 @@ input::placeholder {
 .reserve_button {
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
+    margin-top: 12px;
 }

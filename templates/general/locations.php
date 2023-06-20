@@ -27,45 +27,44 @@ $location = new Locations();
             </div>
         </div>
     </nav>
-    <div id="area_button_filtre">
-        <button id="filtre">
-            Trier
-            <img src="../../assets/logo/filter.png" alt="">
-        </button>
-        <div id="panelfiltre" style="display: none">
-            <p>Prix décroissants</p>
-            <hr>
-            <p>Prix croissants</p>
-            <hr>
-            <p>Pertinence</p>
-            <hr>
-            <p>Popularité</p>
+    <div id="collection">
+        <div id="area_button_filtre">
+            <button id="filtre">
+                Trier
+                <img src="../../assets/logo/filter.png" alt="">
+            </button>
+            <div id="panelfiltre" style="display: none">
+                <p>Prix décroissants</p>
+                <hr>
+                <p>Prix croissants</p>
+                <hr>
+                <p>Pertinence</p>
+                <hr>
+                <p>Popularité</p>
+            </div>
+            <script src="../script/filtre.js"></script>
         </div>
-        <script src="../script/filtre.js"></script>
+        <div id="collection_grid">
+            <?php
+            $result = $location->getlocations();
+            foreach ($result as $r): ?>
+                <div class="appart_parent" id="appart_1">
+                    <img src="<?php echo $r['pics']; ?>" alt="facade villa">
+                    <p class="title"><?php echo $r['name']; ?></p>
+                    <p class="description"><?php echo $r['address']; ?></p>
+                    <p class="description"><?php echo $r['price']; ?> € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
-    <?php 
-    echo '<div id="collection">
-        <div id="collection_grid">';
-        $result = $location->getlocations();
-        foreach ($result as $r) {
-            echo '<div class="appart_parent" id="appart_1">
-                <img src="'. $r["pics"] . '" alt="facade villa">
-                <p class="title">' . $r["name"] . '</p>
-                <p class="description">' . $r["address"] . '</p>
-                <p class="description">' . $r["price"] . ' € / nuit</p>
-                <div class="reserve_button">
-                    <button>Reserver</button>
-                </div>';
-            echo"</div>";
-        }
-        echo '</div>
-            </div>'
-            ?>
-        <div id="more">
+        <!-- <div id="more">
             <button id="buttun_more">
                 <p>Voir plus...</p>
             </button>
-        </div>
+        </div> -->
     </div>
     <?php include "../components/footer.php" ?>
 </body>
