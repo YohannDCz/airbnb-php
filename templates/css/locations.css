@@ -21,14 +21,12 @@
 #filtre {
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    font-family: Futura_medium_italic;
+    font-family: Futura, sans-serif;
     font-size: 18px;
     height: 46px;
     width: 132px;
     margin-left: 72px;
 }
-
-
 
 #area_button_filtre img {
     height: 20px;
@@ -61,11 +59,12 @@
     margin-bottom: 8px;
 }
 
-body {
+html, body {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 #collection {
@@ -141,10 +140,7 @@ nav {
 
 #nav_bar {
     width: 100%;
-    margin-left: 18px;
-    margin-right: 18px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin: 18px 72px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;

@@ -8,13 +8,12 @@ $location = new Locations();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/locations.css">
     <title>Document</title>
-    <style>
-    </style>
+    
 </head>
 <body>
     <?php include "../components/header.php" ?>
+    <link rel="stylesheet" href="../css/locations.css">
     <nav>
         <div id="nav_bar">
             <input type="text" id="destination" placeholder="Destination">
@@ -23,14 +22,14 @@ $location = new Locations();
             <input type="text" id="voyageurs" placeholder="Voyageurs">
             <div id="img">
                 <div class="btn">
-                    <button> <P>Rechercher</P> <img src="../../assets/logo/search.png" alt="flèche"> </button>
+                    <button>Rechercher <img src="../../assets/logo/search.png" alt="flèche"> </button>
                 </div>
             </div>
         </div>
     </nav>
     <div id="area_button_filtre">
         <button id="filtre">
-            <p>Trier</p>
+            Trier
             <img src="../../assets/logo/filter.png" alt="">
         </button>
         <div id="panelfiltre" style="display: none">
@@ -42,8 +41,10 @@ $location = new Locations();
             <hr>
             <p>Popularité</p>
         </div>
+        <script src="../script/filtre.js"></script>
     </div>
-    <?php echo '<div id="collection">
+    <?php 
+    echo '<div id="collection">
         <div id="collection_grid">';
         $result = $location->getlocations();
         foreach ($result as $r) {
@@ -64,6 +65,5 @@ $location = new Locations();
             </button>
         </div>
     </div>
-    <script src="../script/filtre.js"></script>
 </body>
 </html>
