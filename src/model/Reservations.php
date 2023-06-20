@@ -32,7 +32,7 @@ class Locations
     {
         //Connecter la BDD
         $db = new Database();
-
+        $location = "%".$location."%";
         // Ouverture de la connection
         $connection = $db->getConnection();
 
@@ -46,11 +46,13 @@ class Locations
         else if (isset($location) && !isset($maxPlaces)) {
             $request = $connection->prepare("SELECT * From location WHERE name LIKE :location or address LIKE :location ;");
         } 
+        $request->bindParam(":maxPlaces", $maxPlaces);
+        $request->bindParam(":location", $location);
         
         $request->execute();
 
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
-
+        echo"eeeeeeeeeeeeeeeeeeeeee";
         return $result;
     }
     //fonction générale pour trier efficacement suivant les paramètres données 
@@ -64,13 +66,31 @@ class Locations
         // Ouverture de la connection
         $connection = $db->getConnection();
         if (isset($dbParam) && isset($param)) {
-        $where = "WHERE " . $dbParam . " Like :" . $param ;
+        $where = "WHERE " . $dbParam . " Like :" . $param ."" ;
         }  
         if (isset($orderByParam)) {
             $orderBy = "ORDER BY " . $orderByParam ;
         }
         //  Requêtes SQL
         $request = $connection->prepare("SELECT * FROM location" . $where . $orderBy . $ascDesc . ";");
+
+        $request->execute();
+
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
+    //fonction qui permet d'avoir des commentaires 
+    function getReviews() {
+        
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("SELECT reviews.*, users.* FROM reviews INNER JOIN users ON users.id = reviews.user_id;");
 
         $request->execute();
 

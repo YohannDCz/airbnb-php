@@ -1,4 +1,10 @@
 <?php
+require_once"../controller\locationController.php";
+
+$result = showQueryResults();
+session_start();
+$_SESSION['result'] = $result;
+header("location: ../../templates\general\locations.php?result=");
 
 // require_once 'src/controller/locationController.php';
 

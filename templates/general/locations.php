@@ -1,6 +1,10 @@
 <?php
 require_once"../../src/model/Database.php";
 require_once"../../src/model/Reservations.php";
+session_start();
+if (isset($_SESSION['result'])) {
+
+    $result = $_SESSION['result'];}
 $location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
@@ -16,51 +20,69 @@ $location = new Locations();
     <link rel="stylesheet" href="../css/locations.css">
     <nav>
         <div id="nav_bar">
-            <input type="text" id="destination" placeholder="Destination">
-            <input type="text" placeholder="Départ" onfocus="(this.type = 'date')">
-            <input type="text" placeholder="Arrivée" onfocus="(this.type = 'date')">
-            <input type="text" id="voyageurs" placeholder="Voyageurs">
-            <div id="img">
-                <div class="btn">
-                    <button>Rechercher <img src="../../assets/logo/search.png" alt="flèche"> </button>
-                </div>
-            </div>
-        </div>
-    </nav>
-    <div id="collection">
-        <div id="area_button_filtre">
-            <button id="filtre">
-                Trier
-                <img src="../../assets/logo/filter.png" alt="">
-            </button>
-            <div id="panelfiltre" style="display: none">
-                <p>Prix décroissants</p>
-                <hr>
-                <p>Prix croissants</p>
-                <hr>
-                <p>Pertinence</p>
-                <hr>
-                <p>Popularité</p>
-            </div>
-            <script src="../script/filtre.js"></script>
-        </div>
-        <div id="collection_grid">
-            <?php
-            $result = $location->getlocations();
-            foreach ($result as $r): ?>
-                <div class="appart_parent" id="appart_1">
-                    <img src="<?php echo $r['pics']; ?>" alt="facade villa">
-                    <p class="title"><?php echo $r['name']; ?></p>
-                    <p class="description"><?php echo $r['address']; ?></p>
-                    <p class="description"><?php echo $r['price']; ?> € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
+            <form action="../../src/routeur/locationRoutes.php" method="POST">
+                <input type="text" id="destination" name="location"    value="Destination" >
+                <input type="text" id="Départ"      name="Departure"   value="Départ" onfocus="(this.type = 'date')">
+                <input type="text" id="Arrivée"     name="Arrival"     value="Arrivée"  onfocus="(this.type = 'date')">
+                <input type="text" id="voyageurs"   name="maxPlaces"   value="Voyageurs">
+                
+                <div id="img">
+                    <div class="btn">
+                        <button>Rechercher <img src="../../assets/logo/search.png" alt="flèche"> </button>
                     </div>
                 </div>
-            <?php endforeach; ?>
+            </form>
         </div>
+    </nav>
+    <div id="area_button_filtre">
+        <button id="filtre">
+            Trier
+            <img src="../../assets/logo/filter.png" alt="">
+        </button>
+        <div id="panelfiltre" style="display: none">
+            <form action="employee.action" method="post">
+            <p>Prix décroissants</p>
+            <hr>
+            <p>Prix croissants</p>
+            <hr>
+            <p>Pertinence</p>
+            <hr>
+            <p>Popularité</p>
+            </form>
+        </div>
+        <script src="../script/filtre.js"></script>
     </div>
-        <!-- <div id="more">
+    <?php 
+    echo '<div id="collection">
+        <div id="collection_grid">';
+        if (!isset($result)) {
+            $result = $location->getlocations();
+            foreach ($result as $r) {
+                echo '<div class="appart_parent" id="appart_1">
+                    <img src="'. $r["pics"] . '" alt="facade villa">
+                    <p class="title">' . $r["name"] . '</p>
+                    <p class="description">' . $r["address"] . '</p>
+                    <p class="description">' . $r["price"] . ' € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>';
+                echo"</div>";
+            }}
+        else {
+            foreach ($result as $r) {
+                echo '<div class="appart_parent" id="appart_1">
+                    <img src="'. $r["pics"] . '" alt="facade villa">
+                    <p class="title">' . $r["name"] . '</p>
+                    <p class="description">' . $r["address"] . '</p>
+                    <p class="description">' . $r["price"] . ' € / nuit</p>
+                    <div class="reserve_button">
+                        <button>Reserver</button>
+                    </div>';
+                echo"</div>";}}
+        
+            ?>
+            ;
+        <div id="more">
             <button id="buttun_more">
                 <p>Voir plus...</p>
             </button>

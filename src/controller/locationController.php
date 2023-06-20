@@ -1,6 +1,6 @@
 <?php 
-require_once('./model/Database');
-require_once('./model/Reservations.php');
+require_once('../model/Database.php');
+require_once('../../src/model/Reservations.php');
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les profs
@@ -16,14 +16,17 @@ function ShowLocation() {
     return $result;
 }
 function showQueryResults() {
-    $location = $_POST["location"];
-    $location = $_POST["maxPlaces"];
+    $searchedLocation = $_POST["location"];
+    $maxPlaces = $_POST["maxPlaces"];
 
     $location = new Locations;
-    if (isset($location) || isset($maxPlaces)) {
-    $result = $location->searchLocationByInput($search);}
+    if (isset($searchedLocation) || isset($maxPlaces)) {
+    $result = $location->searchLocationByInput($searchedLocation,$maxPlaces);
+    }
+
     else {
-        ShowLocation();
+        $result = ShowLocation();
+        
     }
 
     return $result;
