@@ -8,8 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-<header>
-        <div class="left">
+ <header>
+    <?php include "../components/header.php" ?>
+
+         <div class="left">
         <div class="logo"><img  src="../../assets/img/logo.png"  class="img_logo" alt=""> <h3>TAILLE D'OR</h3></div>
           <nav class="menu">
             <ul>
@@ -46,7 +48,7 @@
        </div>
 
 
-    </header>
+    </header> 
     <div id="collection">
             <h2>Favoris</h2>
         <div id="top_collection">

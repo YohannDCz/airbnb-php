@@ -22,10 +22,11 @@
                         <p> TAILLE D'OR </p>
                     </div>
                     <div class="taches">
-                        <a href>Accueil</a>
-                        <a href>Locations</a>
-                        <a href>Experience</a>
-                        <a href>Messagerie</a>
+                        <a href="../general/homepage.php">Accueil</a>
+                        <a href="../general/locations.php">Locations</a>
+                        <a href="">Experience</a>
+                        <a href="../user/messages.php">Messagerie</a>
+
                     </div>
                 </div>
             </div>
@@ -64,7 +65,7 @@
                 </div>
             </a>
             <hr>
-            <a href="#">
+            <a href="../user/">
                 <div class="reservations panel-item">
                     <img src="../../assets/logo/reservations.svg"
                         alt class="reservationicon icon black">
