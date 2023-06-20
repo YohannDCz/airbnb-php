@@ -28,7 +28,7 @@
     <style>
         <?php
         include("../css/productpage/product.css");
-        include("../css/productpage/disponibilite.css");
+        include("../css/productpage/dispo.css");
         include("../css/productpage/collection.css");
         include("../css/productpage/review.css");
         include("../css/productpage/productpage.css");
@@ -37,102 +37,190 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+
+
+    </header>
     <div id="product">
         <div id="aera_product">
             <div id="left_aera_product">
                 <div id="main_img">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="">
+                    <img src="../../assets/img/img_facade_villa.jpg" alt="" id="img0">
                 </div>
                 <div id="other_img">
-                    <img src="../../assets/img/argument1.png" alt="">
-                    <img src="../../assets/img/argument1.png" alt="">
-                    <img src="../../assets/img/argument1.png" alt="">
+                    <button>
+                        <img src="../../assets/img/argument1.png" alt="" id="img1">
+                    </button>
+                    <button>
+                        <img src="../../assets/img/argument2.png" alt="" id="img2">
+                    </button>
+                    <button>
+                        <img src="../../assets/img/appartment2.png" alt="" id="img3">
+                    </button>
                 </div>
             </div>
             <div id="right_aera_product">
-                <h1></h1>
+                <h1>VIlla Paris 12e</h1>
                 <div id="adresse">
-                    <img src="" alt="">
-                    <p></p>
+                    <img src="../../assets/logo/map.svg" alt="">
+                    <p>22, rue des champs elysées </p>
                 </div>
                 <div id="price">
-                    <span></span>
-                    <p></p>
+                    <p><span id="price_each">600</span>&nbsp€ /nuit</p>
                 </div>
                 <div id="calender" >
                     <div id="calender_du">
-                        <p></p>
-                        <input type="date" name="" id="">
+                        <div>
+                            <img src="../../assets/logo/calender.svg" alt="">
+                            <p>Du</p>
+                        </div>
+                        <input type="date" id="date_debut">
                     </div>
                     <div id="calender_au">
-                        <p></p>
-                        <input type="date" name="" id="">
+                        <div>
+                            <img src="../../assets/logo/calender.svg" alt="">
+                            <p>Au</p>
+                        </div>
+                        <input type="date" id="date_fin">
                     </div>
-                    <p>Séjour de <span></span></p>
+                    <p>Séjour de&nbsp<span id="nb_jours"></span></p>
                 </div>
                 <div id="total">
-
+                    <h2>TOTAL&nbsp&nbsp&nbsp</h2>
+                    <h2 id="price_tag">0</h2>
+                    <h2>&nbsp€</h2>
                 </div>
                 <div id="garanties">
 
                 </div>
                 <div id="submit_div">
-                    <button>
-
+                    <button id="submit_button">
+                        <p>Reserver</p>
                     </button>
                 </div>
             </div>
         </div>
     </div>
-    <div id="dispomibilite">
-        <h3>Retour d'esperience</h3>
-        <div id="area_dispomibilite_slider">
-            <div id="dispomibilite_slider">
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
+    <div id="dispo">
+    <h3>Les disponibilité</h3>
+        <div id="area_dispo">
+            <div id="left_dispo_btn" >
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
+            </div>
+            <div id="area_dispo_slider">
+                <div id="dispo_slider">
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>non disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>non disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
+                    <div class="dispo_element">
+                        <div class="date_dispo_element">
+                            <p>20/06/2023</p>
+                        </div>
+                        <div class="statut_dispo_element">
+                            <p>disponible</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
-                <div class="dispomibilite_element">
-                    <h3>Sophie Dupont</h3>
-                    <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                </div>
+            </div>
+            <div id="right_dispo_btn">
+                <button>
+                    <img src="../../assets/logo/arrow-black.png" alt="">
+                </button>
             </div>
         </div>
     </div>
     <div id="collection">
         <div id="collection_title">
-            <span>
+            <h3>
                 Nos propositions
-            </span>
+            </h3>
         </div>
         <div id="top_collection">
             <div id="left_collection_btn" >

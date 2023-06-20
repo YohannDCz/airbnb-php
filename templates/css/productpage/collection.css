@@ -64,7 +64,6 @@
     font-size: 18px;
     width: 100%;
     display: flex;
-    margin-top: 40px;
     justify-content: center;
     overflow: hidden;
 }
@@ -86,10 +85,15 @@
         overflow-x: hidden;
     }
 
-    #collection_title {
-        height: 0px;
-        margin-top: 0px;
-    }
+    #collection_title > h3{
+        font-family: Futura_Heavy;
+        font-size: 18px;
+        overflow: hidden;
+        width: 100%;
+        text-align: left;
+        margin-left: 10%;
+        margin-bottom: 0px;
+   }
 
     .appart_parent img {
         height: 240px;
