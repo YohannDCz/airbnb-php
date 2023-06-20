@@ -37,7 +37,7 @@
 #panelfiltre {
     flex-direction: column;
     position: absolute;
-    left: 72px;
+    left: 0;
     top: 72px;
     background-color: white;
     border-radius: 20px;
