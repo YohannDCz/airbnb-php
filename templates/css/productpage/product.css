@@ -1,0 +1,52 @@
+#product {
+    display: flex;
+    padding: 140px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#aera_product {
+    background-color: rebeccapurple;
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+
+#left_aera_product {
+    background-color: aqua;
+    display: flex;
+    height: inherit;
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right_aera_product {
+    background-color: aqua;
+    display: flex;
+    height: inherit;
+    width: 100px;
+}
+
+#main_img img{
+    width: 566px;
+    height: 566px;
+    border-radius: 10px;
+}
+
+#other_img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#other_img img{
+    width: 88px;
+    height: 88px;
+    margin-right: 10px;
+
+}
