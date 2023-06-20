@@ -58,7 +58,7 @@ header {
     font-family: "Vogue", serif;
 }
 
-p {
+header p {
     white-space: nowrap;
     color: white;
     font-size: 27px;
@@ -72,7 +72,7 @@ p {
     color: white;
 }
 
-a {
+header a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +204,7 @@ a {
     margin-left: 8px;
 }
 
-hr {
+.panel hr {
     width: 208px;
     margin: 0 16px;
 }
