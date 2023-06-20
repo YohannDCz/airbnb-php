@@ -27,11 +27,11 @@ $location = new Locations();
         src: url("../../assets/fonts/Didot_Regular.ttf");
     }
     </style>
-    <link rel="stylesheet" href="../styles/homepage/homepage.css">
-    <link rel="stylesheet" href="../styles/homepage/carouselle.css">
-    <link rel="stylesheet" href="../styles/homepage/collection.css">
-    <link rel="stylesheet" href="../styles/homepage/argument.css">
-    <link rel="stylesheet" href="../styles/homepage/review.css">
+    <link rel="stylesheet" href="../css/homepage/homepage.css">
+    <link rel="stylesheet" href="../css/homepage/carouselle.css">
+    <link rel="stylesheet" href="../css/homepage/collection.css">
+    <link rel="stylesheet" href="../css/homepage/argument.css">
+    <link rel="stylesheet" href="../css/homepage/review.css">
 
 </head>
 <body>

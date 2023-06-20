@@ -27,11 +27,19 @@
     </style>
     <style>
         <?php
+<<<<<<< HEAD:templates/general/product.php
         include("../styles/product/product.css");
         include("../styles/product/dispo.css");
         include("../styles/product/collection.css");
         include("../styles/product/review.css");
         include("../styles/product/productpage.css");
+=======
+        include("../css/productpage/product.css");
+        include("../css/productpage/dispo.css");
+        include("../css/productpage/collection.css");
+        include("../css/productpage/review.css");
+        include("../css/productpage/productpage.css");
+>>>>>>> parent of 3b54ece... "css" -> "styles":templates/general/productpage.php
         ?>
     </style>
     <title>Document</title>

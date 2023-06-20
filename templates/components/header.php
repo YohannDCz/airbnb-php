@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../styles/header.css">
+        <link rel="stylesheet" href="../css/header.css">
         <link
             href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
             rel="stylesheet">
@@ -22,10 +22,10 @@
                         <p> TAILLE D'OR </p>
                     </div>
                     <div class="taches">
-                        <a href="../general/homepage.php">Accueil</a>
-                        <a href="../general/locations.php">Locations</a>
-                        <a href="">Experience</a>
-                        <a href="../user/messages.php">Messagerie</a>
+                        <a href>Accueil</a>
+                        <a href>Locations</a>
+                        <a href>Experience</a>
+                        <a href>Messagerie</a>
                     </div>
                 </div>
             </div>
