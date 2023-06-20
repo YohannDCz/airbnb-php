@@ -27,20 +27,18 @@
     </style>
     <style>
         <?php
-        include("../styles/productpage/product.css");
-        include("../styles/productpage/dispo.css");
-        include("../styles/productpage/collection.css");
-        include("../styles/productpage/review.css");
-        include("../styles/productpage/productpage.css");
+        include("../styles/product/product.css");
+        include("../styles/product/dispo.css");
+        include("../styles/product/collection.css");
+        include("../styles/product/review.css");
+        include("../styles/product/productpage.css");
         ?>
     </style>
     <title>Document</title>
 </head>
 <body>
-    <header>
-
-
-    </header>
+    <?php include "../components/header.php" ?>
+<div class="column">
     <div id="product">
         <div id="aera_product">
             <div id="left_aera_product">
@@ -60,7 +58,7 @@
                 </div>
             </div>
             <div id="right_aera_product">
-                <h1>VIlla Paris 12e</h1>
+                <h1>Villa Paris 12e</h1>
                 <div id="adresse">
                     <img src="../../assets/logo/map.svg" alt="">
                     <p>22, rue des champs elysées </p>
@@ -102,7 +100,7 @@
         </div>
     </div>
     <div id="dispo">
-    <h3>Les disponibilité</h3>
+    <h3>Les disponibilités</h3>
         <div id="area_dispo">
             <div id="left_dispo_btn" >
                 <button>
@@ -377,9 +375,8 @@
             </div>
         </div>
     </div>
-    <footer>
-
-    </footer>
-    <script src="../script/productpage.js"></script>
+</div>
+    <?php include "../components/footer.php" ?>
+    <script src="../script/product.js"></script>
 </body>
 </html>
