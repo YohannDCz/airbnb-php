@@ -1,0 +1,332 @@
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column-reverse  ;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    height: inherit;
+}
+
+#submit img {
+    height: 100%;
+    margin-left: 10px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 320px;
+}
+
+#text_left {
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+
+#product {
+    display: flex;
+    padding: 140px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#aera_product {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#left_aera_product {
+    display: flex;
+    height: inherit;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right_aera_product {
+    display: flex;
+    height: inherit;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 12px 40px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+#right_aera_product h1{
+    font-family: Futura_Heavy;;
+    font-size: 48px;
+    margin: 0px;
+}
+
+#main_img img{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+#other_img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+#other_img {
+
+}
+
+#other_img img{
+    width: 88px;
+    height: 88px;
+}
+
+#adresse {
+    display: flex;
+    margin-top: 0px;
+}
+
+#adresse p{
+    display: flex;
+    font-size: 20px;
+}
+
+#calender p{
+    display: flex;
+    font-size: 20px;
+}
+
+input[type="date"] {
+    width: 292px;
+    height: 46px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#calender_du div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_du div p {
+    margin-left: 10px;
+}
+
+#calender_au div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_au div p {
+    margin-left: 10px;
+}
+
+#total {
+    display: flex;
+    flex-direction: row;
+}
+
+#other_img button {
+    padding: 0px;
+    background-color: white;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#submit p {
+    font-size: 20px;
+    margin: 0px;
+    flex-wrap: nowrap;
+}
+
+#right_aera_img {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (min-width: 1100px) {
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 1;
+    padding-top: 90px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    height: inherit;
+    height: inherit;
+}
+
+#submit img {
+    height: 100%;
+    margin-left: 10px;
+}
+
+#submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 320px;
+}
+
+#text_left {
+    margin-top: 92px;
+    margin-bottom: 92px;
+}
+
+#product {
+    display: flex;
+    padding: 140px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#aera_product {
+    width: 100%;
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#left_aera_product {
+    display: flex;
+    height: inherit;
+    padding: 0px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right_aera_product {
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 0px 12px 40px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+#right_aera_product h1{
+    font-family: Futura_Heavy;;
+    font-size: 48px;
+    margin: 0px;
+}
+
+#main_img img{
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+}
+
+#other_img {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+#other_img {
+
+}
+
+#other_img img{
+    width: 88px;
+    height: 88px;
+}
+
+#adresse {
+    display: flex;
+    margin-top: 0px;
+}
+
+#adresse p{
+    display: flex;
+    font-size: 20px;
+}
+
+#calender p{
+    display: flex;
+    font-size: 20px;
+}
+
+input[type="date"] {
+    width: 292px;
+    height: 46px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#calender_du div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_du div p {
+    margin-left: 10px;
+}
+
+#calender_au div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_au div p {
+    margin-left: 10px;
+}
+
+#total {
+    display: flex;
+    flex-direction: row;
+}
+
+#other_img button {
+    padding: 0px;
+    background-color: white;
+    width: 88px;
+    height: 88px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+#submit p {
+    font-size: 20px;
+    margin: 0px;
+    flex-wrap: nowrap;
+}
+
+#right_aera_img {
+    display: flex;
+    flex-direction: row;
+}}
+
