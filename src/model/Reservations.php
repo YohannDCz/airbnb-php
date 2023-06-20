@@ -27,8 +27,8 @@ class Locations
     }
     //Permet de rechercher un logement suivant le nom entré
 
-    //WIP Ajouter un SELECT top(//) pour limiter le nombre de SELECT    
-    function searchLocationByName($location)
+    
+    function searchLocationByInput($location,$maxPlaces)
     {
         //Connecter la BDD
         $db = new Database();
@@ -37,25 +37,40 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT * From location WHERE name LIKE :location or address LIKE :location ;");
-
+        if (isset($location) && isset($maxPlaces)) {
+            $request = $connection->prepare("SELECT * From location WHERE max_places > :maxPlaces && name LIKE :location or address LIKE :location ;");
+        }
+        else if (!isset($location) && isset($maxPlaces)) {
+            $request = $connection->prepare("SELECT * From location WHERE max_places > :maxPlaces;");
+        }
+        else if (isset($location) && !isset($maxPlaces)) {
+            $request = $connection->prepare("SELECT * From location WHERE name LIKE :location or address LIKE :location ;");
+        } 
+        
         $request->execute();
 
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
     }
-    //Filtre les résultats par ordre croissant des prix
-    function ascPriceOrder()
-    {
+    //fonction générale pour trier efficacement suivant les paramètres données 
+    function ascPriceOrder($dbParam,$param,$orderByParam,$ascDesc)
+    {   
+        $where = '';
+        $orderBy = '';
         //Connecter la BDD
         $db = new Database();
 
         // Ouverture de la connection
         $connection = $db->getConnection();
-
+        if (isset($dbParam) && isset($param)) {
+        $where = "WHERE " . $dbParam . " Like :" . $param ;
+        }  
+        if (isset($orderByParam)) {
+            $orderBy = "ORDER BY " . $orderByParam ;
+        }
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY price;");
+        $request = $connection->prepare("SELECT * FROM location" . $where . $orderBy . $ascDesc . ";");
 
         $request->execute();
 
@@ -63,150 +78,150 @@ class Locations
 
         return $result;
     }
-    //Filtre les résultats par ordre décroissant des prix
-    function descPriceOrder()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    // //Filtre les résultats par ordre décroissant des prix
+    // function descPriceOrder()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY price DESC;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location ORDER BY price DESC;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats par ordre alphabétique des noms
-    function aZOrder()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats par ordre alphabétique des noms
+    // function aZOrder()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY name ;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location ORDER BY name ;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats par Ordre alphabétique inversé des noms
-    function zAOrder()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats par Ordre alphabétique inversé des noms
+    // function zAOrder()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY name DESC;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location ORDER BY name DESC;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats par ordre croissant des places maximales possibles
-    function ascMaxPlacesOrder()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats par ordre croissant des places maximales possibles
+    // function ascMaxPlacesOrder()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY max_places ;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location ORDER BY max_places ;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats par ordre décroissant des places maximales possibles
-    function descMaxPlacesOrder()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats par ordre décroissant des places maximales possibles
+    // function descMaxPlacesOrder()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location ORDER BY max_places DESC ;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location ORDER BY max_places DESC ;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats par disponibilité des logements
-    function currentlyFree()
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats par disponibilité des logements
+    // function currentlyFree()
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location WHERE currently_free = TRUE ;");
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location WHERE currently_free = TRUE ;");
 
-        $request->execute();
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats suivant la superficie demandée et retourne les logements avec une superficie égale ou superieure
-    function byArea($area)
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats suivant la superficie demandée et retourne les logements avec une superficie égale ou superieure
+    // function byArea($area)
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location WHERE area >= :area ;");
-        $request->bindParam(":area", $area);
-        $request->execute();
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location WHERE area >= :area ;");
+    //     $request->bindParam(":area", $area);
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
-    //Filtre les résultats suivant l'adresse du logement par rapport à l'adresse demandée
-    function byLocation($address)
-    {
-        //Connecter la BDD
-        $db = new Database();
+    //     return $result;
+    // }
+    // //Filtre les résultats suivant l'adresse du logement par rapport à l'adresse demandée
+    // function byLocation($address)
+    // {
+    //     //Connecter la BDD
+    //     $db = new Database();
 
-        // Ouverture de la connection
-        $connection = $db->getConnection();
+    //     // Ouverture de la connection
+    //     $connection = $db->getConnection();
 
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location WHERE address like :address ;");
-        $request->bindParam(":address", $address);
-        $request->execute();
+    //     //  Requêtes SQL
+    //     $request = $connection->prepare("SELECT * FROM location WHERE address like :address ;");
+    //     $request->bindParam(":address", $address);
+    //     $request->execute();
 
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+    //     $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
-        return $result;
-    }
+    //     return $result;
+    // }
     
     
     //WIP

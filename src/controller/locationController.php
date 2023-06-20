@@ -7,11 +7,24 @@ require_once('./model/Reservations.php');
 
 //Fonction qui récupère tous les logements 
 function ShowLocation() {
-    $search = $_POST["search"];
+    $location = $_POST["location"];
 
     $location = new Locations;
 
-    $result = $location->GetLocationByName($search);
+    $result = $location->GetLocationByName($location);
+
+    return $result;
+}
+function showQueryResults() {
+    $location = $_POST["location"];
+    $location = $_POST["maxPlaces"];
+
+    $location = new Locations;
+    if (isset($location) || isset($maxPlaces)) {
+    $result = $location->searchLocationByInput($search);}
+    else {
+        ShowLocation();
+    }
 
     return $result;
 }
