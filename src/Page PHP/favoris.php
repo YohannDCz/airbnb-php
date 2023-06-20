@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../templates/css/styles_profil_reservation.css">
+    <link rel="stylesheet" href="../../templates/css/styles_favoris.css">
     <script src="../javascript/header.js" defer ></script>
     <title>Document</title>
 </head>
@@ -47,67 +47,8 @@
 
 
     </header>
-
-    <div class="profil_container2">
-        <div class="reservation">
-            <h2>Reservation</h2>
-            <div class="reservation-container">
-                <div class="appartement">
-                    <h4>En Cours</h4>
-                    <img src="../../assets/img/logement.png" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <button>Modifier reservation</button>
-                </div>
-                <div class="appartement">
-                    <h4>À venir</h4>
-                    <img src="../../assets/img/logement.png" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <button>Modifier reservation</button>
-                </div>
-                <div class="appartement">
-                    <h4>À venir</h4>
-                    <img src="../../assets/img/logement.png" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <button>Modifier reservation</button>
-                </div>
-                <div class="appartement">
-                    <h4>À venir</h4>
-                    <img src="../../assets/img/logement.png" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <button>Modifier reservation</button>
-                </div>
-                <div class="appartement">
-                    <h4>À venir</h4>
-                    <img src="../../assets/img/logement.png" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <button>Modifier reservation</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <div id="collection">
-            <h2>Passés</h2>
+            <h2>Favoris</h2>
         <div id="top_collection">
             <div id="left_collection_btn" >
                 <button>
@@ -120,11 +61,9 @@
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
 
@@ -132,11 +71,9 @@
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
 
@@ -144,66 +81,54 @@
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
                 <div class="appart_parent">
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
                 <div class="appart_parent">
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
                 <div class="appart_parent">
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
                 <div class="appart_parent">
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
                 <div class="appart_parent">
                     <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
                     <p class="title">Villa Paris 12e</p>
                     <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
+                    <p class="price">600 € / nuit </p>
                     <div class="reserve_button">
-                        <button>Laisser un avis</button>
+                        <button>Reserver</button>
                     </div>
                 </div>
             </div>
@@ -241,8 +166,7 @@
         </class>
     </footer>
 
-    <script src="../../src/javascript/reservation.js"></script>
-
+    <script src="../../src/javascript/favoris.js"></script>
 
 </body>
 </html>
