@@ -78,6 +78,8 @@
             </div>
             <div class="panelright">
                 <div class="header">
+                    <img    class="arrowheader" src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png"
+                            alt="flèche" style="transform: rotate(-180deg)">
                     <p>M. Harry Baldwin</p>
                 </div>
                 <div class="right">
@@ -169,6 +171,7 @@
                 </div>
             </div>
         </div>
+        <script src="../script/messages.js"></script>
         <?php include "../components/footer.php" ?>
         </body>
     </html>

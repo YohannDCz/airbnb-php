@@ -46,65 +46,66 @@
                         <img class="profile" src="../../assets/logo/profile.png"
                             alt="L'icone de la honte.">
                     </div>
-                    <div class="panel" style="display: none">
-                        <img src="../../assets/logo/cross.png" alt class="close">
-                        <a href="#">
-                            <div class="account panel-item">
-                                <img src="../../assets/logo/person.svg" alt
-                                    class="accounticon icon black">
-                                <img class="white"
-                                    src="../../assets/logo/person-white.svg" alt>
-                                <p>Compte</p>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href="#">
-                            <div class="reservations panel-item">
-                                <img src="../../assets/logo/reservations.svg"
-                                    alt class="reservationicon icon black">
-                                <img class="white"
-                                    src="../../assets/logo/reservations-white.svg"
-                                    alt>
-                                <p>Réservations</p>
-                            </div>
-                        </a>
-                        <hr>
-                        <a href>
-                            <div class="favori panel-item">
-                                <img src="../../assets/logo/favorite.svg" alt
-                                    class="favorisicon icon black">
-                                <img class="white"
-                                    src="../../assets/logo/favorite-white.svg"
-                                    alt>
-                                <p>Favoris</p>
-                            </div>
-                        </a>
-                        <hr>
-                        <a>
-                            <div class="theme panel-item">
-                                <img src="../../assets/logo/theme.svg" alt
-                                    class="themeicon black">
-                                <img class="white"
-                                    src="../../assets/logo/theme-white.svg" alt>
-                                <p>Thème</p>
-                            </div>
-                        </a>
-                        <hr>
-                        <a>
-                            <div class="logout panel-item">
-                                <img src="../../assets/logo/logout.svg" alt
-                                    class="signouticon black">
-                                <img class="white"
-                                    src="../../assets/logo/logout-white.svg" alt>
-                                <p>Déconnexion</p>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
-
+            
             <script src="../script/menu.js"></script>
-
+            
         </header>
+        <div class="panel" style="display: none">
+            <img src="../../assets/logo/cross.png" alt class="close">
+            <a href="#">
+                <div class="account panel-item">
+                    <img src="../../assets/logo/person.svg" alt
+                        class="accounticon icon black">
+                    <img class="white"
+                        src="../../assets/logo/person-white.svg" alt>
+                    <p>Compte</p>
+                </div>
+            </a>
+            <hr>
+            <a href="#">
+                <div class="reservations panel-item">
+                    <img src="../../assets/logo/reservations.svg"
+                        alt class="reservationicon icon black">
+                    <img class="white"
+                        src="../../assets/logo/reservations-white.svg"
+                        alt>
+                    <p>Réservations</p>
+                </div>
+            </a>
+            <hr>
+            <a href>
+                <div class="favori panel-item">
+                    <img src="../../assets/logo/favorite.svg" alt
+                        class="favorisicon icon black">
+                    <img class="white"
+                        src="../../assets/logo/favorite-white.svg"
+                        alt>
+                    <p>Favoris</p>
+                </div>
+            </a>
+            <hr>
+            <a>
+                <div class="theme panel-item">
+                    <img src="../../assets/logo/theme.svg" alt
+                        class="themeicon black">
+                    <img class="white"
+                        src="../../assets/logo/theme-white.svg" alt>
+                    <p>Thème</p>
+                </div>
+            </a>
+            <hr>
+            <a>
+                <div class="logout panel-item">
+                    <img src="../../assets/logo/logout.svg" alt
+                        class="signouticon black">
+                    <img class="white"
+                        src="../../assets/logo/logout-white.svg" alt>
+                    <p>Déconnexion</p>
+                </div>
+            </a>
+        </div>
+        <script src="../script/header.js"></script>
     </body>
 </html>

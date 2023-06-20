@@ -73,10 +73,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 
 .panelright .right {
   position: relative;
+  heigh: 100%;
   width: 79.36%;
   display: flex;
   flex-direction: column;
@@ -102,7 +104,7 @@
   color: black;
   font-size: 24px;
   font-family: Futura, sans-serif;
-  margin-left: 40px;
+  margin-left: 24px;
 }
 
 .panelright .messages {
@@ -145,10 +147,6 @@
 .panelright .message .profile p {
   font-size: 18px;
   font-family: Futura, sans-serif;
-}
-
-.profile img {
-  width: 45px;
 }
 
 .panelright .message .description p {
@@ -194,8 +192,29 @@ button {
   margin: 0 !important;
 }
 
-button img {
+.panelright .header img,
+.panelright .right .input img {
   width: 25px;
   height: 25px;
   transform: rotate(-90deg);
+}
+
+.panelright .header img {
+  display: none;
+}
+
+
+@media only screen and (max-width: 840px) {
+  .panelleft {
+    width: 100%;
+  }
+
+  .panelright {
+    display: none;
+  }
+
+  .panelright .header img {
+    display: flex;
+    margin-left: 24px;
+  }
 }
