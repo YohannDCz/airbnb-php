@@ -3,8 +3,8 @@ require_once"../../src/model/Database.php";
 require_once"../../src/model/Reservations.php";
 session_start();
 if (isset($_SESSION['result'])) {
-
-    $result = $_SESSION['result'];}
+    $result = $_SESSION['result'];
+}
 $location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
@@ -17,7 +17,7 @@ $location = new Locations();
 </head>
 <body>
     <?php include "../components/header.php" ?>
-    <link rel="stylesheet" href="../css/locations.css">
+    <link rel="stylesheet" href="../styles/locations.css">
     <nav>
         <div id="nav_bar">
             <form action="../../src/routeur/locationRoutes.php" method="POST">
@@ -33,58 +33,53 @@ $location = new Locations();
                 </div>
             </form>
         </div>
-    </nav>
-    <div id="area_button_filtre">
-        <button id="filtre">
-            Trier
-            <img src="../../assets/logo/filter.png" alt="">
-        </button>
-        <div id="panelfiltre" style="display: none">
-            <form action="../../src/routeur/locationRoutes.php" method="post">
-                <input type="submit" id="desc"        name="desc"        value="Prix Décroissant" >
-                <input type="submit" id="asc"         name="asc"         value="Prix Décroissant" >
-                <input type="submit" id="relevance"   name="relevance"   value="Pertinence"  >
-                <input type="submit" id="pop"         name="pop"         value="Popularité">
-            </form>
+        <div id="area_button_filtre">
+            <button id="filtre">
+                Trier
+                <img src="../../assets/logo/filter.png" alt="">
+            </button>
+            <div id="panelfiltre" style="display: none">
+                <form action="../../src/routeur/locationRoutes.php" method="post">
+                    <input type="submit" id="desc"        name="desc"        value="Prix Décroissant" >
+                    <hr>
+                    <input type="submit" id="asc"         name="asc"         value="Prix Décroissant" >
+                    <hr>
+                    <input type="submit" id="relevance"   name="relevance"   value="Pertinence"  >
+                    <hr>
+                    <input type="submit" id="pop"         name="pop"         value="Popularité">
+                </form>
+            </div>
+            <script src="../script/filtre.js"></script>
         </div>
-        <script src="../script/filtre.js"></script>
-    </div>
+    </nav>
     <?php 
-    echo '<div id="collection">
-        <div id="collection_grid">';
+        echo '<div id="collection">';
+        echo '<div id="collection_grid">';
+
         if (!isset($result)) {
             $result = $location->getlocations();
-            foreach ($result as $r) {
-                echo '<div class="appart_parent" id="appart_1">
-                    <img src="'. $r["pics"] . '" alt="facade villa">
-                    <p class="title">' . $r["name"] . '</p>
-                    <p class="description">' . $r["address"] . '</p>
-                    <p class="description">' . $r["price"] . ' € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>';
-                echo"</div>";
-            }}
-        else {
-            foreach ($result as $r) {
-                echo '<div class="appart_parent" id="appart_1">
-                    <img src="'. $r["pics"] . '" alt="facade villa">
-                    <p class="title">' . $r["name"] . '</p>
-                    <p class="description">' . $r["address"] . '</p>
-                    <p class="description">' . $r["price"] . ' € / nuit</p>
-                    <div class="reserve_button">
-                        <button>Reserver</button>
-                    </div>';
-                echo"</div>";}}
-        
-            ?>
-            ;
-        <div id="more">
+        }
+
+        foreach ($result as $r) {
+            echo '<div class="appart_parent" id="appart_1">';
+            echo '<img src="'. $r["pics"] . '" alt="facade villa">';
+            echo '<p class="title">' . $r["name"] . '</p>';
+            echo '<p class="description">' . $r["address"] . '</p>';
+            echo '<p class="description">' . $r["price"] . ' € / nuit</p>';
+            echo '<div class="reserve_button">';
+            echo '<button>Reserver</button>';
+            echo '</div>';
+            echo '</div>';
+        }
+
+        echo '</div>';
+        echo '</div>';
+    ?>
+        <!-- <div id="more">
             <button id="buttun_more">
                 <p>Voir plus...</p>
             </button>
         </div> -->
-    </div>
     <?php include "../components/footer.php" ?>
 </body>
 </html>

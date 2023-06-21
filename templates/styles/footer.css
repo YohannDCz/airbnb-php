@@ -16,6 +16,7 @@ footer {
     justify-content: space-evenly;
     margin: 0;
     padding: 32px;
+    width: 100%;
 }
 
 footer .container {

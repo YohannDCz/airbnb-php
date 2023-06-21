@@ -1,11 +1,11 @@
-const panel = document.getElementById("panelfiltre")
+const panelfiltre = document.getElementById("panelfiltre")
 const filtre = document.getElementById("filtre")
 
 filtre.addEventListener('click', function() {
-    if (panel.style.display === "none") {
+    if (panelfiltre.style.display === "none") {
         
-        panel.style.display = "flex";
+        panelfiltre.style.display = "flex";
     } else {
-        panel.style.display = "none";
+        panelfiltre.style.display = "none";
     }
 })
