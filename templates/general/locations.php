@@ -21,10 +21,10 @@ $location = new Locations();
     <nav>
         <div id="nav_bar">
             <form action="../../src/routeur/locationRoutes.php" method="POST">
-                <input type="text" id="destination" name="location"    value="Destination" >
-                <input type="text" id="Départ"      name="Departure"   value="Départ" onfocus="(this.type = 'date')">
-                <input type="text" id="Arrivée"     name="Arrival"     value="Arrivée"  onfocus="(this.type = 'date')">
-                <input type="text" id="voyageurs"   name="maxPlaces"   value="Voyageurs">
+                <input type="text" id="destination" name="location"    placeholder="Destination" >
+                <input type="text" id="Départ"      name="Departure"   placeholder="Départ" onfocus="(this.type = 'date')">
+                <input type="text" id="Arrivée"     name="Arrival"     placeholder="Arrivée"  onfocus="(this.type = 'date')">
+                <input type="text" id="voyageurs"   name="maxPlaces"   placeholder="Voyageurs">
                 
                 <div id="img">
                     <div class="btn">

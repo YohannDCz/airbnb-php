@@ -6,8 +6,8 @@ class Database {
     function getConnection() {
         // variables de connection a la bdd
         $servername = "localhost";
-        $username = "Yohann";
-        $password = "Yohann";
+        $username = "root";
+        $password = "";
 
         try {
             $conn = new PDO("mysql:host=$servername;dbname=Project_Airbnb", $username, $password);
