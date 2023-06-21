@@ -21,10 +21,10 @@ $location = new Locations();
     <nav>
         <div id="nav_bar">
             <form action="../../src/routeur/locationRoutes.php" method="POST">
-                <input type="text" id="destination" name="location"    placeholder="Destination" >
-                <input type="text" id="Départ"      name="Departure"   placeholder="Départ" onfocus="(this.type = 'date')">
-                <input type="text" id="Arrivée"     name="Arrival"     placeholder="Arrivée"  onfocus="(this.type = 'date')">
-                <input type="text" id="voyageurs"   name="maxPlaces"   placeholder="Voyageurs">
+                    <input type="text" id="destination" name="location"    placeholder="Destination" >
+                    <input type="text" id="Départ"      name="Departure"   placeholder="Départ" onfocus="(this.type = 'date')">
+                    <input type="text" id="Arrivée"     name="Arrival"     placeholder="Arrivée"  onfocus="(this.type = 'date')">
+                    <input type="text" id="voyageurs"   name="maxPlaces"   placeholder="Voyageurs">
                 
                 <div id="img">
                     <div class="btn">
@@ -40,14 +40,11 @@ $location = new Locations();
             <img src="../../assets/logo/filter.png" alt="">
         </button>
         <div id="panelfiltre" style="display: none">
-            <form action="employee.action" method="post">
-            <p>Prix décroissants</p>
-            <hr>
-            <p>Prix croissants</p>
-            <hr>
-            <p>Pertinence</p>
-            <hr>
-            <p>Popularité</p>
+            <form action="../../src/routeur/locationRoutes.php" method="post">
+                <input type="submit" id="desc"        name="desc"        value="Prix Décroissant" >
+                <input type="submit" id="asc"         name="asc"         value="Prix Décroissant" >
+                <input type="submit" id="relevance"   name="relevance"   value="Pertinence"  >
+                <input type="submit" id="pop"         name="pop"         value="Popularité">
             </form>
         </div>
         <script src="../script/filtre.js"></script>
