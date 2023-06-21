@@ -28,56 +28,34 @@ class Locations
     //Permet de rechercher un logement suivant le nom entré
 
     
-    function searchLocationByInput($location,$maxPlaces)
-    {
+    function searchLocation($location,$maxPlaces,$dbParam,$orderByParam,$ascDesc) {
         //Connecter la BDD
         $db = new Database();
         $location = "%".$location."%";
-        // Ouverture de la connection
+        $where  = '';
+        $orderBy= '';
+        if ($maxPlaces !== '') {
+            $where .= "WHERE max_places > :maxPlaces ";
+        }
+        if ($location !== '' && $maxPlaces !== '') {
+            $where.= "and location LIKE :location or address LIKE :location";
+        }
+        else if ($location !== '' && $maxPlaces === '') {
+            $where.= "WHERE location LIKE :location or address LIKE :location";
+        }
+        if ($orderByParam !== "") {
+            $orderBy .= "ORDER BY ". $orderByParam . $ascDesc;
+        }
         $connection = $db->getConnection();
-
-        //  Requêtes SQL
-        if (isset($location) && isset($maxPlaces)) {
-            $request = $connection->prepare("SELECT * From location WHERE max_places > :maxPlaces && name LIKE :location or address LIKE :location ;");
-        }
-        else if (!isset($location) && isset($maxPlaces)) {
-            $request = $connection->prepare("SELECT * From location WHERE max_places > :maxPlaces;");
-        }
-        else if (isset($location) && !isset($maxPlaces)) {
-            $request = $connection->prepare("SELECT * From location WHERE name LIKE :location or address LIKE :location ;");
-        } 
+        
+        $request = $connection->prepare("SELECT * FROM ". $dbParam . $where . $orderBy .";");
+        
         $request->bindParam(":maxPlaces", $maxPlaces);
         $request->bindParam(":location", $location);
         
         $request->execute();
 
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
-        echo"eeeeeeeeeeeeeeeeeeeeee";
-        return $result;
-    }
-    //fonction générale pour trier efficacement suivant les paramètres données 
-    function ascPriceOrder($dbParam,$param,$orderByParam,$ascDesc)
-    {   
-        $where = '';
-        $orderBy = '';
-        //Connecter la BDD
-        $db = new Database();
-
-        // Ouverture de la connection
-        $connection = $db->getConnection();
-        if (isset($dbParam) && isset($param)) {
-        $where = "WHERE " . $dbParam . " Like :" . $param ."" ;
-        }  
-        if (isset($orderByParam)) {
-            $orderBy = "ORDER BY " . $orderByParam ;
-        }
-        //  Requêtes SQL
-        $request = $connection->prepare("SELECT * FROM location" . $where . $orderBy . $ascDesc . ";");
-
-        $request->execute();
-
-        $result = $request->fetchAll(PDO::FETCH_ASSOC);
-
         return $result;
     }
     //fonction qui permet d'avoir des commentaires 

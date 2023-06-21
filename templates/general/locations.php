@@ -58,8 +58,7 @@ $location = new Locations();
 
         if (!isset($result)) {
             $result = $location->getlocations();
-        }
-
+        };
         foreach ($result as $r) {
             echo '<div class="appart_parent" id="appart_1">';
             echo '<img src="'. $r["pics"] . '" alt="facade villa">';
