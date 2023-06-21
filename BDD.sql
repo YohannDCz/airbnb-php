@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 19, 2023 at 03:25 PM
+-- Generation Time: Jun 21, 2023 at 04:53 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -164,8 +164,21 @@ CREATE TABLE `reviews` (
 --
 
 INSERT INTO `reviews` (`id`, `user_id`, `Review`, `location_id`, `created_at`) VALUES
-(1, 2, '1114427424', 14, '2023-06-19 09:41:56'),
-(4, 2, '5372752542873', 12, '2023-06-19 09:41:56');
+(1, 2, 'Etablissement époustouflant, personnel à l\'écoute. Hâte de pouvoir y retouner. ', 14, '2023-06-21 14:16:36'),
+(2, 8, 'Si vous cherchez le summum du luxe à Paris, ne cherchez pas plus loin que cet extraordinaire endroit. Les vues époustouflantes sur la Seine et les monuments emblématiques depuis les larges fenêtres étaient tout simplement impressionnantes.', 28, '2023-06-21 14:51:18'),
+(3, 4, 'Séjourner dans ce luxueux appartement à Paris est un rêve devenu réalité. L’appartement a été impeccablement conçu, dégageant élégance et sophistication à chaque tournant. ', 11, '2023-06-21 14:22:19'),
+(4, 3, 'L’attention portée aux détails était remarquable, du mobilier exquis aux superbes œuvres d’art qui ornaient les murs. La vue panoramique sur la ville depuis le balcon privé était tout simplement à couper le souffle.', 12, '2023-06-21 14:22:59'),
+(5, 5, 'L’hospitalité de l’hôte a été exceptionnelle, assurant que tous nos besoins ont été satisfaits. Ce fut une expérience de toute une vie!', 15, '2023-06-21 14:27:37'),
+(6, 6, ' Dès que nous sommes entrés dans le grand foyer, nous avons été transportés dans un monde de luxe. Les espaces de vie spacieux étaient ornés de meubles en velours, de lustres ornés et de beaux accents de marbre. ', 19, '2023-06-21 14:31:03'),
+(7, 7, 'Les chambres étaient comme des havres de confort,avec les draps les plus doux et les équipements indulgents.L’emplacement était parfait,avec les monuments les plus emblématiques à quelques pas C’est l’incarnation d’une expérience parisienne haut de gamme.', 23, '2023-06-21 14:51:05'),
+(8, 9, 'Au moment où nous sommes entrés, nous avons été accueillis par une vue imprenable sur la Tour Eiffel à travers les baies vitrées. Le design intérieur était un mélange parfait de modernité et de charme parisien classique. ', 20, '2023-06-21 14:51:33'),
+(9, 10, 'La cuisine gastronomique était un régal pour tous ceux qui aiment cuisiner, et la terrasse privée sur le toit était une oasis de tranquillité au milieu de la ville animée. ', 22, '2023-06-21 14:51:46'),
+(10, 11, 'L’élégance parisienne à son meilleur ! Ce logement a surpassé toutes nos attentes. L’attention aux détails dans chaque coin de cet appartement luxueusement meublé était remarquable.', 15, '2023-06-21 14:51:57'),
+(11, 12, 'L’emplacement central nous a permis d’explorer la ville sans effort, et les recommandations de l’hôte pour les établissements gastronomiques à proximité étaient sur place. Si vous cherchez un séjour vraiment indulgent à Paris, c’est l’endroit idéal !', 24, '2023-06-21 14:52:14'),
+(12, 13, 'Dès le moment où nous sommes entrés dans cet extravagant appartement parisien,nous avons été transportés dans un monde d’opulence.Le design intérieur époustouflant,avec ses hauts plafonds,ses moulures complexes et son mobilier luxueux, nous a émerveillés.', 19, '2023-06-21 14:52:22'),
+(13, 14, 'Chaque aspect de cet appartement méticuleusement conçu respire l’élégance et la sophistication.Le système de divertissement à la fine pointe de la technologie, le spa privé avec jacuzzi et le service de concierge personnel.', 27, '2023-06-21 14:52:31'),
+(14, 15, 'Au moment où nous sommes entrés dans le salon décoré avec goût, nous avons été captivés par le mélange harmonieux de confort moderne et de charme classique français.', 12, '2023-06-21 14:52:40'),
+(15, 16, 'La terrasse spacieuse offrait une vue panoramique imprenable sur la ville, et c’est devenu notre endroit préféré pour profiter d’un verre de vin tout en trempant dans l’ambiance de Paris.', 14, '2023-06-21 14:52:52');
 
 -- --------------------------------------------------------
 
@@ -200,8 +213,21 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `last_name`, `first_name`, `birthdate`, `email`, `phone`, `password`, `Activated`) VALUES
-(2, 'ergret', 'gerg', '2023-06-21', 'grnrbr', 52525, '\"\'\"\'f\"\'ferf', 1),
-(3, 'john', 'richard', '2023-06-21', 'richjohn@gmail.com', 52525, '\"\'\"\'f\"\'ferf', 1);
+(2, 'Thatcher', 'Marcharet', '2023-06-21', 'grnrbr', 52525, '\"\'\"\'f\"\'ferf', 1),
+(3, 'john', 'richard', '2023-06-21', 'richjohn@gmail.com', 52525, '\"\'\"\'f\"\'ferf', 1),
+(4, 'ricot', 'lea', '2023-06-01', 'learicot@gmail.com', 52525, 'ezfzefsdfzefez', 1),
+(5, 'Renold', 'Ryan', '1985-05-07', 'ryanrenold@hotmail.com', 4963214, 'pig', 1),
+(6, 'asthley', 'Rick', NULL, 'nevergonna@giveyou.up', NULL, 'ery', 1),
+(7, 'Williams', 'Olivia', '1985-05-07', 'olivia@gmail.com', NULL, 'zert', 1),
+(8, 'Martinez', 'Lucas', '1985-05-07', 'lucas@gmail.com', NULL, 'azerty', 1),
+(9, 'Lee', 'Sophia', '1985-05-07', 'sophia@yahoo.com', NULL, 'azerty', 1),
+(10, 'Brown', 'Ethan', '1985-05-07', 'ethan@hotmail.com', NULL, 'gjdhjytdj', 1),
+(11, 'Clark', 'Isabella', '1985-05-07', 'isabella@helpme.com', NULL, 'ryujdghtu', 1),
+(12, 'Rodriguez', 'Aiden', '1985-05-07', 'sjdfhs@.com', NULL, 'yujghdxtyuk', 1),
+(13, 'Thomas', 'Harper', '1985-05-07', 'sryu@gmail.ue', NULL, 'rzeytyuiop', 1),
+(14, 'Garcia', 'Benjamin', '1985-05-07', 'dretfyiot__o', NULL, 'rehtrgfhfg', 1),
+(15, 'Hall', 'Charlotte', '1985-05-07', 'aety', NULL, 'QZR', 1),
+(16, 'Taylor', 'Mia', '1985-05-07', 'a\"z\'r-y_uip', NULL, '\"ztyeturykt', 1);
 
 --
 -- Indexes for dumped tables
@@ -286,13 +312,13 @@ ALTER TABLE `location`
 -- AUTO_INCREMENT for table `reviews`
 --
 ALTER TABLE `reviews`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- Constraints for dumped tables
