@@ -24,6 +24,7 @@ $inputColor = $_SESSION["inputColor"];
     }
     #nav_bar input {
         background-color: <?php echo $themeColor; ?>;
+        color: <?php echo $textColor; ?>;
     }
     
     #filtre {
