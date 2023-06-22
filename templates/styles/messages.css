@@ -1,7 +1,15 @@
+body {
+  display: grid !important;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
 .body {
   position: relative;
   display: flex;
-  height: calc(100% - 20%);
+  /* height: calc(100% - 20%); */
+  height: 100%;
+  overflow-y: auto;
   width: 100%;
 }
 
@@ -78,7 +86,7 @@
 
 .panelright .right {
   position: relative;
-  heigh: 100%;
+  height: 100%;
   width: 79.36%;
   display: flex;
   flex-direction: column;
@@ -111,6 +119,8 @@
   display: flex;
   flex-direction: column-reverse;
   justify-content: flex-start;
+  height: 100%;
+  overflow-y: scroll;
 }
 
 .panelright .message {

@@ -158,8 +158,7 @@
                         </div>
                     </div>
                     <form class="input">
-                        <textarea type="text" name="message" placeholder="Votre message">
-                        </textarea>
+                        <textarea  name="message" placeholder="Votre message"></textarea>
                         <div class="btn">
                             <button type="submit"> <span>Continuer</span>
                                 <img

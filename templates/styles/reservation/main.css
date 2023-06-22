@@ -87,10 +87,6 @@
     width: 100%;
 }
 
-#other_img {
-
-}
-
 #other_img img{
     width: 88px;
     height: 88px;
@@ -252,10 +248,6 @@ input[type="date"] {
     align-items: flex-start;
     flex-direction: column;
     width: 100%;
-}
-
-#other_img {
-
 }
 
 #other_img img{

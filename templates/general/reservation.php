@@ -24,8 +24,8 @@
     </style>
     <style>
         <?php
-        include("../css/confirmation_reservation/confirmation_reservation.css");
-        include("../css/confirmation_reservation/main.css");
+        include("../styles/reservation/reservation.css");
+        include("../styles/reservation/main.css");
         ?>
     </style>
 </head>
