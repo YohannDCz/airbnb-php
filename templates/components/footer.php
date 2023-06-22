@@ -19,18 +19,10 @@
             <a href="" class="footer-a">Confidentialité</a>
         </div>
         <div class="container-img">
-            <figure>
                 <img src="../../assets/logo/facebook.svg" alt="">
-            </figure>
-            <figure>
                 <img src="../../assets/logo/instagram.svg" alt="">
-            </figure>
-            <figure>
                 <img src="../../assets/logo/twitter.svg" alt="">
-            </figure>
-            <figure>
                 <img src="../../assets/logo/youtube.svg" alt="">
-            </figure>
         </div>
         </class>
     </footer>

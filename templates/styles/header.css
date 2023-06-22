@@ -27,7 +27,8 @@ header {
     align-items: center;
     border: 1px solid black;
     width: 100%;
-    padding: 21.5px 24px;
+    min-height: 84px;
+    padding: 0 24px;
     align-items: center;
     background-color: black;
     z-index: 98;
@@ -83,8 +84,8 @@ header a {
 .icons {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 25px;
-    height: min-content;
     margin-left: 0px;
 }
 
