@@ -13,7 +13,15 @@ $inputColor = $_SESSION["inputColor"];
         background-color: <?php echo $themeColor; ?>;
         color: <?php echo $textColor; ?>;
     }
-    <!-- location.php -->
+    #panelfiltre { 
+        
+        background-color: <?php echo $themeColor; ?>;
+    }
+    #panelfiltre form input 
+    { 
+        color: <?php echo $textColor; ?>;
+        background-color: <?php echo $themeColor; ?>;
+    }
     #nav_bar input {
         background-color: <?php echo $themeColor; ?>;
     }
@@ -32,7 +40,6 @@ $inputColor = $_SESSION["inputColor"];
         background-color: <?php echo "2px solid " . $inputColor; ?>;
     
     }
-    <!-- homepage.php -->
     div.review_element {
         background-color: <?php echo $themeColor; ?>;
         color: <?php echo $textColor; ?>;
