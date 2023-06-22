@@ -42,7 +42,7 @@ $location = new Locations();
                 <form action="../../src/routeur/locationRoutes.php" method="post">
                     <input type="submit" id="desc"        name="desc"        value="Prix Décroissant" >
                     <hr>
-                    <input type="submit" id="asc"         name="asc"         value="Prix Décroissant" >
+                    <input type="submit" id="asc"         name="asc"         value="Prix croissant" >
                     <hr>
                     <input type="submit" id="relevance"   name="relevance"   value="Pertinence"  >
                     <hr>

@@ -35,19 +35,19 @@ class Locations
         $where  = '';
         $orderBy= '';
         if ($maxPlaces !== '') {
-            $where .= "WHERE max_places > :maxPlaces ";
+            $where .= " WHERE max_places > :maxPlaces ";
         }
         if ($location !== '' && $maxPlaces !== '') {
-            $where.= "and location LIKE :location or address LIKE :location";
+            $where.= "and name LIKE :location or address LIKE :location";
         }
         else if ($location !== '' && $maxPlaces === '') {
-            $where.= "WHERE location LIKE :location or address LIKE :location";
+            $where.= " WHERE name LIKE :location or address LIKE :location";
         }
         if ($orderByParam !== "") {
-            $orderBy .= "ORDER BY ". $orderByParam . $ascDesc;
+            $orderBy .= " ORDER BY ". $orderByParam. " " . $ascDesc;
         }
         $connection = $db->getConnection();
-        
+        echo "SELECT * FROM ". $dbParam . $where . $orderBy .";";
         $request = $connection->prepare("SELECT * FROM ". $dbParam . $where . $orderBy .";");
         
         $request->bindParam(":maxPlaces", $maxPlaces);
