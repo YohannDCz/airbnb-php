@@ -32,6 +32,7 @@ $location = new Locations();
     <link rel="stylesheet" href="../styles/homepage/collection.css">
     <link rel="stylesheet" href="../styles/homepage/argument.css">
     <link rel="stylesheet" href="../styles/homepage/review.css">
+    <link rel="stylesheet" href="../styles/darkTheme.php">
 
 </head>
 <body>

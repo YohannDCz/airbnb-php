@@ -85,7 +85,7 @@
                 </div>
             </a>
             <hr>
-            <a>
+            <a href="../../src/routeur/themeChanger.php">
                 <div class="theme panel-item">
                     <img src="../../assets/logo/theme.svg" alt
                         class="themeicon black">

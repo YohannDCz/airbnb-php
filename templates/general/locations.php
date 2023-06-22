@@ -18,6 +18,7 @@ $location = new Locations();
 <body>
     <?php include "../components/header.php" ?>
     <link rel="stylesheet" href="../styles/locations.css">
+    <link rel="stylesheet" href="../styles/darkTheme.php">
     <nav>
         <div id="nav_bar">
             <form action="../../src/routeur/locationRoutes.php" method="POST">
