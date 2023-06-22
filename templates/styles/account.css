@@ -38,7 +38,6 @@ body{
   flex-shrink: 0;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 1);
 }
 
 .profil-frame1{
@@ -72,7 +71,6 @@ body{
   font-size: 36px;
   font-family: Futura;
   font-weight: 500;
-  color: black;
 }
 
 .profil-text{
@@ -120,7 +118,6 @@ body{
 }
 
 .title-info {
-  color: rgba(0, 0, 0, 1);
   width: 194px;
   height: auto;
   font-size: 22px;
@@ -134,7 +131,6 @@ body{
 }
 
 .text-info {
-  color: rgba(0, 0, 0, 1);
   height: auto;
   font-size: 18px;
   font-style: normal;
@@ -147,7 +143,6 @@ body{
   white-space: wrap;
 }
 .edit {
-  color: rgba(0, 0, 0, 1);
   height: auto;
   font-size: 18px;
   text-align: left;
@@ -163,8 +158,6 @@ button {
   display: flex;
   align-items: center;
   margin: 30px;
-  background-color: #EDD54C;
-  color: black;
   border: none;
   border-radius: 30px;
   width: 110px;
@@ -182,8 +175,6 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EDD54C;
-  color: black;
   border: none;
   border-radius: 30px;
   display: flex;

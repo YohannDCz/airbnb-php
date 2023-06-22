@@ -8,6 +8,8 @@
     </head>
     <body>
         <?php include "../components/header.php" ?>
+
+        
         <div class="body">
             <div class="panelleft">
                 <div class="conversation">

@@ -11,7 +11,6 @@ $inputColor = $_SESSION["inputColor"];
     ?>
     body {
         background-color: <?php echo $themeColor; ?>;
-        
         color: <?php echo $textColor; ?>;
     }
     <!-- location.php -->
@@ -38,3 +37,10 @@ $inputColor = $_SESSION["inputColor"];
         background-color: <?php echo $themeColor; ?>;
         color: <?php echo $textColor; ?>;
     }
+    div.carousel-slide {
+        color: <?php echo "white"; ?>;
+
+    }
+    .link_password a {
+        color: <?php echo $textColor; ?> !important;
+        }

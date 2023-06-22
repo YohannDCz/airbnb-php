@@ -30,6 +30,9 @@
     </style>
 </head>
 <body>
+    
+<link rel="stylesheet" href="../styles/darkTheme.php">
+
     <header>
 
     </header>
