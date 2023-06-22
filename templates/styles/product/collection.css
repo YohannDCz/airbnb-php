@@ -1,5 +1,6 @@
 #collection {
     align-self: center;
+    padding-bottom: 80px;
 }
 
 #left_collection_btn {
@@ -20,6 +21,10 @@
     grid-gap: 16px;
 
 
+}
+
+.appart_parent > * {
+    margin-top: 16px;
 }
 
 .appart_parent img {
@@ -68,6 +73,14 @@
     overflow: hidden;
 }
 
+#collection_title>h3 {
+    font-family: Futura_Heavy;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+
+}
+
 @media (min-width: 750px) {
     #collection_grid {
         grid-template-columns: repeat(3, 200px);
@@ -88,12 +101,16 @@
 
     #collection_title>h3 {
         font-family: Futura_Heavy;
-        font-size: 18px;
+        font-size: 32px;
         overflow: hidden;
-        width: 100%;
+        padding-left: 140px;
         text-align: left;
+        width: 100%;
+        margin-bottom: 80px;
+    }
 
-
+    .appart_parent {
+        margin-right: 32px;
     }
 
     .appart_parent img {
@@ -130,7 +147,7 @@
     }
 
     #left_collection_btn {
-        width: 10%;
+        width: 140px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -140,7 +157,7 @@
     }
 
     #right_collection_btn {
-        width: 10%;
+        width: 140px;
         display: flex;
         justify-content: flex-start;
         align-items: center;

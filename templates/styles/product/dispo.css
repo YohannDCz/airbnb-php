@@ -9,14 +9,20 @@
 #dispo h3 {
     font-family: Futura_Heavy;
     font-size: 32px;
-
-
+    margin-left: 0px;
+    margin-right: 0px;
     overflow: hidden;
+    width: inherit;
+    text-align: center;
+    margin-top: 49px;
 }
 
 #area_dispo {
     display: flex;
     width: 100%;
+    padding-top : 48px;
+    padding-bottom : 64px;
+    margin-left: 16px;
 }
 
 #area_dispo_slider {
@@ -24,7 +30,7 @@
     justify-content: flex-start;
     overflow-x: hidden;
     z-index: 0;
-    width: 100%;
+    flex: 1;
 }
 
 #dispo_slider {
@@ -85,7 +91,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    margin-right: 80px;
 
 
 }
@@ -95,30 +101,35 @@
     color: black;
     border: none;
     border-radius: 10px;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    
 }
 
 .date_dispo_element p {
     margin: 0px;
+}
 
-
-
-
+.statut_dispo_element p {
+    margin-top: 4px;
 }
 
 
 @media (min-width: 1100px) {
 
 
+    #dispo h3 {
+        margin-top: 140px;
+        padding-left: 140px;
+        width: 100%;
+        text-align: left;
+        margin-top: 0px;
+    }
+
     #dispo {
         align-self: none;
         width: 100%;
-    }
-
-    #dispo>h3 {
-        width: 100%;
-        text-align: left;
-
-
     }
 
     #dispo_slider {
@@ -128,7 +139,7 @@
     }
 
     #left_dispo_btn {
-        width: 10%;
+        width: 140px;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -138,7 +149,7 @@
     }
 
     #right_dispo_btn {
-        width: 10%;
+        width: 140px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -172,11 +183,10 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
-
         width: 100%;
         overflow-x: hidden;
         z-index: 0;
+        margin-left: 0px;
     }
 
     #dispo_slider {

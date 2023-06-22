@@ -88,9 +88,6 @@
                     <h2 id="price_tag">0</h2>
                     <h2>&nbsp€</h2>
                 </div>
-                <div id="garanties">
-
-                </div>
                 <div id="submit_div">
                     <button id="submit_button">
                         <p>Reserver</p>
@@ -377,6 +374,6 @@
     </div>
 </div>
     <?php include "../components/footer.php" ?>
-    <script src="../script/product.js"></script>
+    <script src="../script/productpage.js"></script>
 </body>
 </html>
