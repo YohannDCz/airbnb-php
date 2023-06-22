@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#product {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+#aera_product {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: space-between;
+    flex-direction: column-reverse;
+}
+
+#left_aera_product {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+#right_aera_product {
+    display: flex;
+    min-height: 90vh;
+    width: inherit;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    padding: 14px;
+}
+
+#right_aera_product h1 {
+    font-family: Didot, serif;
+    ;
+    font-size: 36px;
+    margin: 0px;
+}
+
+#main_img img {
+    width: 240px;
+    height: 240px;
+    border-radius: 10px;
+}
+
+#other_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+}
+
+#other_img img {
+    width: 88px;
+    height: 88px;
+    margin-right: 10px;
+}
+
+#adresse {
+    display: flex;
+    margin-top: 0px;
+}
+
+#adresse p {
+    display: flex;
+    font-size: 20px;
+}
+
+#calender p {
+    display: flex;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#calender_au {
+    margin-top: 16px;
+}
+
+#calender_du input {
+    margin-top: 10px;
+}
+
+#calender_au input {
+    margin-top: 10px;
+}
+
+input[type="date"] {
+    width: 292px;
+    height: 46px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+#calender_du div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_du div p {
+    margin-left: 10px;
+}
+
+#calender_au div {
+    display: flex;
+    width: inherit;
+    flex-direction: row;
+}
+
+#calender_au div p {
+    margin-left: 10px;
+}
+
+#total {
+    display: flex;
+    flex-direction: row;
+}
+
+#other_img button {
+    padding: 0px;
+    background-color: white;
+    height: auto;
+}
+
+#submit_button p {
+    font-size: 20px;
+}
+
+@media (min-width: 1100px) {
+
+
+    #product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+    }
+
+    #aera_product {
+        margin-top: 140px;
+        width: 100%;
+        height: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 140px;;
+        
+    }
+
+    #left_aera_product {
+        display: flex;
+        height: inherit;
+
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #right_aera_product {
+        min-height: auto;
+        display: flex;
+        height: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 400px;
+    }
+
+    #right_aera_product h1 {
+        font-family: Didot, serif;
+        ;
+        font-size: 48px;
+        margin: 0px;
+    }
+
+    #main_img img {
+        width: 566px;
+        height: 566px;
+        border-radius: 10px;
+    }
+
+    #other_img {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #other_img img {
+        width: 88px;
+        height: 88px;
+        margin-right: 10px;
+    }
+
+    #adresse {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #adresse p {
+        display: flex;
+        font-size: 20px;
+    }
+
+    #calender p {
+        display: flex;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    input[type="date"] {
+        width: 292px;
+        height: 46px;
+        border: 1px solid #000000;
+        border-radius: 10px;
+    }
+
+    #calender_du div {
+        display: flex;
+        width: inherit;
+        flex-direction: row;
+    }
+
+    #calender_du div p {
+        margin-left: 10px;
+    }
+
+    #calender_du input {
+        margin-top: 10px;
+    }
+
+    #calender_au {
+        margin-top: 20px;
+    }
+
+    #calender_au div {
+        display: flex;
+        width: inherit;
+        flex-direction: row;
+    }
+
+    #calender_au div p {
+        margin-left: 10px;
+    }
+
+    #calender_au input {
+        margin-top: 10px;
+    }
+
+    #total {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #other_img button {
+        padding: 0px;
+        background-color: white;
+    }
+
+    #submit_div {
+        width: inherit;
+    }
+
+    #submit_button {
+        display: flex;
+        width: 100%;
+    }
+
+    #submit_button p {
+        font-size: 20px;
+    }
+
+}

@@ -1,21 +1,22 @@
 <?php
 class Database {
-    //Code recyclé  en partie du projet précédent et aussi de https://www.w3schools.com/php/php_mysql_connect.asp 
+    //Code recyclé du projet précédent et aussi de https://www.w3schools.com/php/php_mysql_connect.asp 
 
     //Fonction qui permet de se connecter à la base de données
-    function getConnection () {
+    function getConnection() {
         // variables de connection a la bdd
         $servername = "localhost";
-        $username = "root";
-        $password = "";
-        
+        $username = "Yohann";
+        $password = "Yohann";
+
         try {
-        $conn = new PDO("mysql:host=$servername;dbname=Project_Airbnb", $username, $password);
-        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        echo "SUCCESS";
+            $conn = new PDO("mysql:host=$servername;dbname=Project_Airbnb", $username, $password);
+            $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            return $conn;
         } 
         catch(PDOException $exception) {
-        echo "ERROR: " . $exception->getMessage();
+            echo "ERROR: " . $exception->getMessage();
+            return null;
         }
         }
     }

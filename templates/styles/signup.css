@@ -1,0 +1,167 @@
+@font-face {
+    font-family: FuturaMediumBT;
+    src: url(../../assets/font/FuturaMediumBT.ttf);
+}
+
+@font-face {
+    font-family: Vogue;
+    src: url(../../assets/font/Vogue.ttf);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 80px;
+    font-family: Futura, sans-serif;
+}
+
+.signup_box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 0px;
+    width: 250px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.signup_box_second {
+    height: 200px;
+}
+
+#left {
+    color: black;
+    font-size: 18px;
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.mail_input {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.prenom_input {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#confirm_password {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#phone {
+    border-bottom: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.acount_exist {
+    text-align: center;
+    margin: 40px 0 40px;
+    font-family: Futura, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-family: Futura, sans-serif;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.btn {
+    display: flex;
+    justify-self: center;
+
+}
+
+button {
+    display: flex;
+    align-items: center;
+    background-color: #EDD54C;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    width: 110px;
+    height: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 !important;
+}
+
+button img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    width: 28px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logo-container h1 {
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.logo-container h1 {
+    color: white;
+    display: inline-block;
+    font-family: 'Vogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27.01px;
+    line-height: 24px;
+    margin: 7px 0 0 13px;
+    vertical-align: middle;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    .signup_box {
+        width: 475px;
+        height: 210px;
+    }
+
+    .signup_box input {
+
+        width: 475px;
+        height: 70px;
+    }
+
+    h2 {
+        margin: 0;
+        line-height: 37px;
+    }
+}
