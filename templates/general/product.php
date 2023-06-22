@@ -38,6 +38,7 @@
 </head>
 <body>
     <?php include "../components/header.php" ?>
+    <link rel="stylesheet" href="../styles/darkTheme.php">
 <div class="column">
     <div id="product">
         <div id="aera_product">
