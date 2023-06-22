@@ -47,7 +47,7 @@
 }
 
 #left_review_btn button {
-    background-color: white;
+    /* background-color: white; */
     border: 0px;
     height: 0px;
     width: 0px;
@@ -60,7 +60,7 @@
 
 
 #right_review_btn  button{
-    background-color: white;
+    /* background-color: white; */
     border: 0px;
     height: 70px;
     width: 70px;
@@ -82,8 +82,6 @@
 .review_element {
     height: 364px;
     min-width: 230px;
-    background-color: white;
-    /* border: 1px solid black; */
     margin-left: 12px;
     margin-top: 42px;
     margin-bottom: 42px;
@@ -152,7 +150,7 @@
     }
 
     #left_review_btn button {
-        background-color: white;
+        /* background-color: white; */
 
         height: 0px;
         width: 0px;
@@ -163,7 +161,7 @@
 
     
     #right_review_btn  button{
-        background-color: white;
+        /* background-color: white; */
         height: 70px;
         width: 70px;
         border-radius: 90px;

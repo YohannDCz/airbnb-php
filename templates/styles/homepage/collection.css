@@ -48,7 +48,7 @@
 
 #buttun_more {
     margin-top: 0px;
-    background-color: white;
+    /* background-color: white; */
     font-family:Futura_Heavy;
 }
 
@@ -145,7 +145,7 @@
     }
 
     #left_collection_btn button {
-        background-color: white;
+        /* background-color: white; */
         height: 0px;
         width: 0px;
         border-radius: 90px;
@@ -157,7 +157,7 @@
 
     
     #right_collection_btn  button{
-        background-color: white;
+        /* background-color: white; */
         height: 70px;
         width: 70px;
         border-radius: 90px;
