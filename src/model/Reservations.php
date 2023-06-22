@@ -76,6 +76,23 @@ class Locations
 
         return $result;
     }
+    function getNumberOfReviews() {
+        
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("SELECT reviews.review, location.*, COUNT(*) FROM reviews INNER JOIN location ON location.id = reviews.location_id GROUP BY reviews.location_id order by COUNT(*); ");
+
+        $request->execute();
+
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
     // //Filtre les résultats par ordre décroissant des prix
     // function descPriceOrder()
     // {
@@ -226,9 +243,9 @@ class Locations
     function searchByDate() {
         pass;
     }
-    //WIP
-    function createLocation() {
-        function addUser($address, $password, $name, $price, $pics,$max_places, $description, $currentlyFree){
+    //fonction qui permet de rajouter des logements 
+    function createLocation($address, $area, $name, $price, $pics,$max_places, $description, $currentlyFree) 
+        {
             //  Connecter la BDD
             $db = new Database();
             // Ouverture de la connection
@@ -265,4 +282,3 @@ class Locations
         }
     
     }
-}

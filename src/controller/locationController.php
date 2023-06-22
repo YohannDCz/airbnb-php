@@ -41,8 +41,10 @@ function showQueryResults() {
             break;
         case in_array('relevance', $_POST):
             pass;
-        case in_array('pop', $_POST):
-            pass;
+        case in_array('Popularité', $_POST):
+            $location = new Locations;
+            $result = $location->getNumberOfReviews();
+            return $result;
     }
     $location = new Locations;
     if (isset($_SESSION["searchedLocation"])) {
