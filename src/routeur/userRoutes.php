@@ -1,4 +1,12 @@
 <?php
+require_once '../controller/userController.php';
+
+login();
+
+
+
+
+
 
 // require_once 'src/controller/userController.php';
 

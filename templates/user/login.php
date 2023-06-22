@@ -11,11 +11,11 @@
         <?php include "../components/header-mini.php" ?>
         <div class="login">
             <h1>Connexion</h1>
-            <form action>
+            <form method="POST" action="/MiniAirbnb/src/routeur/userRoutes.php">
                 <div class="form">
                 <div class="box_login">
-                    <input type="email" name id placeholder="Adresse mail @">
-                    <input type="password" name id="mot_de_passe"
+                    <input type="email" name='email' id placeholder="Adresse mail @">
+                    <input type="password" name='password' id="mot_de_passe"
                         placeholder="Mot de passe">
                 </div>
                 <div class="link_password">
@@ -23,7 +23,7 @@
                     <a href="#" id="right">S'inscrire</a>
                 </div>
                 <div class="btn">
-                    <button> Continuer <img
+                    <button type="submit"> Continuer <img
                     src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-arrow-right-c-1024.png"
                     alt="flèche"> </button>
                 </div>
