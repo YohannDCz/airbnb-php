@@ -63,7 +63,7 @@
                 </div>
             </a>
             <hr>
-            <a href="#">
+            <a href="../user/">
                 <div class="reservations panel-item">
                     <img src="../../assets/logo/reservations.svg"
                         alt class="reservationicon icon black">
