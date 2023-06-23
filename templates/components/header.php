@@ -63,7 +63,7 @@
                 </div>
             </a>
             <hr>
-            <a href="../user/">
+            <a href="../../templates\user\profil_reservation.php">
                 <div class="reservations panel-item">
                     <img src="../../assets/logo/reservations.svg"
                         alt class="reservationicon icon black">
@@ -74,7 +74,7 @@
                 </div>
             </a>
             <hr>
-            <a href>
+            <a href="../../templates\user\favoris.php">
                 <div class="favori panel-item">
                     <img src="../../assets/logo/favorite.svg" alt
                         class="favorisicon icon black">
