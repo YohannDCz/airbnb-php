@@ -8,6 +8,7 @@
 </head>
 <body>
     <?php include "../components/header.php" ?>
+    <link rel="stylesheet" href="../styles/darkTheme.php">
     <div class="profil_container2">
         <div class="reservation">
             <h2>Reservation</h2>

@@ -9,6 +9,7 @@
 </head>
 <body>
     <?php include "../components/header.php" ?>
+    <link rel="stylesheet" href="../styles/darkTheme.php">
     <div id="collection">
             <h2>Favoris</h2>
         <div id="top_collection">
