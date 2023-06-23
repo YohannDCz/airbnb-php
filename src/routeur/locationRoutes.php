@@ -3,7 +3,10 @@ require_once"../controller/locationController.php";
 $_SESSION['result'] = null;
 
 //Easter Egg Rick Rolled !
-
+if ($_POST["location"] === "Rick And Roll" || $_POST["location"] === "Rick Roll" ) {
+    header("location: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj95_my8NP_AhUhUqQEHckhC_QQ3yx6BAglEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU&opi=89978449");
+    return;
+    };
 //Active la fonction qui va aller chercher les logements
 $result = showQueryResults();
 
