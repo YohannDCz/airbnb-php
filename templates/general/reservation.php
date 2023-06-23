@@ -68,7 +68,7 @@
                     </button>
                 </div>
             </div>
-            <h1>VIlla Paris 12e</h1>
+            <h1>Villa Paris 12e</h1>
             <div id="adresse">
                 <img src="../../assets/logo/map.svg" alt="">
                 <p>22, rue des champs elysées </p>

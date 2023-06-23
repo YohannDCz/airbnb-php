@@ -66,7 +66,7 @@ nav {
     margin-top: 8px
 }
 
-#panelfiltre form input:not(:last-child) {
+#panelfiltre p:not(:last-child) {
     margin-bottom: 8px;
 }
 
