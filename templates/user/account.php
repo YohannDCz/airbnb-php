@@ -86,7 +86,7 @@
         <?php include "../components/footer.php" ?>
         <script>
             
-            const userId = 1;
+            const userId = 2;
 
             fetchJson()
 
