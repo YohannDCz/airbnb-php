@@ -1,3 +1,5 @@
+<?php 
+session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -86,7 +88,7 @@
         <?php include "../components/footer.php" ?>
         <script>
             
-            const userId = 2;
+            const userId = "<?php echo $_SESSION["userId"]; ?>";
 
             fetchJson()
 

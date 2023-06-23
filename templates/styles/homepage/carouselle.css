@@ -154,12 +154,12 @@ input[name="carousel-css"][value="slide-3"]:checked ~ .carousel-wrapper .carouse
 }
 
 #second_carousel {
-    background-image: url("../../../assets/img/immeuble.png");
+    background-image: url("../../../assets/img/BalconParis.jpg");
     background-size: cover;
 }
 
 #third_carousel {
-    background-image: url("../../../assets/img/immeuble.png");
+    background-image: url("../../../assets/img/MaisonLuxe.png");
     background-size: cover;
 }
 
