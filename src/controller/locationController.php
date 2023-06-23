@@ -1,5 +1,5 @@
 <?php 
-require_once('../model/Database.php');
+require_once('../../src/model/Database.php');
 require_once('../../src/model/Reservations.php');
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
@@ -15,6 +15,19 @@ function ShowLocation() {
 
     return $result;
 }
+function showPastBooking() {
+    session_start();
+    
+    $userId = $_SESSION["userId"];
+
+    $location = new Locations;
+
+    $pastBooking = $location->getLocationOnStatus($userId);
+
+    return $pastBooking;
+}
+
+
 
 function showQueryResults() {
     session_start();
@@ -59,6 +72,5 @@ function showQueryResults() {
     $result = $location->searchLocation($searchedLocation,$maxPlaces,"location",$orderBy,$ascDesc);
     return $result;
 }
-
 
 

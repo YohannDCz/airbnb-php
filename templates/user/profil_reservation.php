@@ -1,3 +1,7 @@
+<?php require_once"../../src/model/Database.php";
+require_once"../../src/controller/locationController.php";
+$location = new Locations();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,100 +79,27 @@
                     <img src="../../assets/logo/arrow-black.png" alt="">
                 </button>
             </div>
-            <div id="area_collection_grid">
-            <div id="collection_grid">
-                <div class="appart_parent" id="appart_1">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
+            <?php 
+        echo '<div id="area_collection_grid">';
+        echo '<div id="collection_grid">';
 
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
+        $result = $location->showPastBooking();
+        foreach ($result as $r) {
+            echo '<div class="appart_parent" id="appart_1">';
+            echo '<img src="'. $r["pics"] . '" alt="facade villa">';
+            echo '<p class="title">' . $r["name"] . '</p>';
+            echo '<p class="description">' . $r["address"] . '</p>';
+            echo '<p class="description">' . $r["price"] . ' € / nuit</p>';
+            echo '<div class="reserve_button">';
+            echo '<button>Reserver</button>';
+            echo '</div>';
+            echo '</div>';
+        }
 
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-                <div class="appart_parent">
-                    <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                    <p class="title">Villa Paris 12e</p>
-                    <p class="description">22, rue des champs elysées </p>
-                    <p class="date">Du 12/12/2023 </p>
-                    <p class="date">Au 12/12/2024 </p>
-                    <p class="price">Total: 1450€ </p>
-                    <div class="reserve_button">
-                        <button>Laisser un avis</button>
-                    </div>
-                </div>
-            </div>
-            </div>
+        echo '</div>';
+        echo '</div>';
+    ?>
+            
             <div id="right_collection_btn">
                 <button>
                     <img src="../../assets/logo/arrow-black.png" alt="">

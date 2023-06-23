@@ -76,6 +76,23 @@ class Locations
 
         return $result;
     }
+    function getLocationReviews() {
+        
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("SELECT reviews.*, users.* FROM reviews INNER JOIN users ON users.id = reviews.user_id;");
+
+        $request->execute();
+
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+    }
     function getNumberOfReviews() {
         
         //Connecter la BDD
@@ -92,6 +109,25 @@ class Locations
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
 
         return $result;
+    }
+    function getLocationOnStatus($userId) {
+        //Connecter la BDD
+        $db = new Database();
+
+        // Ouverture de la connection
+        $connection = $db->getConnection();
+
+        //  Requêtes SQL
+        $request = $connection->prepare("SELECT location.* FROM location INNER JOIN booking ON location.id = booking.location_id INNER JOIN users WHERE booking_status = 1 and users.id = :userId; ");
+
+        $request->bindParam(":userId", $userId);
+
+        $request->execute();
+
+        $result = $request->fetchAll(PDO::FETCH_ASSOC);
+
+        return $result;
+
     }
     // //Filtre les résultats par ordre décroissant des prix
     // function descPriceOrder()
