@@ -10,19 +10,20 @@
 </head>
 <body>
     <footer>
+        <!-- Les liens ne fonctionnent pas, nous n'avons pas eu le temps de faire ces parties là -->
         <div class = "container">
             <p>© 2023 Taillé d’or, Inc. </p>
-            <a href="" class="footer-a">Infos sur l'entreprise</a>
-            <a href="" class="footer-a">Fonctionnement du site</a>
-            <a href="" class="footer-a">Conditions générales</a>
-            <a href="" class="footer-a">Plan du site</a>
-            <a href="" class="footer-a">Confidentialité</a>
+            <a href="../user/contactus.php" class="footer-a">Infos sur l'entreprise</a>
+            <a href="#" class="footer-a">Fonctionnement du site</a>
+            <a href="#" class="footer-a">Conditions générales</a>
+            <a href="#" class="footer-a">Plan du site</a>
+            <a href="#" class="footer-a">Confidentialité</a>
         </div>
         <div class="container-img">
-                <img src="../../assets/logo/facebook.svg" alt="">
-                <img src="../../assets/logo/instagram.svg" alt="">
-                <img src="../../assets/logo/twitter.svg" alt="">
-                <img src="../../assets/logo/youtube.svg" alt="">
+                <a href="https://www.facebook.com/" target="_blank"><img src="../../assets/logo/facebook.svg" alt=""></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="../../assets/logo/instagram.svg" alt=""></a>
+                <a href="https://twitter.com/" target="_blank"><img src="../../assets/logo/twitter.svg" alt=""></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="../../assets/logo/youtube.svg" alt=""></a>
         </div>
         </class>
     </footer>

@@ -53,7 +53,7 @@
         </header>
         <div class="panel" style="display: none">
             <img src="../../assets/logo/cross.png" alt class="close">
-            <a href="#">
+            <a href="../user/account.php">
                 <div class="account panel-item">
                     <img src="../../assets/logo/person.svg" alt
                         class="accounticon icon black">
@@ -95,7 +95,7 @@
                 </div>
             </a>
             <hr>
-            <a>
+            <a href="../user/login.php">
                 <div class="logout panel-item">
                     <img src="../../assets/logo/logout.svg" alt
                         class="signouticon black">
