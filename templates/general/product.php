@@ -1,4 +1,7 @@
 <?php
+require_once"../../src/model/Database.php";
+require_once"../../src/model/Reservations.php";
+$location = new Locations();
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -224,84 +227,28 @@
                     <img src="../../assets/logo/arrow-black.png" alt="">
                 </button>
             </div>
-            <div id="area_collection_grid">
-                <div id="collection_grid">
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
+            <?php 
+        echo '<div id="area_collection_grid">';
+        echo '<div id="collection_grid">';
 
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
+        if (!isset($result)) {
+            $result = $location->getlocations();
+        };
+        foreach ($result as $r) {
+            echo '<div class="appart_parent" id="appart_1">';
+            echo '<img src="'. $r["pics"] . '" alt="facade villa">';
+            echo '<p class="title">' . $r["name"] . '</p>';
+            echo '<p class="description">' . $r["address"] . '</p>';
+            echo '<p class="description">' . $r["price"] . ' € / nuit</p>';
+            echo '<div class="reserve_button">';
+            echo '<button>Reserver</button>';
+            echo '</div>';
+            echo '</div>';
+        }
 
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                    <div class="appart_parent">
-                        <img src="../../assets/img/img_facade_villa.jpg" alt="facade villa">
-                        <p class="title">Villa Paris 12e</p>
-                        <p class="description">22, rue des champs elysées </p>
-                        <p class="description">600 € / nuit</p>
-                        <div class="reserve_button">
-                            <button>Reserver</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        echo '</div>';
+        echo '</div>';
+    ?>
             <div id="right_collection_btn">
                 <button>
                     <img src="../../assets/logo/arrow-black.png" alt="">
@@ -324,46 +271,16 @@
             </div>
             <div id="area_review_slider">
                 <div id="review_slider">
-                    <div class="review_element">
-                        <h3>Sophie Dupont</h3>
-                        <p>Superbe logement ! Propre, spacieux et décoré avec goût. Nous avons passé un séjour vraiment agréable.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Alexandre Martin</h3>
-                        <p>L'emplacement de ce logement est idéal. Il est proche des attractions touristiques, des restaurants et des transports en commun. Parfait pour explorer la ville.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Emma Tremblay</h3>
-                        <p>Les propriétaires sont très accueillants et attentifs à nos besoins. Ils nous ont fourni toutes les informations nécessaires pour profiter au maximum de notre séjour.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Gabriel Sanchez</h3>
-                        <p>Les propriétaires sont très accueillants et attentifs à nos besoins. Ils nous ont fourni toutes les informations nécessaires pour profiter au maximum de notre séjour.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Olivia Thompson</h3>
-                        <p>Les propriétaires sont très accueillants et attentifs à nos besoins. Ils nous ont fourni toutes les informations nécessaires pour profiter au maximum de notre séjour.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Liam Patel</h3>
-                        <p>La résidence est très calme et sécurisée. Nous nous sommes sentis en toute tranquillité pendant notre séjour, ce qui a ajouté une dimension de relaxation supplémentaire.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Charlotte Dubois</h3>
-                        <p>La résidence est très calme et sécurisée. Nous nous sommes sentis en toute tranquillité pendant notre séjour, ce qui a ajouté une dimension de relaxation supplémentaire.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Noah Kim</h3>
-                        <p>La résidence est très calme et sécurisée. Nous nous sommes sentis en toute tranquillité pendant notre séjour, ce qui a ajouté une dimension de relaxation supplémentaire.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Mia Garcia</h3>
-                        <p>Le lit était extrêmement confortable, ce qui nous a permis de bien nous reposer après des journées bien remplies de visites et d'activités.</p>
-                    </div>
-                    <div class="review_element">
-                        <h3>Lucas Anderson</h3>
-                        <p>Nous recommandons vivement ce logement à tous ceux qui souhaitent passer un séjour mémorable. Nous n'hésiterons pas à réserver à nouveau lors de notre prochaine visite.</p>
-                    </div>
+                <?php 
+                    $result = $location->getReviews();
+                    foreach ($result as $r) {
+                        echo '<div class="review_element">
+                                    <h3>' . $r["first_name"] . " " . $r["last_name"] . "</h3> 
+                                    <p>" . $r["Review"] . "<p> 
+                            </div>"; 
+                    };
+                    
+                    ?>
                 </div>
             </div>
             <div id="right_review_btn">
@@ -375,6 +292,6 @@
     </div>
 </div>
     <?php include "../components/footer.php" ?>
-    <script src="../script/productpage.js"></script>
+    <script src="../script/product.js"></script>
 </body>
 </html>
