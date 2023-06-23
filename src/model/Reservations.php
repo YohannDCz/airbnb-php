@@ -110,7 +110,7 @@ class Locations
 
         return $result;
     }
-    function getLocationOnStatus($userId) {
+    function getLocationOnStatus($userId,$status) {
         //Connecter la BDD
         $db = new Database();
 
@@ -118,9 +118,10 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT location.* FROM location INNER JOIN booking ON location.id = booking.location_id INNER JOIN users WHERE booking_status = 1 and users.id = :userId; ");
+        $request = $connection->prepare("SELECT location.* FROM location INNER JOIN booking ON location.id = booking.location_id INNER JOIN users WHERE booking_status = :status and users.id = :userId; ");
 
         $request->bindParam(":userId", $userId);
+        $request->bindParam(":status", $status);
 
         $request->execute();
 

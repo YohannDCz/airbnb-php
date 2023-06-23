@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once('../model/Database.php');
 require_once('../model/User.php');
 
@@ -27,6 +28,7 @@ function login() {
 
     if (password_verify($password, $userDb["password"])) {
         $_SESSION["loggedin"] = true;
+        $_SESSION["userId"] = $userDb["id"];
         header("Location: ../../templates/general/homepage.php");
         return true;
     } else {

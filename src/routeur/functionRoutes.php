@@ -1,5 +1,5 @@
 <?php
-
+//RIP Router, #haventhadthechancetoknowyou
 // // require de tous les controllers
 // require_once 'src/controller/userController.php';
 // require_once 'src/controller/locationController.php';

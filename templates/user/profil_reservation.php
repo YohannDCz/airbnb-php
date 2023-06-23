@@ -1,6 +1,9 @@
-<?php require_once"../../src/model/Database.php";
+<?php 
+require_once"../../src/model/Database.php";
 require_once"../../src/controller/locationController.php";
 $location = new Locations();
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +15,7 @@ $location = new Locations();
 </head>
 <body>
     <?php include "../components/header.php" ?>
-    <link rel="stylesheet" href="../styles/darkTheme.php">
+    <link rel="stylesheet" href="../styles/dark_theme.php">
     <div class="profil_container2">
         <div class="reservation">
             <h2>Reservation</h2>
@@ -83,7 +86,7 @@ $location = new Locations();
         echo '<div id="area_collection_grid">';
         echo '<div id="collection_grid">';
 
-        $result = $location->showPastBooking();
+        $result = showBooking("1");
         foreach ($result as $r) {
             echo '<div class="appart_parent" id="appart_1">';
             echo '<img src="'. $r["pics"] . '" alt="facade villa">';

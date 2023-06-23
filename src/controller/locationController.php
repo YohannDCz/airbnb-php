@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once('../../src/model/Database.php');
 require_once('../../src/model/Reservations.php');
 
@@ -15,20 +16,21 @@ function ShowLocation() {
 
     return $result;
 }
-function showPastBooking() {
-    session_start();
+
+//fonction permettant d'afficher les réservations passées de chaque utilisateur suivant son id de session, la variable $status permettant de savoir si la réservation est 1-passée 2-en cours 3-future 4-mise en dans les favoris
+function showBooking($status) {
     
-    $userId = $_SESSION["userId"];
+    $userId = $_SESSION["userId"] ;
 
     $location = new Locations;
 
-    $pastBooking = $location->getLocationOnStatus($userId);
+    $pastBooking = $location->getLocationOnStatus($userId,$status);
 
     return $pastBooking;
 }
 
 
-
+//fonction qui permet de montrer les résultats de la recherche 
 function showQueryResults() {
     session_start();
     $ascDesc = '';
@@ -37,12 +39,11 @@ function showQueryResults() {
         $_SESSION["searchedLocation"] = $_POST["location"];
         $_SESSION["maxPlaces"] = $_POST["maxPlaces"];
     }
-    if (isset($_POST["location"])) {
-        if ($_POST["location"] === "Rick And Roll" || $_POST["location"] === "Rick Roll" ) {
-            header("location: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj95_my8NP_AhUhUqQEHckhC_QQ3yx6BAglEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU&opi=89978449");
-            return;
+    if ($_POST["location"] === "Rick And Roll" || $_POST["location"] === "Rick Roll" ) {
+        header("location: https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj95_my8NP_AhUhUqQEHckhC_QQ3yx6BAglEAI&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DdQw4w9WgXcQ&usg=AOvVaw0aHtehaphMhOCAkCydRLZU&opi=89978449");
+        return;
         };
-    }
+    
     switch($_POST) {
         case in_array('Prix Décroissant', $_POST):
             $ascDesc = "DESC";

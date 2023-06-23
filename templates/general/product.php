@@ -41,7 +41,7 @@ $location = new Locations();
 </head>
 <body>
     <?php include "../components/header.php" ?>
-    <link rel="stylesheet" href="../styles/darkTheme.php">
+    <link rel="stylesheet" href="../styles/dark_theme.php">
 <div class="column">
     <div id="product">
         <div id="aera_product">

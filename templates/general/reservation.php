@@ -31,7 +31,7 @@
 </head>
 <body>
     
-<link rel="stylesheet" href="../styles/darkTheme.php">
+<link rel="stylesheet" href="../styles/dark_theme.php">
 
     <header>
 
