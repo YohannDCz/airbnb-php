@@ -110,7 +110,6 @@ body {
   font-style: italic;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: black;
   text-align: left;
 }
 
@@ -118,7 +117,6 @@ body {
   font-family: EpilogueSemiBold;
   font-size: 18px;
   font-weight: 600;
-  color: #000000;
   margin-bottom: 13px;
   text-align: left;
 }
@@ -127,7 +125,6 @@ body {
   font-family: EpilogueRegular;
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
   margin-bottom: 5px;
   text-align: left;
 }
@@ -136,7 +133,6 @@ body {
   font-family: EpilogueRegular;
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
   margin-top: 14px;
   margin-bottom: 5px;
   text-align: left;
@@ -144,8 +140,6 @@ body {
 
 .appartement button {
   margin-top: 15px;
-  background-color: #EDD54C;
-  color: black;
   font-family: FuturaMediumBT;
   font-style: normal;
   font-weight: 500;
@@ -209,7 +203,6 @@ body {
   font-style: italic;
   margin-bottom: 10px;
   margin-top: 20px;
-  color: black;
   text-align: left;
 }
 
@@ -217,7 +210,6 @@ body {
   font-family: EpilogueSemiBold;
   font-size: 18px;
   font-weight: 600;
-  color: #000000;
   margin-bottom: 13px;
   text-align: left;
 }
@@ -226,7 +218,6 @@ body {
   font-family: EpilogueRegular;
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
   margin-bottom: 5px;
   text-align: left;
 }
@@ -235,7 +226,6 @@ body {
   font-family: EpilogueRegular;
   font-size: 18px;
   font-weight: 400;
-  color: #000000;
   margin-top: 14px;
   margin-bottom: 5px;
   text-align: left;
@@ -243,8 +233,6 @@ body {
 
 .appart_parent button {
   margin-top: 15px;
-  background-color: #EDD54C;
-  color: black;
   font-family: FuturaMediumBT;
   font-style: normal;
   font-weight: 500;
@@ -362,8 +350,6 @@ body {
 @media (min-width: 1300px) {
   .appartement button {
     margin-top: 15px;
-    background-color: #EDD54C;
-    color: black;
     font-family: FuturaMediumBT;
     font-style: normal;
     font-weight: 500;
