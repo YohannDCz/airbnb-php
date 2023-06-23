@@ -78,7 +78,7 @@
                     />
                 </div>
                 <div class="acount_exist">
-                    <a href="#" id="left">Vous êtes déjà client ?</a>
+                    <a href="login.php" id="left">Vous êtes déjà client ?</a>
                 </div>
                 <div class="btn">
                     <button type="submit">

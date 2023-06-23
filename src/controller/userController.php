@@ -27,7 +27,7 @@ function login() {
 
     if (password_verify($password, $userDb["password"])) {
         $_SESSION["loggedin"] = true;
-        header("Location: http://localhost/MiniAirbnb/templates/general/homepage.php");
+        header("Location: ../../templates/general/homepage.php");
         return true;
     } else {
         echo"Identifiants invalides";

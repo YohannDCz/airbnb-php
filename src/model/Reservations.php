@@ -85,7 +85,7 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT reviews.review, location.*, COUNT(*) FROM reviews INNER JOIN location ON location.id = reviews.location_id GROUP BY reviews.location_id order by COUNT(*); ");
+        $request = $connection->prepare("SELECT reviews.review, location.*, COUNT(*) FROM reviews INNER JOIN location ON location.id = reviews.location_id GROUP BY reviews.location_id order by COUNT(*) DESC; ");
 
         $request->execute();
 

@@ -20,8 +20,8 @@
                         placeholder="Mot de passe">
                 </div>
                 <div class="link_password">
-                    <a href="#" id="left">Mot de passe oublié ?</a> 
-                    <a href="#" id="right">S'inscrire</a>
+                    <a href="resetPassword.php" id="left">Mot de passe oublié ?</a> 
+                    <a href="signup.php" id="right">S'inscrire</a>
                 </div>
                 <div class="btn">
                     <button type="submit"> Continuer <img
