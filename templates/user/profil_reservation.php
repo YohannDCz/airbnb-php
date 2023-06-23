@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/profil/styles_profil_reservation.css">
+    <link rel="stylesheet" href="../styles/profile/styles_profil_reservation.css">
     <title>Document</title>
 </head>
 <body>
