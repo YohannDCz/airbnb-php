@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 21, 2023 at 04:53 PM
+-- Generation Time: Jun 24, 2023 at 06:28 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -32,6 +32,16 @@ CREATE TABLE `booking` (
   `location_id` int(11) DEFAULT NULL,
   `booking_status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`user_id`, `location_id`, `booking_status`) VALUES
+(2, 15, 1),
+(2, 23, 1),
+(2, 12, 4),
+(2, 15, 4);
 
 -- --------------------------------------------------------
 
@@ -213,21 +223,21 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `last_name`, `first_name`, `birthdate`, `email`, `phone`, `password`, `Activated`) VALUES
-(2, 'Thatcher', 'Marcharet', '2023-06-21', 'grnrbr', 52525, '\"\'\"\'f\"\'ferf', 1),
-(3, 'john', 'richard', '2023-06-21', 'richjohn@gmail.com', 52525, '\"\'\"\'f\"\'ferf', 1),
-(4, 'ricot', 'lea', '2023-06-01', 'learicot@gmail.com', 52525, 'ezfzefsdfzefez', 1),
-(5, 'Renold', 'Ryan', '1985-05-07', 'ryanrenold@hotmail.com', 4963214, 'pig', 1),
-(6, 'asthley', 'Rick', NULL, 'nevergonna@giveyou.up', NULL, 'ery', 1),
-(7, 'Williams', 'Olivia', '1985-05-07', 'olivia@gmail.com', NULL, 'zert', 1),
-(8, 'Martinez', 'Lucas', '1985-05-07', 'lucas@gmail.com', NULL, 'azerty', 1),
-(9, 'Lee', 'Sophia', '1985-05-07', 'sophia@yahoo.com', NULL, 'azerty', 1),
-(10, 'Brown', 'Ethan', '1985-05-07', 'ethan@hotmail.com', NULL, 'gjdhjytdj', 1),
-(11, 'Clark', 'Isabella', '1985-05-07', 'isabella@helpme.com', NULL, 'ryujdghtu', 1),
-(12, 'Rodriguez', 'Aiden', '1985-05-07', 'sjdfhs@.com', NULL, 'yujghdxtyuk', 1),
-(13, 'Thomas', 'Harper', '1985-05-07', 'sryu@gmail.ue', NULL, 'rzeytyuiop', 1),
-(14, 'Garcia', 'Benjamin', '1985-05-07', 'dretfyiot__o', NULL, 'rehtrgfhfg', 1),
-(15, 'Hall', 'Charlotte', '1985-05-07', 'aety', NULL, 'QZR', 1),
-(16, 'Taylor', 'Mia', '1985-05-07', 'a\"z\'r-y_uip', NULL, '\"ztyeturykt', 1);
+(2, 'Thatcher', 'Marcharet', '1925-10-13', 'Falklands@gmail.com', 602041982, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(3, 'John', 'Richard', '2023-06-21', 'richjohn@gmail.com', 52525, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(4, 'Ricots', 'Léa', '2023-06-01', 'learicot@gmail.com', 52525, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(5, 'Renold', 'Ryan', '1985-05-07', 'ryanrenold@hotmail.com', 4963214, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(6, 'asthley', 'Rick', NULL, 'nevergonna@giveyou.up', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(7, 'Williams', 'Olivia', '1985-05-07', 'olivia@gmail.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(8, 'Martinez', 'Lucas', '1985-05-07', 'lucas@gmail.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(9, 'Lee', 'Sophia', '1985-05-07', 'sophia@yahoo.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(10, 'Brown', 'Ethan', '1985-05-07', 'ethan@hotmail.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(11, 'Clark', 'Isabella', '1985-05-07', 'isabella@helpme.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(12, 'Rodriguez', 'Aiden', '1985-05-07', 'sjdfhs@.com', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(13, 'Thomas', 'Harper', '1985-05-07', 'sryu@gmail.ue', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(14, 'Garcia', 'Benjamin', '1985-05-07', 'dretfyiot__o', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(15, 'Hall', 'Charlotte', '1985-05-07', 'aety', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1),
+(16, 'Taylor', 'Mia', '1985-05-07', 'a\"z\'r-y_uip', NULL, '$2y$10$cZ/2MvjcqqZQB8Hpv2p4q.CkzGEaYS0B3vN2oyF8JZc8PWpyQLsl2', 1);
 
 --
 -- Indexes for dumped tables
