@@ -40,7 +40,7 @@ function showQueryResults() {
             $orderBy = 'price';
             break;
         case in_array('relevance', $_POST):
-            pass;
+            break;
         case in_array('Popularité', $_POST):
             $location = new Locations;
             $result = $location->getNumberOfReviews();

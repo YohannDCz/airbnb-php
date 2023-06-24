@@ -62,7 +62,7 @@ function UpdateLocation() {
     $location = new Management();
 
     //Modification du logement avec ,comme défaut, null si la valeur n'est pas présente  
-    $locationName = $location->modifyLocation(
+    $locationName = $location->updateLocation(
         isset($_POST["name"]) ? $_POST["name"] : null,
         isset($_POST["price"]) ? $_POST["price"] : null,
         isset($_POST["address"]) ? $_POST["address"] : null,

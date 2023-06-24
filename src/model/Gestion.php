@@ -106,7 +106,7 @@ class Management
             // Fermeture de la connection
             $connection = null;
 
-            return $page_name;
+            return $request;
     }
     function updateLocation($name,$price,$address,$pics,$description,$maxPlaces,$currentlyFree,$area,$locationId) {
         //Connecter la BDD
@@ -134,7 +134,7 @@ class Management
         // Fermeture de la connection
         $connection = null;
 
-        return $page_name;
+        return $request;
     }
     function deleteLocation($locationId){
             //Connecter la BDD
@@ -153,5 +153,5 @@ class Management
     // Fermeture de la connection
     $connection = null;
 
-    return $page_name;
+    return $request;
 } }

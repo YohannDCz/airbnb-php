@@ -6,13 +6,14 @@ require_once('../model/User.php');
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les prof
 
-function deleteReview() {
-    $userId = $_POST["userId"];
-    $user = new Users;
-    $user->deleteReviewsByIds($userId);
-    return True ;
+// function deleteReview() {
+//     $userId = $_POST["userId"];
+//     $user = new Users;
+//     $user->deleteReviewsByIds($userId);
+//     return True ;
 
-}
+// }
+
 function login() {
     
     $user = new Users();
