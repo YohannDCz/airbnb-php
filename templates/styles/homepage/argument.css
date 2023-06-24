@@ -7,7 +7,8 @@
 }
 
 .arguement img {
-    width: 70%;
+    width: 55%;
+    margin-bottom: 58px;
 }
 
 .arguement div {
@@ -46,6 +47,7 @@
         height: 260px;
         margin-left: 154px;
         margin-right: 154px;
+        margin-bottom: 0px;
     }
 
     #argument_2 {
