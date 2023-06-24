@@ -6,17 +6,6 @@ require_once('../../src/model/Reservations.php');
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les profs
 
-//Fonction qui récupère tous les logements 
-function ShowLocation() {
-    $location = $_POST["location"];
-
-    $location = new Locations;
-
-    $result = $location->GetLocationByName($location);
-
-    return $result;
-}
-
 //fonction permettant d'afficher les réservations passées de chaque utilisateur suivant son id de session, la variable $status permettant de savoir si la réservation est 1-passée 2-en cours 3-future 4-mise en dans les favoris
 function showBooking($status) {
     
