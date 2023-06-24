@@ -13,7 +13,7 @@
         <?php include "../components/header-mini.php" ?>
         <div class="login">
             <h1>Connexion</h1>
-            <form method="POST" action="/MiniAirbnb/src/routeur/userRoutes.php">
+            <form method="POST" action="../../src/routeur/userRoutes.php">
                 <div class="form">
                 <div class="box_login">
                     <input type="email" name='email' id placeholder="Adresse mail @">
