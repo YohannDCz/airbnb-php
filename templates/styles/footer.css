@@ -15,8 +15,7 @@ footer {
     display: flex;
     justify-content: space-evenly;
     margin: 0;
-    padding: 0 32px;
-    min-height: 118px;
+    padding: 32px;
     width: 100%;
 }
 

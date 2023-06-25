@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="../styles/dashboard/calendar.css">
     </head>
     <body>
-        <!-- <?php include "../components/header.php" ?> -->
+        <?php include "../components/header.php" ?>
         <div class="navbar">
             <div class="icon">
                 <img src="../../assets/logo/event.svg" alt>
@@ -349,7 +349,7 @@
                 </div>
             </div>
         </section>
-        <!-- <?php include "../components/footer.php" ?> -->
+        <?php include "../components/footer.php" ?>
         <script src="../script/calendar.js"></script>
     </body>
 </html>

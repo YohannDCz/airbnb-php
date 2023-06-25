@@ -52,3 +52,5 @@ $inputColor = $_SESSION["inputColor"];
     .link_password a {
         color: <?php echo $textColor; ?> !important;
         }
+
+    .

@@ -50,32 +50,6 @@ $location = new Locations();
             </div>
         </div>
     </div>
-    <footer>
-        <div class = "container">
-            <p>© 2023 Taillé d’or, Inc. </p>
-            <a href="" class="footer-a">Infos sur l'entreprise</a>
-            <a href="" class="footer-a">Fonctionnement du site</a>
-            <a href="" class="footer-a">Conditions générales</a>
-            <a href="" class="footer-a">Plan du site</a>
-            <a href="" class="footer-a">Confidentialité</a>
-        </div>
-        <div class="container-img">
-            <figure>
-                <img src="../../assets/img/Facebook.svg" alt="">
-            </figure>
-            <figure>
-                <img src="../../assets/img/instagram.svg" alt="">
-            </figure>
-            <figure>
-                <img src="../../assets/img/Twitter.svg" alt="">
-            </figure>
-            <figure>
-                <img src="../../assets/img/Youtube.svg" alt="">
-            </figure>
-        </div>
-        </class>
-    </footer>
-    
     <?php include "../components/footer.php" ?>
     <script src="../../src/javascript/favoris.js"></script>
 

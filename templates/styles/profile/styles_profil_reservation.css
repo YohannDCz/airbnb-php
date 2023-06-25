@@ -1,20 +1,20 @@
 @font-face {
-  font-family: FuturaMediumBT;
-  src: url(../../assets/font/FuturaMediumBT.ttf);
+  font-family: Futura, sans-serif;;
+  src: url(../../assets/font/Futura, sans-serif;.ttf);
 }
 
 @font-face {
-  font-family: EpilogueExtraBold;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-ExtraBoldItalic.ttf);
 }
 
 @font-face {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-Regular.ttf);
 }
 
 @font-face {
-  font-family: EpilogueSemiBold;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-SemiBold.ttf);
 }
 
@@ -27,22 +27,22 @@ body {
 
 
 @font-face {
-  font-family: FuturaMediumBT;
-  src: url(../../assets/font/FuturaMediumBT.ttf);
+  font-family: Futura, sans-serif;;
+  src: url(../../assets/font/Futura, sans-serif;.ttf);
 }
 
 @font-face {
-  font-family: EpilogueExtraBold;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-ExtraBoldItalic.ttf);
 }
 
 @font-face {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-Regular.ttf);
 }
 
 @font-face {
-  font-family: EpilogueSemiBold;
+  font-family: Futura, sans-serif;;
   src: url(../../assets/font/Epilogue-SemiBold.ttf);
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 .reservation h2 {
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -87,7 +87,7 @@ body {
 
 
 .appartement h4 {
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 30px;
@@ -104,7 +104,7 @@ body {
 }
 
 .appartement p.title {
-  font-family: EpilogueExtraBold;
+  font-family: Futura, sans-serif;;
   font-size: 20px;
   font-weight: 800;
   font-style: italic;
@@ -114,7 +114,7 @@ body {
 }
 
 .appartement p.description {
-  font-family: EpilogueSemiBold;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 13px;
@@ -122,7 +122,7 @@ body {
 }
 
 .appartement p.date {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
@@ -130,7 +130,7 @@ body {
 }
 
 .appartement p.price {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 400;
   margin-top: 14px;
@@ -140,7 +140,7 @@ body {
 
 .appartement button {
   margin-top: 15px;
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -156,7 +156,7 @@ body {
   margin-top: 15px;
   background-color: #EDD54C;
   color: rgb(255, 255, 255);
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -176,7 +176,7 @@ body {
 }
 
 #collection h2 {
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -197,7 +197,7 @@ body {
 }
 
 .appart_parent p.title {
-  font-family: EpilogueExtraBold;
+  font-family: Futura, sans-serif;;
   font-size: 20px;
   font-weight: 800;
   font-style: italic;
@@ -207,7 +207,7 @@ body {
 }
 
 .appart_parent p.description {
-  font-family: EpilogueSemiBold;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 13px;
@@ -215,7 +215,7 @@ body {
 }
 
 .appart_parent p.date {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 5px;
@@ -223,7 +223,7 @@ body {
 }
 
 .appart_parent p.price {
-  font-family: EpilogueRegular;
+  font-family: Futura, sans-serif;;
   font-size: 18px;
   font-weight: 400;
   margin-top: 14px;
@@ -233,7 +233,7 @@ body {
 
 .appart_parent button {
   margin-top: 15px;
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -249,7 +249,7 @@ body {
   margin-top: 15px;
   background-color: #EDD54C;
   color: rgb(255, 255, 255);
-  font-family: FuturaMediumBT;
+  font-family: Futura, sans-serif;;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -350,7 +350,7 @@ body {
 @media (min-width: 1300px) {
   .appartement button {
     margin-top: 15px;
-    font-family: FuturaMediumBT;
+    font-family: Futura, sans-serif;;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -366,7 +366,7 @@ body {
     margin-top: 15px;
     background-color: #EDD54C;
     color: rgb(255, 255, 255);
-    font-family: FuturaMediumBT;
+    font-family: Futura, sans-serif;;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;

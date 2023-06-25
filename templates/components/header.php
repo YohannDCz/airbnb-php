@@ -25,6 +25,7 @@
                         <a href="../general/homepage.php">Accueil</a>
                         <a href="../general/locations.php">Locations</a>
                         <a href="../user/messages.php">Messagerie</a>
+                        <a href="../backoffice/dashboard.php">Dashboard</a>
                     </div>
                 </div>
             </div>
@@ -53,6 +54,12 @@
         </header>
         <div class="panel" style="display: none">
             <img src="../../assets/logo/cross.png" alt class="close">
+            <div class="taches">
+                        <a href="../general/homepage.php">Accueil</a>
+                        <a href="../general/locations.php">Locations</a>
+                        <a href="../user/messages.php">Messagerie</a>
+                        <a href="../backoffice/dashboard.php">Dashboard</a>
+                    </div>
             <a href="../user/account.php">
                 <div class="account panel-item">
                     <img src="../../assets/logo/person.svg" alt
