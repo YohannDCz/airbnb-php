@@ -11,17 +11,17 @@
         <?php include "../components/header.php" ?>
         <div class="navbar">
             <div class="icon">
-                <img src="../../assets/logo/event.svg" alt>
-                <img src="../../assets/logo/review.svg" alt>
-                <img src="../../assets/logo/gestion.svg" alt>
-                <img src="../../assets/logo/settings.svg" alt>
+                <a href="#locations"><img src="../../assets/logo/event.svg" alt></a>
+                <a href="#reviews"><img href="#reviews" src="../../assets/logo/review.svg" alt></a>
+                <a href="#"><img href="#" src="../../assets/logo/gestion.svg" alt></a>
+                <a href="#"><img href="#" src="../../assets/logo/settings.svg" alt></a>
             </div>
         </div>
         <section>
             <div class="section">
                 <h1>Calendrier des reservations</h1>
                 <div class="location_a_venir">
-                    <h2>Location à venir</h2>
+                    <h2 id="locations">Location à venir</h2>
                     <div class="location_et_calendrier">
                         <div class="locations">
                             <div class="location">
@@ -317,7 +317,7 @@
                             </div>
                         </div>
                     </div>
-                    <h2>Retour d'expériences</h2>
+                    <h2 id="reviews">Retour d'expériences</h2>
                     <div class="notes">
                         <div class="nombre">
                             <p>Avis: 2</p>

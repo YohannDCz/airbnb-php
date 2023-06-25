@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   gap: 32px;
-  margin-top: 32px;
+  margin-top: 116px;
 }
 
 .navbar img {
@@ -51,6 +51,7 @@ section {
   display: flex;
   flex-direction: column;
   margin-left: 84px;
+  margin-bottom: 64px;
 }
 
 .section h1 {
@@ -58,6 +59,7 @@ section {
   font-family: Futura, sans-serif;
   font-weight: normal;
   margin-top: 60px;
+  padding-left: 32px;
 }
 
 .location_a_venir .location_et_calendrier {

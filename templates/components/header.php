@@ -36,7 +36,7 @@
                     <p>&euro;</p>
                 </div>
                 <div class="round">
-                    <a href="lien_image2.html"><img
+                    <a href="../general/locations.php"><img
                             src="../../assets/logo/search2.png" alt="LP"></a>
                 </div>
                 <div class="menu">
