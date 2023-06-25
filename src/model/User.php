@@ -11,8 +11,8 @@ function addUser($adress, $password, $first_name, $last_name,$birthdate, $phone,
         $connection = $db->getConnection();
         // Requêtes SQL
 
-        $sql = 'INSERT INTO users (first_name, last_name, adress, email, phone, password, birthdate)
-        VALUES(:first_name, :last_name, :adress, :email, :phone, :password, :birthdate)';
+        $sql = 'INSERT INTO users (first_name, last_name, email, phone, password, birthdate, adress)
+        VALUES(:first_name, :last_name, :email, :phone, :password, :birthdate, :adress)';
 
         $query = $connection->prepare($sql);
     
@@ -25,11 +25,11 @@ function addUser($adress, $password, $first_name, $last_name,$birthdate, $phone,
 
         $query->bindParam(":first_name", $first_name);
         $query->bindParam(":last_name", $last_name);
-        $query->bindParam(":adress", $adress);
         $query->bindParam(":email", $email);
         $query->bindParam(":phone", $phone);
         $query->bindParam(":password", $password);
         $query->bindParam(":birthdate", $birthdate);
+        $query->bindParam(":adress", $adress);
 
 
         if ($query->execute()){

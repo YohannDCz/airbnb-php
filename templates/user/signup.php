@@ -14,7 +14,7 @@
         <?php include "../components/header-mini.php" ?>
         <div class="signup" id="page1">
             <h2>Inscription</h2>
-            <form action="/MiniAirbnb/src/routeur/signupRoute.php" method="POST" id="page1-form">
+            <form action="../../src/routeur/signupRoute.php" method="POST" id="page1-form">
                 <div class="signup_box">
                     <input
                         class="mail_input"

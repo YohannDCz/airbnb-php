@@ -43,6 +43,8 @@ function login() {
 
 function signup() {
 
+    var_dump("ok");
+    
     $user = new Users();
 
     $adress = $_POST["adress"];
@@ -68,6 +70,8 @@ function signup() {
         setcookie("birthdate", $birthdate);
 
         $user->addUser($adress, $password, $first_name, $last_name, $birthdate, $phone, $email);
+        header("Location: ../../templates/user/login.php");
+        
     }
 }
 ?>

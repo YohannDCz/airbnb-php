@@ -34,6 +34,11 @@ button {
     font-weight: 500;
 }
 
+button img {
+    width: 25px;
+    height: 25px;
+}
+
 form {
     width: 300px;
     height: fit-content;
@@ -56,7 +61,7 @@ form {
     flex-direction: column;
     border-radius: 10px;
     border: 2px solid black;
-    width: 220px;
+    width: 300px;
     margin: 0;
 }
 
@@ -65,7 +70,7 @@ input {
     border-bottom: 2px solid black;
     min-width: 100%;
     min-height: 56px;
-    padding-left: 15px;
+    padding: 0 15px;
     outline: none;
     font-size: 18px;
     font-family: Futura, sans-serif;
@@ -101,10 +106,6 @@ input {
 
 #right {
     margin-left: 10px;
-}
-
-img {
-    width: 32px;
 }
 
 @media screen and (min-width: 800px) {
