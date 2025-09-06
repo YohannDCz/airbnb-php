@@ -1,7 +1,7 @@
 <?php
 
 //Inclusion du fichier pour la connexion a la BDD
-require_once 'Database.php';
+require_once __DIR__ . '/Database.php';
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les profs
@@ -31,28 +31,38 @@ class Locations
     function searchLocation($location,$maxPlaces,$dbParam,$orderByParam,$ascDesc) {
         //Connecter la BDD
         $db = new Database();
-        $location = "%".$location."%";
-        $where  = '';
-        $orderBy= '';
-        if ($maxPlaces !== '') {
-            $where .= " WHERE max_places > :maxPlaces ";
+        $connection = $db->getConnection();
+
+        $locationLike = $location !== '' ? "%" . $location . "%" : '';
+        $where  = [];
+        $params = [];
+
+        if ($maxPlaces !== '' && $maxPlaces !== null) {
+            $where[] = "max_places >= :maxPlaces";
+            $params[':maxPlaces'] = (int)$maxPlaces;
         }
-        if ($location !== '' && $maxPlaces !== '') {
-            $where.= "and name LIKE :location or address LIKE :location";
+        if ($location !== '') {
+            $where[] = "(name LIKE :location OR address LIKE :location)";
+            $params[':location'] = $locationLike;
         }
-        else if ($location !== '' && $maxPlaces === '') {
-            $where.= " WHERE name LIKE :location or address LIKE :location";
+
+        $sql = "SELECT * FROM location";
+        if (!empty($where)) {
+            $sql .= " WHERE " . implode(' AND ', $where);
         }
         if ($orderByParam !== "") {
-            $orderBy .= " ORDER BY ". $orderByParam. " " . $ascDesc;
+            $allowedOrder = ['price', 'name', 'max_places'];
+            if (in_array($orderByParam, $allowedOrder, true)) {
+                $dir = strtoupper($ascDesc) === 'DESC' ? 'DESC' : 'ASC';
+                $sql .= " ORDER BY $orderByParam $dir";
+            }
         }
-        $connection = $db->getConnection();
-        echo "SELECT * FROM ". $dbParam . $where . $orderBy .";";
-        $request = $connection->prepare("SELECT * FROM ". $dbParam . $where . $orderBy .";");
-        
-        $request->bindParam(":maxPlaces", $maxPlaces);
-        $request->bindParam(":location", $location);
-        
+        $sql .= ";";
+
+        $request = $connection->prepare($sql);
+        foreach ($params as $k => $v) {
+            $request->bindValue($k, $v);
+        }
         $request->execute();
 
         $result = $request->fetchAll(PDO::FETCH_ASSOC);
@@ -118,7 +128,10 @@ class Locations
         $connection = $db->getConnection();
 
         //  Requêtes SQL
-        $request = $connection->prepare("SELECT location.* FROM location INNER JOIN booking ON location.id = booking.location_id INNER JOIN users WHERE booking_status = :status and users.id = :userId; ");
+        $request = $connection->prepare("SELECT location.*
+                                         FROM location
+                                         INNER JOIN booking ON location.id = booking.location_id
+                                         WHERE booking.booking_status = :status AND booking.user_id = :userId;");
 
         $request->bindParam(":userId", $userId);
         $request->bindParam(":status", $status);
@@ -277,9 +290,7 @@ class Locations
     
     
     //WIP
-    function searchByDate() {
-        pass;
-    }
+    // function searchByDate() { /* TODO */ }
     //fonction qui permet de rajouter des logements 
     function createLocation($address, $area, $name, $price, $pics,$max_places, $description, $currentlyFree) 
         {
@@ -289,8 +300,8 @@ class Locations
             $connection = $db->getConnection();
             // Requêtes SQL
     
-            $sql = 'INSERT INTO "location" (name, price, address, pics, description, currently_free, max_places,area)
-            VALUES(:name, :price, :address, :pics, :description, :currentlyFree, :maxPlaces :area)';
+            $sql = 'INSERT INTO location (name, price, address, pics, description, currently_free, max_places, area)
+            VALUES(:name, :price, :address, :pics, :description, :currentlyFree, :maxPlaces, :area)';
     
             $query = $connection->prepare($sql);
         
@@ -306,8 +317,9 @@ class Locations
             $query->bindParam(":address", $address);
             $query->bindParam(":pics", $pics);
             $query->bindParam(":description", $description);
-            $query->bindParam(":password", $password);
-            $query->bindParam(":maxPlaces", $maxPlaces);
+            $query->bindParam(":currentlyFree", $currentlyFree, PDO::PARAM_BOOL);
+            $query->bindParam(":maxPlaces", $max_places, PDO::PARAM_INT);
+            $query->bindParam(":area", $area);
     
     
             if ($query->execute()){

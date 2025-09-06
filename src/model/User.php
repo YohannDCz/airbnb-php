@@ -1,6 +1,6 @@
 <?php
 
-require_once 'Database.php';
+require_once __DIR__ . '/Database.php';
 
 class Users {
 
@@ -11,8 +11,10 @@ function addUser($adress, $password, $first_name, $last_name,$birthdate, $phone,
         $connection = $db->getConnection();
         // Requêtes SQL
 
-        $sql = 'INSERT INTO users (first_name, last_name, email, phone, password, birthdate, adress)
-        VALUES(:first_name, :last_name, :email, :phone, :password, :birthdate, :adress)';
+        // Schéma BDD.sql: users(id,last_name,first_name,birthdate,email,phone,password,Activated)
+        // L'adresse n'existe pas dans ce dump, on l'ignore côté stockage
+        $sql = 'INSERT INTO users (first_name, last_name, email, phone, password, birthdate, Activated)
+        VALUES(:first_name, :last_name, :email, :phone, :password, :birthdate, :activated)';
 
         $query = $connection->prepare($sql);
     
@@ -29,7 +31,8 @@ function addUser($adress, $password, $first_name, $last_name,$birthdate, $phone,
         $query->bindParam(":phone", $phone);
         $query->bindParam(":password", $password);
         $query->bindParam(":birthdate", $birthdate);
-        $query->bindParam(":adress", $adress);
+        $activated = 1;
+        $query->bindParam(":activated", $activated, PDO::PARAM_INT);
 
 
         if ($query->execute()){
@@ -53,7 +56,6 @@ function addUser($adress, $password, $first_name, $last_name,$birthdate, $phone,
         $query->execute([
             ":credentials" => $credentials,
         ]);
-        $query->execute();
     
         // var_dump($stmt);
         

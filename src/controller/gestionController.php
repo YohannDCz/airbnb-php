@@ -1,6 +1,6 @@
 <?php 
-require_once('./model/Database');
-require_once('./model/Gestion.php');
+require_once(__DIR__ . '/../model/Database.php');
+require_once(__DIR__ . '/../model/Gestion.php');
 
 //Ces lignes de code ont été recyclées en partie, avec le consentement des personnes l'ayant fait, ( parce qu'on est écolo, bien sûr ) du projet précédent .
 // Commentaire pour les profs
@@ -24,12 +24,15 @@ function deleteBooking() {
 function availability() {
     //Récupération du nouveau statut de disponibilité 
     $newStatus = $_POST["newstatus"];
+    $locationId = $_POST["locationId"] ?? null;
     
     //Appel de la classe présente dans Gestion.php
     $management = new Management;
 
     //Changement du statut de disponibilité
-    $management->setLocationAvailability($newStatus);
+    if ($locationId !== null) {
+        $management->setLocationAvailability($locationId, $newStatus);
+    }
     return True ;
 }
 

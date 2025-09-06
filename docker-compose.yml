@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  db:
+    image: mariadb:11
+    container_name: my_mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: project_airbnb
+    volumes:
+      - ./BDD.sql:/docker-entrypoint-initdb.d/BDD.sql
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    container_name: my_adminer
+    ports:
+      - "8080:8080"

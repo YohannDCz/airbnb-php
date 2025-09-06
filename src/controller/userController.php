@@ -23,18 +23,16 @@ function login() {
     setcookie("login", $login);
 
     $query = $user->login($login);
-
-    $userDb = $query->fetch(PDO::FETCH_ASSOC);
+    $userDb = $query ? $query->fetch(PDO::FETCH_ASSOC) : false;
     $error = null;
 
-    if (password_verify($password, $userDb["password"])) {
+    if ($userDb && isset($userDb["password"]) && password_verify($password, $userDb["password"])) {
         $_SESSION["loggedin"] = true;
         $_SESSION["userId"] = $userDb["id"];
         header("Location: ../../templates/general/homepage.php");
         return true;
     } else {
-        echo"Identifiants invalides";
-        setcookie("errorPassword", $error);
+        echo "Identifiants invalides";
         return false;
     }
 }
@@ -43,8 +41,6 @@ function login() {
 
 function signup() {
 
-    var_dump("ok");
-    
     $user = new Users();
 
     $adress = $_POST["adress"];
@@ -56,9 +52,7 @@ function signup() {
     $birthdate = $_POST["birthdate"];
 
     $resultat = $user->checkUser($email);
-    $results = isset($resultat["adress"]) or isset($resultat["mail"]);
-
-    if ($results) {
+    if ($resultat) {
         echo "L'utilisateur existe déjà.";
       // return $error;
     } else {
