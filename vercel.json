@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "builds": [
-    { "src": "api/**/*.php", "use": "@vercel/php" }
-  ],
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "vercel-php@0.6.2",
+      "includeFiles": [
+        "templates/**",
+        "src/**",
+        "assets/**"
+      ]
+    }
+  },
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
     { "src": "/styles/(.*)\\.css", "dest": "/templates/styles/$1.css" },
@@ -10,4 +17,3 @@
     { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
-
