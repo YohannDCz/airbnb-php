@@ -5,8 +5,8 @@
   ],
   "routes": [
     { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/styles/(.*)\.css", "dest": "/templates/styles/$1.css" },
-    { "src": "/script/(.*)\.js", "dest": "/templates/script/$1.js" },
+    { "src": "/styles/(.*)\\.css", "dest": "/templates/styles/$1.css" },
+    { "src": "/script/(.*)\\.js", "dest": "/templates/script/$1.js" },
     { "src": "/(.*)", "dest": "/api/index.php" }
   ]
 }
