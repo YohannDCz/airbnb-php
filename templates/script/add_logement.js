@@ -1,7 +1,7 @@
 const first_btn = document.getElementById("first_btn");
 
 first_btn.addEventListener('click', function(){
-    window.location.href = "http://localhost:8888/templates/backoffice/add_logement2.php";
+    window.location.href = "/backoffice/add_logement2.php";
 })
 
 
