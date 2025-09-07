@@ -16,3 +16,4 @@ services:
     container_name: my_adminer
     ports:
       - "8080:8080"
+    restart: always

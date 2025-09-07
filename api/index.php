@@ -14,6 +14,16 @@ if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 
+// Gestion globale des exceptions pour des messages d'erreur plus clairs
+set_exception_handler(function (Throwable $e): void {
+    http_response_code(500);
+    header('Content-Type: text/plain; charset=utf-8');
+    echo 'Application error: ' . $e->getMessage();
+    // Optionnel: commenter la ligne suivante si vous souhaitez le stack trace en dev
+    // echo "\n\n" . $e;
+    exit;
+});
+
 $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?? '/';
 $path = rtrim($path, '/') === '' ? '/' : rtrim($path, '/');
 
