@@ -1,7 +1,7 @@
 <?php
 require_once"../../src/model/Database.php";
 require_once"../../src/model/Reservations.php";
-session_start();
+if (session_status() === PHP_SESSION_NONE) { session_start(); }
 if (isset($_SESSION['result'])) {
     $result = $_SESSION['result'];
 }
